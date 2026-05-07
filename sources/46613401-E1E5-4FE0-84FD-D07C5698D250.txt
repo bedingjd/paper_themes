@@ -1,0 +1,214 @@
+Design of Agent Tutee’s Question Prompts to Engage Student’s Role-Playing as Tutor in a Learning-by-Teaching Agent Environment
+Chee-Kit LOOI, Longkai WU, National Institute of Education Nanyang Technological University, Singapore
+Email: cheekit.looi@nie.edu.sg, longkai.wu@gmail.com
+
+
+Abstract: A learning-by-teaching environment can be used to create a context in which the student can play the role of tutor teaching the agent tutee. Without meaningful feedback from the agent, there is no reason to expect much student’s engagement with the teaching interaction and growth in learning. This study tries to investigate the design of agent tutee’s question prompts that can engage the student’s role-playing as tutor and thereby stimulate reflective knowledge-building in a learning-by-teaching agent environment, Betty’s Brain. A pilot study that compares question prompts with self-reflection prompts within the agent environment is undertaken. Question prompts are more specific and concrete questions related to the tutor’s teaching and in which the student tutor needs to respond. Self-reflection prompts are more general prompts to stimulate self-reflection. The result gives us some preliminary evidence that the question prompts support on role-playing can be positive in enhancing student’s learning when pursing learning-by-teaching activities.
+
+Introduction
+Role-playing is a methodology derived from socio-drama for exploring the issues involved in complex social situations, which can be used for the training of professionals or the understanding of literature, history, and science (Blatner, 2002). Vygotsky (1977) emphasized that in role-playing, the child has to suppress his or her immediate impulses and to act according to the given role. Role-playing also encourages the student to reflect on his knowledge of a subject and to use appropriate concepts when articulating his or her response to the role-playing setting. Because role-playing is participatory in nature, it tends to be more effective at embedding concepts and understanding in the long-term memory of a student than do more frequently used teaching techniques, such as lectures, that do not require active participation from a student (Silberman, 1996).
+The design of the learning-by-teaching agent environment (Biswas, Schwarz and Bransford, 2001), derived from the practice of peer-tutoring, is an intriguing approach to implement intelligent learning environments in which the student has the opportunity of role playing the tutor while the agent plays the role of less knowledgeable tutee. The student tutor teaches the computerized tutee agent with explicit instructions and observes the agent’s independent problem solving. It is claimed that this procedure can motivate the student to learn what he has taught and gain deeper understanding of the domain knowledge. However, we argue that students, especially middle schools students, still lack the ability to autonomously clarify their role and assume the responsibility to teach the agent actively. They need further support from the agent environment in playing the role as tutor and thus achieving better learning outcomes.
+Roscoe and Chi (2004) found that in a non-reciprocal and naturalistic (i.e. little or no training) tutoring context, the tutee’s questions can influence tutor explanations and metacognition, and thus have a significant and positive influence on the tutor’s learning activities and opportunities. Meanwhile, some researchers have found positive evidences of question prompts for students on several aspects, such knowledge integration (Davis and Linn, 2000) and ill-structured problem-solving processes (Ge and Land, 2004). Inspired by these findings, in the work reported here, we try to investigate the design of agent tutee’s question prompts in a learning-by- teaching agent environment, Betty’s Brain, for the purpose of enhancing the student’s role-playing as tutor. Our hypothesis is that the question prompts from tutee agent can stimulate the student in a process of reflective knowledge-building (Roscoe and Chi, in press) which involves understanding, monitoring, misunderstanding repairing, and self-explanation, and thus the student receives support in performing a better job as tutor in the agent environment.
+The paper is organized as follows. First, we present an overview of the research literature, with a brief introduction to Betty’s Brain, stages of role-playing, and reflective knowledge-building in tutor-tutee interaction. This provides the architectural foundation for building agent tutee’s question prompts as the tutor role-playing support in the environment. Second, the mechanism of incorporating agent tutee’s question prompts into the learning-by-teaching environment is provided. Third, a pilot study on comparing the effectiveness of agent tutee’s question prompts and self-reflection prompts is described. Finally, we discuss our future work.
+
+Background
+
+A Learning-by-Teaching Agent Environment: Betty’s Brain
+Biswas, Schwarz & Bransford (2001), and Leelawong et al (2003) have built an environment where students explicitly teach and directly receive feedback about their teaching through interactions with a computer agent, named Betty’s Brain.
+
+
+
+Figure 1. A Learning-by-Teaching Agent Environment: Betty’s Brain.
+The teaching practices in Betty’s Brain can be divided into four phases: (i) the Prepare to teach phase, where students learn the domain knowledge independently; (ii) the Teach phase, where students impart knowledge to the agent Betty by means of a dynamic concept map interface, and access content materials as needed to learn information for teaching; (iii) the Query phase, where students ask Betty questions (using question templates) which she answers by reasoning with information that the student has taught her, and (iv) the Quiz phase, where students evaluate how well they have taught Betty by observing her performance on a quiz.
+
+Stages of Role-Playing
+A role play consists of three major stages (Alden, 1999). First, students are introduced to the nature and purpose of the activity. If the style of the role play requires it, the players who are to act out the roles are told about the situation and setting for the role play. Descriptions of the player characters are introduced, either to all students or only to the student playing the particular character. Non-players are given specific observational and reflective learning tasks. Second, the role play is run. Third, and of enormous importance for the learning process, a discussion session is undertaken in which the activity is reviewed.
+
+Reflective Knowledge-Building in Tutor-Tutee Interaction
+Roscoe and Chi (in press) refer to the tutor’s reflective knowledge-building as intermingled processes of knowledge construction and metacognition as a direct result of his engagement in instructional activities inherent to the tutoring process, such as explaining, answering questions, correcting tutee errors, manipulating different representations, etc. (Cohen, 1986; Garneret al., 1971; King, 1998). The opportunity of reflective knowledge-building enables the tutor to monitor own understanding, recognize and repair knowledge gaps and misconceptions, integrate new knowledge with prior knowledge and generate new ideas for self-evaluation and reflection.
+Our focus on reflective knowledge-building is the tutor’s response and explanation to tutee’s questions, which are fundamental to tutoring interaction (Graesser, et, al., 1995). The tutee’s questions, which arise when the tutee notices a contradiction, or perceives his lack of knowledge, often stimulates his curiosity to understand deeply about the subject matter (Graesser and McMahen, 1993). By responding or explaining to these questions, the tutor is expected to reexamine his beliefs and to be stimulated to learn through elaboration and self-monitoring (King et al., 1998).
+
+System Design
+Architecture
+In engaging the student’s role-playing as tutor in the learning-by-teaching agent environment, our goal is to improve the current version of Betty’s Brain to let the agent tutee accommodate and generate meaningful
+
+Learning-by- Teaching Stages
+Learning Strategies
+Expert Map
+Student Map
+Interactive Dialogue
+Concept Map Editor
+Student Tutor
+Question Prompts Generation Rule Engine
+Agent Tutee
+Agent Tutee
+question prompts which can encourage the student’s response and explanations for reflective knowledge- building and better learning outcomes.
+Figure 2. Architecture of Generating Question Prompts in Learning-by-Teaching Agent Environment.
+Our focus in generating question prompts from agent tutee is to challenge student’s understanding by comparing his map with the expert map. In Figure 2, the architecture is depicted with three major components are involved, the question prompts generation rule engine, the student map and the expert map. The engine evaluates the student map and generates question prompts based on the stored learning strategies, learning-by- teaching stages and expert map. Students tutor receives these prompts in an interactive dialogue and tries to respond while teaching the agent by modeling in a concept map editor.
+
+Pattern Detection
+The major work of the rule engine in the system is to monitor the student’s concept mapping activities (the student teaches Betty by producing a concept map in the agent environment) and to detect possible patterns in student map by comparing with pre-stored expert maps. We adopt a fuzzy integration and matching algorithm (Chen, Lin and Chang, 2001) to overlay parts of expert map with the student map. With the carefully predefined expert maps, this algorithm analyzes the student map with importance ranking for each node and link, and identifies how closely each student map resembles the expert map using a list of node names and relation types.
+
+
+
+Figure 3. Pattern of Conflict in the Learning-by-Teaching Agent Environment.
+The rule engine looks for the following pattern in the order stated (i) missing expert concepts, (ii) missing expert links, (iii) incorrect expert links, and (iv) conflict links. Once a pattern is confirmed, the rule engine sends the message to the Interactive Dialogue component and generates corresponding question prompts.
+
+For example, as shown in Figure 3, there is a conflict in the concept map, which means the reasoning from following different paths will engender inconsistent results. In this case, the increase of climate change will cause price to increase following one path, while causing price to decrease following the other path. Then the Pattern_Conflict pattern will be matched and triggers question prompts from the agent tutee.
+
+Stage Detection
+Apart from pattern detection, the rule engine also needs to detect the student’s current stage of role- play, which includes before role-playing, during role-playing and after role-playing, and trigger the student with different cognitive and metacognitive aspects of playing the role of tutor.
+Different stages call for different reflective knowledge-building activities. At stage 1, the student is required to get to know the environment and the background story well, and be cognizant of the teaching goals and plans. As the role-playing begins, we expect the student to reflect on his knowledge and to monitor his understanding, i.e. justifying his concepts and links, being aware of the completeness or correctness of his map, and being elicited into self-explanation. At this second stage, the student will be led to do tasks with using appropriate tactics and strategies specified to the agent environment (e.g. examine the agent’s understanding by exposing the agent to a query or to take a quiz; observe the agent’s independent performance in the quiz and improve his teaching). After the role-playing, the student needs to review and summarize his activities for the purpose of knowledge integration and synthesis.
+
+Design of Agent Tutee’s Question Prompts
+Our study, as shown in Figure 4, seeks to compare two modalities of prompts, namely self-reflection prompts and agent tutee’s question prompts, in the learning-by-teaching agent environment. Our previous study (Wu and Looi, 2007) has shown the potential effectiveness of self-reflection prompts in facilitating student’s learning-by-teaching activities. The self-reflection prompts are a series of metacognitive questions guiding student to reflect on learning and teaching, such as “Why should I teach?”, “How can I use the tools to help my student understand what I teach?”, “What do I learn from my student?”, and et al. The classroom study showed that students with self-reflection prompts (reflection group) support tend to have better learning outcomes than students who taught the agent without prompts support (teach group). As to the quality of the concept maps they drew, the numbers of valid concepts improved from 5.8 for the teach group to 6.6 for reflection group (F=0.64, p= 0.447). The average numbers of valid links improved from 8.6 for the teach group to 13.8 for the reflection group (F=11.27, p= 0.00998).
+
+
+
+
+“ Reflection”
+Mode
+Learning by Teaching
+
+
+
+
+
+Student Tutor
+Self-Reflection Prompts
+
+Agent
+
+
+
+
+“ Interaction”
+Mode
+Learning by Teaching
+
+
+
+
+
+Student Tutor
+Question Prompts
+
+Agent
+
+Figure 4. Two Modalities of Prompts.
+
+In this study, to guide the student’s reflective knowledge-building activities, we introduce another modality of prompts, the agent tutee’s question prompts, in the learning-by-teaching environment, by trying to formulate reflective interaction between the student tutor and agent tutee. These question prompts, designed from the perspective of a tutee, are intended to make the agent behave in an inquisitive way and stimulate the student tutor in the process of understanding, monitoring, misunderstanding repairing and self-explanation when dealing with the complex and unfamiliar domains,
+Examples of the question prompts tailored to the three stages of tutor role-playing are as follows:
+Question Prompts Triggering General Thinking before Tutor Role-Playing
+[Introduction of the background story], you are my tutor now, Can you teach me?
+Do you feel you are prepared to teach me now?
+What is the expectation of you for me?
+How do you plan to teach me?
+Question Prompts Triggering Domain Knowledge Thinking during Tutor Role-Playing
+Can you explain some concepts you taught me just now?
+Can you check is there any error concept/link in the map you teach me?
+Can you check if there is any conflict link in the map you teach me?
+I need more knowledge to finish my quiz task. Teach me more, please, my tutor.
+Question Prompts Triggering Task-Specific Thinking during Tutor Role-Playing
+Can you ask some questions related to the online resources? I am interested.
+I haven’t been asked quiz questions. Can you ask me those?
+I have learned a lot from you. Can you send me to take a quiz?
+Question Prompts Triggering Reflection Assessment after Tutor Role-Playing
+Did I really learn from you? How will you evaluate your teaching work?
+What is the most important thing you have taught to me?
+Did you also learn something from me after you teach me?
+Davis and Linn (2000) noted that prompts have the negative effect of reinforcing following “step by step” procedures rather than reflecting and connecting ideas when helping students in structuring and completing activities. Ge, Chen and Davis (2005) also pointed out that students might overlook a larger picture of the problem-solving when prompts are used as step-by-step guidelines. We have thus designed self-reflection prompts and agent tutee’s question prompts to be open-ended questions. Our hypothesis in this study is that agent tutee’s question prompts, with the ability to enhance the human-agent tutoring interaction, can be more effective than self-reflection prompts in helping student’s reflective knowledge-building process.
+
+Prompting Strategies
+One key issue in our design is whether we should force the students to respond to each of the prompts or let them make voluntary decisions. In fact, there have some concerns in using prompts as scaffolding strategies. Greene & Land (2000) and Ge & Land (2003) found that students sometimes omitted questions or gave superficial answers, therefore resulting in a lack of attention to some important aspects of problem and failing to engage in deeper understanding. Other research suggests that we should force students to receive and respond to prompts (e.g. Zellermayer, et al., 1991). Considering the nature of designed prompts, we choose different strategies for the modalities of prompts. Self-reflection prompts act as metacognitive guides. Students are forced to receive them but can choose whether to respond to them or not. This is so that they can still focus on the domain knowledge building. However, students are forced to receive and respond to the agent tutee’s question prompts in order to sustain the reflective tutoring interaction.
+
+Pilot Study
+Participant and Procedure
+To assess and compare the two modalities of prompts in their potential effectiveness and implications for designing learning-by-teaching environment, we conducted a small pilot study on 2 female students (13 and 14 years old separately) from a local secondary school. 2 students is a start to help us have a feel of the issues of how students might use the system under the 2 prompt modality conditions. We are planning to get more students to do larger sample studies. We chose the topic of supply and demand in basic economics as the domain for students to pursue learning-by-teaching activities with Betty’s Brain.
+The 2-hour classroom pilot study was divided in 3 sessions. At the beginning of session 1, the students filled out a Motivated Strategies for Learning Questionnaire. After that they were told a background story and introduced to basic features of the software. Then, the students prepared themselves to teach Betty by independently reading the available reference materials. In session 2, the 2 students were asked to teach two versions of Betty separately. One used the version with the agent tutee’s question prompts (“Interaction” condition). The other one used the version with self- reflection prompts (“Reflection” condition). In session 3, the students were asked to write down on an interview sheet their thoughts on their first learning-by-teaching experiences.
+
+Results
+As shown in Figure 5 and Table 1, the analysis of the two maps, the map of the “interaction” student is
+much richer and has more complete structures than that of the “reflection” student.
+
+
+Figure 5. Concept Maps from the “reflection” student (left) and the “interaction” student (right).
+Table 1: Comparison between the maps of the “reflection” and “interaction” student.
+
+
+“Reflection” Student
+“Interaction” Student
+Valid nodes
+12
+19
+Valid links
+11
+26
+Density ratio of valid nodes by valid links
+1.09
+1.37
+Breadth of links to the central concept (demand)
+number of links to it
+6
+8
+Depth of links from the central concept (demand) distance to furthest link
+4
+4
+
+
+Additionally, the “interaction” student answered almost all the more question prompts and generated a relatively complete interactive dialogue while the “reflection” student left most of self-reflection prompts unanswered. An excerpt of the interactive dialogue from the “interaction” student and agent is as follows.
+[Agent] Hi, nice to meet you, my tutor. I can’t understand the relevant materials well. Please help to read them and teach me the way I can understand. How will you comment on the materials at the beginning?
+[Your Response] The materials mainly touches on the various aspects of demand, namely, it comprises of three things, which is desire, ability to pay and willingness to pay. I will further elaborate on it…
+[Agent] It seems there are several concepts you have taught me. Can you choose some to explain to
+me?
+[Your Response] The law of demand is that quality demanded is inversely proportional to price. The law of supply is that quality supplied is directly proportional to price. If we combine these two laws, we would combine these two laws, we would eventually get Market/Equilibrium Price.
+[Agent] I just answered your questions. How will you evaluate my answer?
+[Your Response] I will base it on the concept taught and see if your answer is similar or close to it. [Agent] Can you check if there is any conflict relationship in the map?
+[Your Response] Yes, by assessing the quality of your answers.
+[Agent] I am always hungering for knowledge. Try to teach me more knowledge, please, my tutor. [Your Response] You can always find out more from books or Internet resources.
+
+[Agent] Did I understand your meaning? How will you evaluate your teaching work? [Your Response] You understand quite well. I would say the links are a little sloppy. [Agent] What was the most important thing you tried to teach me?
+[Your Response] It was how demand affects everything.
+[Agent] What was the most important thing I can learn from you? [Your Response] The laws and changes and what it affects [Agent] Did you learn something for me?
+[Your Response] How to clarify my answers?
+
+On the interview sheet, the “interaction” student chose “Feedback from someone who is less capable that can challenge you” as the feedback that makes her most involved in the learning-by-teaching environment. She also commented that “Betty points out the problems in the concept map through her evaluated answer”, but “there are some things that are hard to explain just by using the idea of increasing and deceasing.” So, she expected “more choices to teach links”. Similarly, the “reflection” student also expected “more types of links (more structures)” while she supported concept mapping as effective way in representing her ideas. Her expectation also included “it would be more helpful if Betty could provide explanations in greater detail”.
+From this work, we postulate that our designed question prompts can trigger students to do more knowledge building than more general or abstract self-reflection prompts. We need to probe deeper why if the agent tutee asks more concrete questions, students would engage in deeper reasoning, elaboration and reflection. We need to conduct more evaluation and experimentation of different modalities of triggering deep student thinking to explore the mechanisms that might explain the outcomes.
+
+Discussion and Future Work
+Previous studies (e.g. Roscoe and Chi, in press) showed that human tutee plays a very important role in shaping the learning activates and learning opportunities of human tutor. The human tutee can directly or indirectly stimulate tutor’s learning activities, such understanding, monitoring, misunderstanding repairing, and self-explanation. Our pilot study suggested that the computerized agent tutee with ability to raise meaningful question prompts in a learning-by-teaching environment has the potential to engage students in the interactive dialogue with the agent and help him in the promotion of reflection. Students require additional support, like tutee’s questions prompts and self-reflection prompts, from the context, in efficiently understanding the general metacognitive skills, task-specific skills and domain knowledge system for implementing learning. Feedback from the students who used the system indicates that the idea of agent prompts in learning–by-teaching activities can be successful in guiding them in learning on complex and unfamiliar domains. Since our initial pilot reported in (Wu & Looi, 2007) and this paper, a few schools have expressed interest in having their students use our software. More extensive studies will be conducted with a focus on how different modalities of question prompts can motivate students’ learning in the environment.
+
+References
+Alden, D. (1999) Experience with Scripted Role Play in Environmental Economics, The Journal of Economic Education.
+Biswas, G., Schwartz, D., Bransford, J., & The Teachable Agents Group at Vanderbilt University (2001). Technology Support for Complex Problem Solving: From SAD Environments to AI. In Forbus & Feltovich (eds.), Smart Machines in Education, 71-98. Menlo Park, CA: AAAI Press.
+Blatner, A. (2002). Role Playing in Education. The Journal of Learning Sciences, 2(2), 141-178.
+Chen, S.W., Lin, S.C., and Chang K.E., (2001). Attributed concept maps: fuzzy integration and fuzzy matching,
+IEEE Transactions on Systems, Man, And Cybernetics, 31 (5)
+Cohen, P.A., Kulik, J.A., & Kulik, C.C. (1982). Educational outcomes of tutoring: A meta-analysis of findings. American Educational Research Journal 19(2): 237-248. Coleman, E.B. (1998). Using explanatory knowledge during collaborative problems solving in science. Journal of the Learning Sciences 7: 387- 427.
+Cohen, J. (1986). Theoretical considerations of peer tutoring. Psychology in the Schools 23: 175-186.
+Coleman, E.B., Brown, A.L., & Rivkin, I.D. (1997). The effect of instructional explanations on formal learning from scientific texts. The Journal of the Learning Sciences 6(4), 347-365.
+Davis, E. A., & Linn, M. (2000). Scaffolding students’ knowledge integration: Prompts for reflection in KIE.
+International Journal of Science Education, 22(8),819-837.
+Gartner, A., Kohler, M.C., & Riessman, F. (1971). Children teach children: Learning by teaching. New York: Harper & Row.
+Ge, X., Chen, C. H., & Davis, K. A. (2005). Scaffolding novice instructional designers’ problem-solving processes using question prompts in a web-based learning environment. Journal of Educational Computing Research, 33(2), 219-248.
+Ge, X., & Land, S. M. (2004). A conceptual framework of scaffolding ill-structured problem solving processes using question prompts and peer interactions. Educational Technology Research and Development, 52(2), 5-22.
+Graesser, A.C. & McMahen, C. (1993). Anomalous information triggers questions when adults solve quantitative problems and comprehend stories. Journal of Educational Psychology, 85(1), 136-151.
+Graesser, A.C., Person, N.K., & Magliano, J.P. (1995). Collaborative Dialogue Patterns in Naturalistic One-to- One Tutoring. Applied Cognitive Psychology 9: 495-522.
+
+Greene, B. A., & Land, S. M. (2000). A qualitative analysis of scaffolding use in a resource-based learning environment involving the world wide web. Journal of Educational Computing Research, 23(2), 151- 180.
+King, A. (1998). Transactive peer tutoring: Distributing cognition and metacognition. Educational Psychology Review, 10(1), 57-74.
+King, A., & Adelgais, A. (1998). Mutual peer tutoring: Effects of structuring tutorial interaction to scaffold peer learning. Journal of Educational Psychology 90(1): 134-152.
+Leelawong, K., et al. (2003), “Teachable Agents: Learning by Teaching Environments for Science Domains,”
+Proc. 15th Innovative Applications of Artificial Intelligence Conf., Acapulco, Mexico, 109-116.
+Peverly, S. T., Wood, R. (2001). The effect of adjunct questions and feedback on improving the reading comprehension of learning disabled adolescents. Contemporary Educational Psychology, 26, 25-43.
+Roscoe, R.D. & Chi, M. (2004) The influence of the tutee in learning by peer tutoring. In K. Forbus, D. Gentner, & T. Regier (Eds.), Proceedings the 26th Annual Meeting of the Cognitive Science Society (pp. 1179- 1184). Chicago.
+Roscoe, R.D. & Chi, M.T.H. (In press). The influence of tutor-tutee interactions on tutor learning. Instructional Science.
+Silberman, M. (1996). Active learning: 101 strategies to teach any subject. Boston: Allyn and Bacon.
+Vygotsky, L. S. (1977). Play and Its Role in the Mental Development of the Child (C. Mulholland, Trans. ). In
+M. Cole (Ed.). Soviet Development Psychology (pp. 76-99). White Plains, NY: M.E. Sharpe. (Original work published 1933/1966).
+Wu, L., Looi, C. K.(2007), A Reflection Prompt Production Mechanism to Facilitate Thinking about Teaching in Teachable Agent Environment. the 15th International Conference on Computers in Education, Hiroshima, Japan.
+Zellermayer, M., Salomon, G., Globerson, T., & Givon, H. (1991). Enhancing writing related metacognitions through a computerized writing partner. American Educational Research Journal, 28(2), 373-391.
+
+Acknowledgments
+We are grateful to the teachers (Michael Jalleh, Joanne Marquita Cardoza and Edwin Koh) of Raffles Girls’
+School (Secondary), Singapore, who helped us with the study.

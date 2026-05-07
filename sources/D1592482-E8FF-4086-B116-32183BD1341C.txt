@@ -1,0 +1,79 @@
+The Organization and Management of Informal and Formal Learning
+Kimberly Austin, University of Chicago, 1313 E. 60th Street Chicago, IL 60637, kaustin@uchicago.edu Nichole Pinkard, University of Chicago, 1313 E. 60th Street Chicago, IL 60637, npinkard@usi-schools.org
+
+
+Abstract: This display sketches one element of the Digital Youth Network, a program aimed at producing digitally literate youth. The practices of program leaders blend those of mentoring and teaching. Despite the potential conflict between these roles, program leaders structure activities to support role transitions. The management of youth behavior within this structure supports the successful transition. This design creates a complex learning space where informal and formal learning simultaneously occurs.
+The Digital Clubhouse, one of the earliest models for digital literacy learning, imagined an informal space where youths interact with technologies under the guidance of adult mentors (Center for Children & Technology (CCT), 2001). Evaluations of this model value adult skills but speculate pedagogical knowledge would increase learning outcomes (CCT, 2001). The Digital Youth Network (DYN) follows this advice by creating a space that blends formal and informal learning. The following poster explores how adults negotiate this hybrid space. Initial evidence suggests DYN leaders organize events in a way that draws upon teaching practices at the opening and closing of sessions and mentoring practices in the middle. Language is key in signaling these shifts to youths. This design produces a space geared toward providing the benefits of formal and informal learning.
+Multiple definitions of informal learning exist (Sefton-Green, 2004). In contrast, formal learning occurs within schools (Sefton-Green, 2004) where a knowledge authority selects strategies and tools for instruction. Intentionality and structures differentiate the two (Sefton-Green, 2004). DYN exists in a formal school setting but the space it fashions straddles formal and informal models. DYN leaders, therefore, act both as formal learning leaders, i.e., teachers, and as informal ones, i.e., mentors. These roles, however, are not uniformly compatible. Teachers occupy a well-defined role of knowledge holder, which places them in a dominant relation to students (Waller, 1932; Larkin, 1973; Meyer & Rowan, 1974; Hurn, 1985). In contrast, reciprocity characterizes the tie between mentor and protégé (McPartland & Nettles, 1991; Rhodes, Grossman & Resch, 2000). Substantively, this means teachers profess some knowledge set; whereas, mentors respond to youth interest and share knowledge on this basis.
+This analysis sits in a larger research project examining the program’s impact on digital media literacy. DYN started in Old Orchard Middle School, a technology-focused school in Chicago. The school serves about 140 middle-to-low income students who are mostly African American, aged 11 to 14 years. The program reaches all learners through a series of required media arts courses that expose students to a breadth of skills. After school sessions allow students to develop skill depth by concentrating on a particular medium. DYN leaders attend weekly professional development sessions that provide pedagogical content and general knowledge (Shulman, 1986) used to inform instruction. For more information about the program visit http://www.iremix.org. Participant observations comprise the data set for this analysis. This work focuses on the practice of three leaders – Marlowe, Anthony and Jeff. Field notes served as the basis for the coding schema (e.g., Emerson et al, 1995) and relate to DYN leaders’ practice including instructional delivery, assessment of participant work, and collaboration with youths.
+Time organizes role performances. The progression of events in DYN sessions resembles most American classrooms with the instruction of new material, guided and independent practice, and closing. Leaders adopt roles associated with teaching in the opening and closing phases. Framed by a dry erase board filled with the day’s agenda, checklists, and resources, DYN leaders face students to dictate session objectives. For example, Jeff, the leader of the introductory media arts session, said, “This semester we’re going to work on marketing our label… We’re going to use ou[r] web site to help us with this…” Adults establish the order of events. Youths accept these assertions without question. Youths also accept the new material DYN leaders presented. DYN leaders authoritative edge over participants continues through guided practice. Anthony, who leads film production sessions, explained the use of themes and symbols and asked students to identify them in three public service announcements. As students did this he corrected student understanding. The leaders’ request for knowledge aligns with a role more closely associated with oversight than collaboration. Questioning during these phases also demonstrates power differentials between the adult and youth.
+[Marlowe] asked how many beats were in a bar. David raised his hand, Marlowe called on him, and he replied four. [Marlowe] asked the students to drum out a bar. Marlowe called on Andrew who beat out two measures (or bars) of four. Marlowe credited his effort…
+
+
+3-5
+
+In the above excerpt, Marlowe, like others, demands students to demonstrate knowledge.
+Independent practice marks the shift to behavior more closely aligned with mentoring. Formal instructional tactics give way to discussing, guiding and suggesting. Physical changes occur. Students rearrange chairs, leave the room to record in the studio, and move freely about the room doing tasks related to being protégés. Teachers abandon their posts at the front of the room and offer assistance as mentors. Discussion and collaboration offer more egalitarian forms of communication than direct instruction and questioning. The following excerpt captures a conversation around a student’s suggestion to wear T-shirts bearing the record label’s name.
+
+Jeff tells him that’s a “great idea” and asks, “but who’s going to get the T shirts?” Turner protests that everyone has a white T-shirt and he offered to bring blue tape to but on T-shirts. Madison: Who wants to mess up a plain white T just to do this show?...Turner [says] that’s why I said tape. Madison: You’ll still have that black crap up on your shirt. Scott: I’m going to do designs and stuff on my T-shirt…
+
+Jeff does not offer a lecture on T-shirt design nor does he affirm or dismiss student suggestions. As a mentor he frames the opportunity for creation. He gives his opinion of the ideas (e.g., great idea) and challenges students (e.g., “but who’s going to get the T-shirts?”), but protégés take the lead in the discussion. Collaboration offers another format for reciprocal adult-youth relations. Marlowe typically play instruments with youths during jam sessions, Anthony works with participant to write scripts, and Jeff interviews musical groups. As a fellow contributor they can guide musicians by changing tempo, share ideas, and develop storyboards.
+Nigel is on the drum machine and Nate is on the keyboards. Marlowe is also playing on the keyboards. Marlowe: faster. Nate: We do our part then you put beats on top. Marlowe adds some beats by pushing 1-2 keys on the keyboard while Nate and Nigel play.
+
+Marlowe directed the group to speed up the tempo, but Nate pushed back (i.e., he said wait). This excerpt also points to another element of the mentor-protégé exchange, which is suggestion. Leaders share ideas with protégés during this time. This allows them to share their expertise while also giving youth the latitude to accept or reject that knowledge.
+Performances by DYN leaders and youths are least consistent at the end of sessions. The trend appears to be a return to teacher-student relations but DYN members too often break character. We speculate the quality of the informal space complicate this transition. Participants are reluctant to leave autonomous roles for hierarchical ones. Researchers theorize that individuals carry around multiple identities connected to disparate roles (Stets & Burke, 2000), but this is achieved because others in the social setting anticipate behaviors that are consistent in a given setting. DYN violates this since members fulfill dual roles in a single setting. This condition results in role confusion, which surfaces in the field notes as what Goffman (1959) would call “breaches.” DYN leaders respond to these slippages by re-asserting their legitimacy as an authority figure. Unfortunately, space limitations prevent a more extensive discussion of these techniques.
+The program’s design offers one model for the integration of informal and formal learning spaces. The proceeding analysis focuses on the dual roles member adopt in this integrated space. Future analysis will explore the effectiveness of this model in comparison with “purely” informal spaces. Nonetheless, this analysis bridges the gap between informal and formal learning. Early reviews of the paper noted that this is a long established phenomenon in teaching. This point is well taken, but the value added of DYN hybrid role is to theories of informal learning. First, DYN leaders devote most of their sessions to independent practice. In fact after schools sessions are longer than classes. In both forms, leaders use intentionality as a frame for independent work. Second, thinking of this space in relation to the work of teaching misses the outcome of DYN. Production and creativity are the goals. Youths make music videos, TV shows, Web pages, robots, and video games. The space retains an atmosphere of informality to allow student ideas, thoughts, and interests to guide products. The instructional habits adopted at the opening and closing equip youths with the tools to pursue these interests. Thus, the leader in DYN is of an individual charged with the delivery of instruction that does not clamp down so tightly that it suffocates student self-direction. We submit that the leaders’ organization of time-denoted role changes is one way to integrate informal and formal learning spaces.
+References
+Bidwell, Charles E. (2006). “Varieties of Institutional Theory: Traditions and Prospects for Educational Research.” Heinz-Dieter Meyer and Brian Rowan (Eds.) Advances in Institutional Theory: Applications to Educational Scholarship. Albany, NY: State University of New York at Albany Press.
+Center for Children and Technology. (2000). Evaluation of the Intel Computer Clubhouse Network for Education Development Center: New York City, NY.
+
+
+3-6
+
+Emerson, Robert, Rachel, Fretz, and Shaw, Linda. (1995). Writing Ethnographic Field notes. University of Chicago Press: Chicago, IL.
+Goffman, Erving. (1959). The Presentation of Self in Everyday Life. Anchor: Garden City, NY.
+Healy, Charles C. and Welchert, Alice J. (1990). “Mentoring Relations: A Definition to Advance Research and
+Practice.” Educational Researcher 19 (9): 17-21.
+Hurn, Christopher. (1985). "Changes in Authority Relationships in Schools 1960-1980." Research in Sociology of Education and Socialization 5: 31-57.
+Lortie, Dan C. (1975). Schoolteacher. University of Chicago Press, Chicago, IL.
+James M. McPartland; Saundra Murray Nettles. (1991). “Using Community Adults as Advocates or Mentors for At-Risk Middle School Students: A two-year evaluation of project RAISE.” American Journal of Education 99 (4): 568-586.
+Meyer, J. W., and B. Rowan. (1977). "Institutionalized Organizations: Formal Structure as Myth and Ceremony." American Journal of Sociology 83:340-363.
+Murphy, Joseph. (1990). The Reform of American Public Education in the 1980s: Perspectives and cases.
+Berkeley, CA: McCutchan Press.
+Noblit, George W. (1993). “Power and Caring.” American Educational Research Journal 30 (1): 23-38. Pinkard, Nichole. (2006). “iRemix America: Empowering Youth to Appropriate New Media Literacies to Find
+Their Voice in a Global Media World” for the John D and Catherine T MacArthur Foundation.
+Rhodes, Jean E., Grossman, Jean B., and Resch, Nancy L. (2000). “Agents of Change: Pathways through which mentoring relationships influence adolescents' academic adjustment. Child Development 71 (6): 1662- 1671.
+Sefton-Green, Julian. (2004). “Literature Review in Informal Learning Outside of School.” Futurelab Series Report.
+Shulman, Lee. (1986). “Those Who Understand: Knowledge growth in teaching.” Education Research 15(2): 4-
+14.
+Stets, Jan and Burke, Peter. 2000. “Identity Theory and Social Identity Theory.” Social Psychology Quarterly 62
+(2): 173-189.
+Tyack, David. (1974). One Best System: A History if American Urban Education. Cambridge, MA: Harvard
+University Press.
+Waller, Willard. (1961 [1932]). The Sociology of Teaching. New York: Russell and Russell.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+3-7
