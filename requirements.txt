@@ -1,1 +1,6 @@
 openai
+docx2txt
+pandas
+dotenv
+xmltodict
+google-genai
