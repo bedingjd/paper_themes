@@ -31,6 +31,8 @@ as a .qdpx file.  This file should be placed in the same folder as the main_app.
   - Windows:
     > venv\scripts\activate.bat
 - If any python libraries are missing, they can be installed with:
+  - a pip update might be required / desired:
+    > python.exe -m pip install --upgrade pip
   - via the requirements file provided
     > python -m pip install -r requirements.txt
   - or one at a time via:
@@ -120,3 +122,6 @@ are as desired.
 - [ ] Are the following files in use?
   - '2025-06-16_ICLS_Conf_Themes_ALL_just10.zip'
 
+### Some reconfigurations
+- changed location to: QDPX_NAME = "references/2025-06-16_ICLS_Conf_Themes_ALL_just10.qdpx"  
+- changed location to: LEARNING_SCIENCES_OVERVIEW_FILENAME = 'references/00_Learning_Sciences_Overview_converted.rtf'

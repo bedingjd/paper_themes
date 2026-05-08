@@ -4,3 +4,4 @@ pandas
 dotenv
 xmltodict
 google-genai
+chardet

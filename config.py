@@ -3,7 +3,7 @@ import docx2txt
 # This file includes key variables used by the main_app
 # ============================================================================
 
-PROJECT_NAME = 'Proj_gemma_4_31_20060506a'
+PROJECT_NAME = 'Proj_gemma_4_31_20060508a'
 #PROJECT_NAME = 'Proj_olmo31_20260216_0820'                       # name for the new MaxQDA project to be created
 OUTPUT_FILES_PATH = 'Output_Proj_Deepseek_31_20260302_0900b_20260302_1037' # 'Output_Proj_Deepseek_31_20260218_1424_20260218_1424' #'Output_Proj_Deepseek_31_20260216_1410'
 #OUTPUT_FILES_PATH = 'Output_Proj_olmo31_20260216_0820'           # folder is in the same directory.  was 'output_files'
@@ -23,7 +23,7 @@ RUN_DESCRIPTION = "Using Gemma 4-31-31B, 8 Aug Codebook as .pdq with added GUIDs
 BASE_URL = "https://openrouter.ai/api/v1"               # OpenRouter server
 #BASE_URL = "http://localhost:1234/v1"                   # PC, check the IP address
 #BASE_URL = "http://192.168.1.187:1234/v1"                   # PC, check the IP address
-BASE_URL = "http://192.168.1.187:1234/api/v1/chat"                   # PC, check the IP address
+BASE_URL = "http://192.168.1.187:1234/v1"                   # PC, check the IP address
 #api_key="lm-studio"                                     # For LM Studio, not sure this is needed to checked
 
 # The name of the AI model you would like to use
@@ -70,7 +70,7 @@ MODEL_TEMPERATURE = 0.0                                 # was 1.0
 
 # location of the source folder.  Place the papers to be coded inside the source folder
 # path and name of the qdpx file
-QDPX_NAME = "2025-06-16_ICLS_Conf_Themes_ALL_just10.qdpx"                       # Name of the .qdpx file  was "2025-05-12_5_3.qdpx"
+QDPX_NAME = "references/2025-06-16_ICLS_Conf_Themes_ALL_just10.qdpx"                       # Name of the .qdpx file  was "2025-05-12_5_3.qdpx"
 sources_directory_path = "sources/"
 USER_NAME = 'jwmcelde'                                  # this will mark all codings with this user name
 EXFILES_PATH = 'sources'                                # was "/home/jomac/projects/Donaldson/ExFiles"  was "ExFiles"
@@ -89,7 +89,7 @@ CODEBOOK_IN_WORD = "202508_updated_codebook/2025-08-08 ICLS Conference Themes - 
 
 # ================
 # Learning Science Paper Location
-LEARNING_SCIENCES_OVERVIEW_FILENAME = '00_Learning_Sciences_Overview_converted.rtf'
+LEARNING_SCIENCES_OVERVIEW_FILENAME = 'references/00_Learning_Sciences_Overview_converted.rtf'
 
 # ============================================================================
 # Model Information
