@@ -48,6 +48,8 @@ import re                                           # for regular expressions
 
 import shutil                                   # for file copy
 
+import chardet                                  # to detect file character encodings automatically
+
 
 
 # ====================================
@@ -194,9 +196,18 @@ class PaperCoding(BaseModel):
 
 # ====================================
 
+# a function to determine the character encoding of a file
+# idea from this search: https://www.bing.com/search?pglt=297&q=python+windows+UnicodeDecodeError%3A+%27charmap%27+codec+can%27t+decode+byte+0x9d+in+position+6445%3A+character+maps+to+%3Cundefined%3E&cvid=8b8cee47a9d64b1481fcd9767dd492f3&gs_lcrp=EgRlZGdlKgYIABBFGDkyBggAEEUYOTIHCAEQ6wcYQNIBCDQyODJqMGo3qAIAsAIA&FORM=ANNTA1&adppc=EDGEESS&PC=NMTS&source=chrome.ob
+def getCharEncoding(file_path):
+    with open(file_path, "rb") as raw:
+        result = chardet.detect(raw.read(10000))
+    encoding = result["encoding"]
+    return encoding
+
+
 # a function to read in text file
 def read_text_file(file_path):
-    with open(file_path, 'r') as file:
+    with open(file_path, 'r', encoding=getCharEncoding(file_path)) as file:
         text = file.read()
     return text
 
@@ -253,7 +264,7 @@ def get_paper_IDs(list_of_filenames, directory):
 
 # to read in the Learning Sciences Overview paper (in .rtf), or read in any .rtf file
 def readInRTF_file(filename):
-    with open(filename, "r") as file:
+    with open(filename, "r", encoding=getCharEncoding(filename)) as file:
         raw_rtf_content = file.read()
     return raw_rtf_content
 
@@ -443,6 +454,7 @@ def analyze_one_paper_via_code_category_via_openai(client, qde_content, paperID,
     # this code example based on quickstart guide here: https://openrouter.ai/docs/quickstart
     json_schema = PaperCoding.model_json_schema()       # from example here: https://docs.vllm.ai/en/latest/features/structured_outputs/#online-serving-openai-api
     completion = client.chat.completions.create(                                                   # <====================
+
     #completion = client.responses.parse(
     #extra_headers={
         #"HTTP-Referer": "<YOUR_SITE_URL>", # Optional. Site URL for rankings on openrouter.ai.
@@ -526,7 +538,7 @@ def parse_qde_to_json(file_path):
 # another attempt to parse the project.qde file to json.  Using this one in the prompt
 def qde_to_json(filepath):
     # Read XML file
-    with open(filepath) as xml_file:
+    with open(filepath, encoding=getCharEncoding(filepath)) as xml_file:
         data_dict = xmltodict.parse(xml_file.read())
 
     # Convert to JSON
@@ -537,7 +549,7 @@ def qde_to_json(filepath):
 
 # to log the response from the AI
 def write_raw_data(timestamp_filename, content):
-    with open(timestamp_filename, "a") as f_temp:
+    with open(timestamp_filename, "a", encoding="utf-8") as f_temp:
         f_temp.write("\n=======================================================\n")
         f_temp.write(".......RAW DATA.......\n")
         f_temp.write(str(content))
@@ -545,7 +557,7 @@ def write_raw_data(timestamp_filename, content):
 
 # to log the response from the AI, without any fancy lines
 def write_just_raw_data(timestamp_filename, content):
-    with open(timestamp_filename, "a") as f_temp:
+    with open(timestamp_filename, "a", encoding="utf-8") as f_temp:
         f_temp.write(str(content))
     return
 
@@ -640,7 +652,7 @@ def generate_timestamp():
 # helper function to log
 def log_this(filename, content):
     timestamp = "At:  " + generate_timestamp() + "\n"
-    with open(filename, "a") as f_temp:
+    with open(filename, "a", errors="ignore", encoding="utf-8") as f_temp:                            # *** we're ignoring encoding errors
         f_temp.write("\n=======================================================\n")
         f_temp.write(str(timestamp))
         f_temp.write(str(content))
@@ -667,7 +679,7 @@ def get_filenames(directory):
 # function to parse the output file, to just get the json part out of it
 # returns 'None' if there was no json to split on
 def parse_output_file(filename, path):
-    with open(path+"/"+filename) as thisFile:
+    with open(path+"/"+filename, encoding=getCharEncoding(filename)) as thisFile:
         text = thisFile.read()
         json_parts = str(text).split('json', 1)         # 'json' is the delimiter, 1 is the max number of splits
         #data_dict = xmltodict.parse(xml_file.read())
@@ -692,7 +704,7 @@ def parse_output_file(filename, path):
 # We added this to the file just in case the AI didn't provide it
 # returns 'None' if there was no paper GUID
 def parse_output_file_emergency_PaperGUID(filename, path):
-    with open(path+"/"+filename) as thisFile:
+    with open(path+"/"+filename, encoding=getCharEncoding(filename)) as thisFile:
         try:
             text = thisFile.read()
             indexOfStartOfGUID = str(text).find('Paper GUID:') + len('Paper GUID: ')
@@ -715,7 +727,7 @@ def parse_output_file_emergency_PaperGUID(filename, path):
 # used to read in the name of the paper from the source
 def read_in_paper_name(file_path):
     try:
-        with open(file_path, 'r') as file:
+        with open(file_path, 'r', encoding=getCharEncoding(file_path)) as file:
             paper_name = file.readline()
             paper_name = paper_name.strip()                         # .strip() removes trailing newline characters
             print(f"Extracted the paper name as: {paper_name}") 
@@ -731,7 +743,7 @@ def read_in_paper_name(file_path):
 # parses the project.qde file to json.  Using this to get the codebook info
 def qde_to_json(filepath):
     # Read XML file
-    with open(filepath) as xml_file:
+    with open(filepath, encoding=getCharEncoding(filepath)) as xml_file:
         data_dict = xmltodict.parse(xml_file.read())
 
     # Convert to JSON
@@ -936,7 +948,7 @@ def parse_codebook_via_qde3(codebook_file, project):                            
     "@name": "WORKED - reflection - reflection contributed to learning", 
     "@color": "#6da529"},
     '''
-    with open(codebook_file) as xml_file:
+    with open(codebook_file, encoding=getCharEncoding(codebook_file)) as xml_file:
         #print("\n=======================================================\n")
         #print(f"...THE XML FILE: {str(xml_file.read())}")
         # to pull out just the codes
@@ -967,7 +979,7 @@ def parse_codebook_via_qde3_qdc(codebook_file, project):                        
     "@name": "WORKED - reflection - reflection contributed to learning", 
     "@color": "#6da529"},
     '''
-    with open(codebook_file) as xml_file:
+    with open(codebook_file, encoding=getCharEncoding(codebook_file)) as xml_file:
         #print("\n=======================================================\n")
         #print(f"...THE XML FILE: {str(xml_file.read())}")
         # to pull out just the codes
@@ -1143,7 +1155,7 @@ def parse_paper_names_via_qde(qde_file, project, LOG_FILE_NAME):
     '''
 
     
-    with open(qde_file) as xml_file:
+    with open(qde_file, encoding=getCharEncoding(qde_file)) as xml_file:
         xml_file_asString = str(xml_file.read())
         #print(f"XML_FILE is {xml_file_asString}")
     
@@ -1317,7 +1329,7 @@ if __name__ == "__main__":
                 timestamp_filename = OUTPUT_FILES_PATH + '/' + timestamp_filename
 
                 # write the demographic data to a file
-                with open(timestamp_filename, "w") as f_temp:
+                with open(timestamp_filename, "w", encoding="utf-8") as f_temp:
                     f_temp.write(".......SAMPLE INFORMATION.......\n")
                     f_temp.write(f"Model: {openrouter_model}\n")                    # <========== change to 'chosen_model' is using open API
                     f_temp.write(f"Temperature: {temp}\n")
@@ -1967,7 +1979,7 @@ if __name__ == "__main__":
                     
                     log_this(LOG_FILE_NAME,f"{paper_ID} response is: {resp}\n")
                     csv_file_name = OUTPUT_FILES_PATH + "/" + "output_" + paper_ID + "_" + str(generate_timestamp()) + ".csv"
-                    with open(csv_file_name, "a") as f_temp:
+                    with open(csv_file_name, "a", errors="ignore", encoding="utf-8") as f_temp:
                         f_temp.write(str(resp))
                     
                     # ==========================================================

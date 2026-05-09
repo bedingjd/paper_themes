@@ -125,3 +125,14 @@ are as desired.
 ### Some reconfigurations
 - changed location to: QDPX_NAME = "references/2025-06-16_ICLS_Conf_Themes_ALL_just10.qdpx"  
 - changed location to: LEARNING_SCIENCES_OVERVIEW_FILENAME = 'references/00_Learning_Sciences_Overview_converted.rtf'
+- in main_app.py, line 655: with open(filename, "a", errors="ignore") as f_temp: 
+  - we're ignoring any encoding errors
+  - same with line 1982: with open(csv_file_name, "a", errors="ignore") as f_temp:
+- Set all writes to utf-8 encoding
+  - encoding="utf-8"
+  - Line 552: with open(timestamp_filename, "a", encoding="utf-8") as f_temp:
+  - Line 560: with open(timestamp_filename, "a", encoding="utf-8") as f_temp:
+  - Line 655:  with open(filename, "a", errors="ignore", encoding="utf-8") as f_temp: 
+  - Line 1332: with open(timestamp_filename, "w", encoding="utf-8") as f_temp:
+  - Line 1982:  with open(csv_file_name, "a", errors="ignore", encoding="utf-8") as f_temp:
+  - 
