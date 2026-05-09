@@ -1,0 +1,961 @@
+<?xml version='1.0' encoding='utf-8'?>
+<Project xmlns="urn:QDA-XML:project:1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:QDA-XML:project:1.0 http://schema.qdasoftware.org/versions/Project/v1.0/Project.xsd" origin="MAXQDA 24 (Release 24.7.0)" name="2025-06-16_ICLS_Conf_Themes_ALL_just10" modifiedDateTime="2025-07-14T18:42:34Z">
+ <Users>
+  <User guid="F3EA8DA1-BB99-411F-8ED4-011170237B6C" name="johnb" />
+ </Users>
+ <CodeBook xmlns="urn:QDA-XML:codebook:0:4" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:QDA-XML:codebook:0:4 Codebook.xsd" origin="MAXQDA 24 (Release 24.7.0, Build 241213)">
+  <Codes>
+   <Code color="#ef8256" guid="C9E3D7E0-4DBF-46E2-96EF-14574ECD3B90" name="Additional Themes and Ideas" isCodable="true">
+    <Description>This category encompasses a range of specific theoretical concepts, pedagogical perspectives, and analytical lenses that, while not fitting neatly into other primary categories, represent significant and recurring themes within Learning Sciences research. These codes capture distinct ideas, frameworks, or approaches that researchers draw upon or investigate, often reflecting evolving areas of inquiry or nuanced aspects of learning, teaching, and research practice. This is a parent category, and only the codes within this category should be applied when coding data (but never apply this parent category as a code).</Description>
+    <Code color="#ef8256" guid="C6C1BE73-B4F4-4C2D-91F1-90B73BFC5C25" name="THEME - Affinity Spaces (Gee)" isCodable="true">
+     <Description>Apply this code when a study uses Gee's concept of affinity spaces.</Description>
+    </Code>
+    <Code color="#ef8256" guid="E8B5FA57-E2EA-4588-BB48-9D0DE25A1BF1" name="THEME - Affordances" isCodable="true">
+     <Description>This code is applied when a paper includes the idea of affordances.</Description>
+    </Code>
+    <Code color="#ef8256" guid="B493C8BE-1A22-4A7D-AD9C-6B435D51705E" name="THEME - Anti-deficit, Strengths-Based Perspectives" isCodable="true">
+     <Description>Apply when the study explicitly adopts or investigates pedagogical or analytical approaches that focus on identifying and leveraging the strengths, resources, and cultural wealth of learners and communities, countering deficit narratives.</Description>
+    </Code>
+    <Code color="#ef8256" guid="E0995B8C-776C-4D8F-A63A-91B97441ACB1" name="THEME - Context-Sensitivity, Contextuality" isCodable="true">
+     <Description>Apply when the study's central theoretical argument or finding relates to how learning, reasoning, or knowledge activation is dependent on or shifts across different contexts or task features.</Description>
+    </Code>
+    <Code color="#ef8256" guid="72E049E7-C721-4109-9A93-62686415D060" name="THEME - Epistemic Cognition" isCodable="true">
+     <Description>This code is applied when a paper talks about epistemic cognition. Epistemic cognition refers to how individuals think about the nature, development, and justification of knowledge and knowing. This concept sits at the intersection of philosophy, psychology, and education, focusing on how people reason about knowledge itself—not just what they know, but their understanding of knowing.</Description>
+    </Code>
+    <Code color="#ef8256" guid="83573769-A394-48B1-8DAF-91B0692A5BC0" name="THEME - Expert Sophistication" isCodable="true">
+     <Description>This code is applied when a paper describes expertise in terms of greater sophistication than novice thinking.</Description>
+    </Code>
+    <Code color="#ef8256" guid="A6908BC0-3B57-48DC-87A6-332A9B31BD99" name="THEME - Individualized Learning" isCodable="true">
+     <Description>This code is applied when a paper discusses individualized learning.</Description>
+    </Code>
+    <Code color="#ef8256" guid="C7227ABF-DE4D-4012-A71F-61C408052450" name="THEME - Maker Mindset, Making as Identity, Maker Epistemology" isCodable="true">
+     <Description>Apply when the study investigates the set of attitudes, beliefs, or dispositions associated with maker culture (e.g., iteration, resourcefulness, comfort with ambiguity, sharing), potentially as learning outcomes or identity markers.</Description>
+    </Code>
+    <Code color="#ef8256" guid="A84528D0-44F4-41D5-A1A5-7DF539A4A6A1" name="THEME - Orchestration (Dillenbourg)" isCodable="true">
+     <Description>This code is applied when a paper discussess orchestration, a learning sciences term that is a middle‑ground construct: it sits between learning theory and technological implementation, giving researchers and designers a common language for talking about the real‑time choreography that turns learning designs into lived classroom experiences. It provides language and a lens to understand the skillful, adaptive, and often invisible work facilitators do in managing the multiple layers (social, cognitive, logistical, technological) of contemporary learning environments. It highlights the practical challenges and demands placed on educators who move beyond simplistic "delivery" models towards fostering environments where learners actively construct knowledge and develop identities as participants in communities of practice.</Description>
+    </Code>
+    <Code color="#ef8256" guid="B2E02AAA-07A0-43AC-A2E3-9A143A29A64E" name="THEME - Researcher Positionality, Reflexivity" isCodable="true">
+     <Description>Apply when the paper explicitly discusses the researchers' backgrounds, identities, biases, relationships to the participants or context, and how these factors influence the research process and interpretation.</Description>
+    </Code>
+    <Code color="#ef8256" guid="B7F1199E-9855-4AC0-88EA-CAD01DD104BB" name="THEME - Sociotechnical Imaginaries, Futures Thinking" isCodable="true">
+     <Description>Apply this code to studies that purposefully engage learners, educators, or design teams in envisioning, constructing, or critiquing imagined future worlds in which technologies and social arrangements are co-evolving. Papers eligible for this code will explicitly draw on frameworks such as sociotechnical imaginaries (Jasanoff &amp; Kim), futures literacy, design fiction, speculative or critical design, scenario planning, or anticipatory governance. Look for activities where participants articulate possible or desirable futures (e.g., storyboarding AI-supported classrooms in 2040, prototyping climate-responsive learning spaces, or mapping ethical trajectories of learning analytics) and examine the cultural, ethical, or political assumptions embedded in those visions. Code here only when the work goes beyond a generic “future work” paragraph or incremental technology roadmap; the imaginary must be a central analytic or design object that shapes inquiry, reflection, or intervention. Do not apply if the study simply tests an emerging technology without asking participants to explore larger societal futures, or if it speculates about feasibility without addressing social values, governance, or collective aspirations.</Description>
+    </Code>
+    <Code color="#ef8256" guid="2FA36645-C5ED-4497-8A11-BFBF9C5E3CA6" name="THEME - Teacher Noticing, Teacher Metacognition" isCodable="true">
+     <Description>Apply when the study investigates what teachers perceive in classroom situations, how they interpret these perceptions (especially regarding student thinking), and how they make decisions based on them. Includes concepts like professional vision, selective attention, knowledge-based reasoning about practice.</Description>
+    </Code>
+   <Code color="#7A1F00" guid="73A8126E-7F3C-4866-8042-A75D85498BD5" name="THEME - NO ADDITIONAL THEMES" isCodable="true"><Description /></Code></Code>
+   <Code color="#32bd59" guid="5C7AE230-096A-4F7E-A632-3BE263BB9156" name="Assessments" isCodable="true">
+    <Description>This category focuses on the various methods, types, purposes, and critical perspectives related to the evaluation of learning and educational interventions. It includes codes for different domains of outcomes (e.g., cognitive, affective, behavioral), approaches to assessment (e.g., authentic, standardized, performance-based), the timing and function of assessments (e.g., formative, summative), and critical examinations of assessment practices themselves. This is a parent category, and only the codes within this category should be applied when coding data (but never apply this parent category as a code).</Description>
+    <Code color="#32bd59" guid="088164C3-4BB6-4C84-8FCF-E550D479867D" name="ASSMNT - Affective Outcomes" isCodable="true">
+     <Description>Apply this code when the paper discusses assessments that measure learners' emotions, attitudes, interests, motivations, or values related to the learning process. This includes evaluations of students' emotional responses to instruction, their attitudes toward specific subjects or learning in general, levels of motivation, engagement, and any affective changes resulting from educational interventions.</Description>
+    </Code>
+    <Code color="#32bd59" guid="42969CC0-FED4-424B-BEBB-C4D3A833AA21" name="ASSMNT - Authentic Assessment" isCodable="true">
+     <Description>Use this code when the paper focuses on assessment methods that involve real-world tasks or problems relevant to learners' lives. Authentic assessments require students to apply their knowledge and skills in practical, meaningful contexts, often mirroring challenges they might face outside the classroom.</Description>
+    </Code>
+    <Code color="#32bd59" guid="51535678-A4F8-4398-A5C2-4DD6815C87E3" name="ASSMNT - Behavioral Outcomes" isCodable="true">
+     <Description>Assign this code when the paper examines assessments that observe and measure learners' actions, behaviors, or performance in response to educational activities. This includes assessments of participation, collaboration, on-task behavior, or any observable conduct that reflects learning.</Description>
+    </Code>
+    <Code color="#32bd59" guid="C428A419-B130-49F6-92CA-40F1D1B90838" name="ASSMNT - Cognitive, Knowledge Outcomes" isCodable="true">
+     <Description>Use this code when the paper addresses assessments that evaluate learners' intellectual skills, understanding, knowledge acquisition, or cognitive processes. This includes tests, quizzes, or tasks designed to measure comprehension, analysis, synthesis, and evaluation.</Description>
+    </Code>
+    <Code color="#32bd59" guid="1C7952E8-1231-409C-AC16-F3393DD3823F" name="ASSMNT - Formative Assessment" isCodable="true">
+     <Description>Apply this code when the paper discusses assessments conducted during the learning process to monitor student progress and provide ongoing feedback. Formative assessments aim to identify areas where students struggle so that instruction can be adjusted accordingly.</Description>
+    </Code>
+    <Code color="#32bd59" guid="2E0D2EE5-9F26-4E2C-9CC4-AD51AF816A9C" name="ASSMNT - Performance-Based Assessment, Competency Assessment" isCodable="true">
+     <Description>Assign this code when the paper focuses on assessments where learners demonstrate specific skills or competencies through practical tasks or performances. These assessments require students to apply what they've learned to produce a product, perform a task, or solve a problem.</Description>
+    </Code>
+    <Code color="#32bd59" guid="1F30D7F7-B277-43D5-90A4-C280A9BB85C7" name="ASSMNT - Reject, Problematize Assessment" isCodable="true">
+     <Description>Use this code when the paper critically examines traditional assessment practices, questions their validity, or explores the negative implications they may have on learning. This includes discussions about the limitations of standardized testing or the impact of assessments on student well-being.</Description>
+    </Code>
+    <Code color="#32bd59" guid="A9F427DB-BF26-42B3-A083-565A38E64955" name="ASSMNT - Standardized Testing" isCodable="true">
+     <Description>Apply this code when the paper discusses assessments that are administered and scored in a consistent manner across all test-takers. Standardized tests are often used to compare performance across different populations or to evaluate educational programs.</Description>
+    </Code>
+    <Code color="#32bd59" guid="DF85BB45-B08E-4ABD-807E-D4AB06B09E72" name="ASSMNT - Summative Assessment" isCodable="true">
+     <Description>Use this code when the paper addresses assessments conducted at the end of an instructional period to evaluate overall student learning outcomes. Summative assessments aim to measure the extent to which learning objectives have been achieved.</Description>
+    </Code>
+   <Code color="#5FC48B" guid="7FFE3EEC-0513-4A1B-809B-F8E4B537DD70" name="ASSMNT - NO ASSESSMENTS MENTIONED" isCodable="true"><Description /></Code></Code>
+   <Code color="#ffca28" guid="A4672230-0F36-4086-BF5E-C69346D86B28" name="Collaboration and Community" isCodable="true">
+    <Description>This category addresses the various forms of joint effort, partnership, and group engagement aimed at enhancing learning, research, or educational practice. It encompasses collaborations between different stakeholders (e.g., researchers, practitioners, community members, parents, interdisciplinary teams) and the formation of groups dedicated to collective learning and professional development. This is a parent category, and only the codes within this category should be applied when coding data (but never apply this parent category as a code).</Description>
+    <Code color="#ffca28" guid="89C759F6-958E-426E-B047-F39DECB5FD2B" name="COMMCOLAB - Community Partnerships" isCodable="true">
+     <Description>Use this code when the paper focuses on collaborative relationships between educational researchers or institutions and community organizations, businesses, or groups. These partnerships aim to enhance learning experiences and outcomes through community involvement.</Description>
+    </Code>
+    <Code color="#ffca28" guid="5D299645-A784-4A19-A20D-63BA889DC28D" name="COMMCOLAB - Interdisciplinary Teams" isCodable="true">
+     <Description>Apply this code when the paper discusses teams composed of members from different academic disciplines working together on educational projects or research. This interdisciplinarity is intended to enrich perspectives and solutions.</Description>
+    </Code>
+    <Code color="#ffca28" guid="318540BF-9047-46ED-B1C6-9A57BCD20465" name="COMMCOLAB - Learning Communities, Communities of Scholars" isCodable="true">
+     <Description>Assign this code when the paper addresses groups engaged in collective learning, knowledge sharing, or professional development. These communities may consist of students, teachers, or researchers collaborating to enhance understanding and practice.</Description>
+    </Code>
+    <Code color="#ffca28" guid="88EAF8D3-3CBA-40A6-BBF4-9DF3C7A0625C" name="COMMCOLAB - Parental Involvement" isCodable="true">
+     <Description>Use this code when the paper highlights the role of parents in supporting and enhancing their children's education. This can include parental participation in school activities, homework support, or communication with educators.</Description>
+    </Code>
+    <Code color="#ffca28" guid="8242C0B6-7715-4A38-ACF7-10DF1A35D3F9" name="COMMCOLAB - Professional Learning Communities (PLC) for Educators" isCodable="true">
+     <Description>This code is applied when a paper discusses engaging educators in professional learning communities.</Description>
+    </Code>
+    <Code color="#ffca28" guid="E609CA62-E3CB-4047-902F-B310DA900AB5" name="COMMCOLAB - Research-Practice Partnerships" isCodable="true">
+     <Description>Apply this code when the paper discusses collaborations between researchers and practitioners (such as teachers or administrators) to co-design and implement educational interventions, aiming to bridge the gap between theory and practice.</Description>
+    </Code>
+   <Code color="#31C8B3" guid="6BD534A0-20A3-4421-9ECE-39D98D753BDE" name="COMMCOLAB - NO COLLABORATION OR COMMUNITY MENTIONED" isCodable="true"><Description /></Code></Code>
+   <Code color="#c5e157" guid="28CD6473-F2B3-4AF8-9F8A-00A50A79A8D6" name="Equity, Diversity, and Inclusion" isCodable="true">
+    <Description>This category encompasses research focused on addressing and promoting fairness, equal opportunity, representation, and support for diverse learners within educational contexts. It includes studies that investigate systemic inequities, explore the needs of specific learner populations (e.g., second language learners, students with special needs, underrepresented minorities), and examine pedagogical or systemic approaches designed to create more inclusive and equitable learning environments. This is a parent category, and only the codes within this category should be applied when coding data (but never apply this parent category as a code).</Description>
+    <Code color="#c5e157" guid="DA72D2D7-1479-4FFD-8684-C3EED2436A82" name="EQDIVINC - Accessibility" isCodable="true">
+     <Description>Apply this code when the paper addresses ensuring that learning environments, resources, and instruction are usable and effective for all learners, including those with disabilities or special needs.</Description>
+    </Code>
+    <Code color="#c5e157" guid="ACA6ACA2-9F74-4EA0-9261-CAF3F4FB3F22" name="EQDIVINC - Cultural Diversity" isCodable="true">
+     <Description>Assign this code when the paper focuses on including and valuing different cultural backgrounds, perspectives, and experiences in educational contexts to promote inclusivity and understanding.</Description>
+    </Code>
+    <Code color="#c5e157" guid="52CE3375-08A8-4656-86FA-9D003081E8AC" name="EQDIVINC - Inclusion, Inclusive Teaching" isCodable="true">
+     <Description>This code is applied when a paper is focused on inclusion or inclusive teaching.</Description>
+    </Code>
+    <Code color="#c5e157" guid="F8CC65DC-EB1C-40CB-B1D8-F745EBDB382B" name="EQDIVINC - Injustice, Inequity (general)" isCodable="true">
+     <Description>This code is applied when the research investigates injustice, inequity, marginalization, or other issues stemming from systemic power relations.</Description>
+    </Code>
+    <Code color="#c5e157" guid="2E904A04-2E8A-423F-B0B9-B59B12C1739C" name="EQDIVINC - Second Language Learners, English Language Learners" isCodable="true">
+     <Description>Apply this code when the paper addresses learners who are acquiring proficiency in a language that is not their native tongue, focusing on strategies to support their language development and academic success.</Description>
+    </Code>
+    <Code color="#c5e157" guid="BCAF7706-A70C-421C-8110-8B4E6AE8359B" name="EQDIVINC - Socioeconomic Status" isCodable="true">
+     <Description>Assign this code when the paper considers how learners' economic backgrounds affect their educational opportunities and outcomes, including discussions on overcoming socioeconomic barriers.</Description>
+    </Code>
+    <Code color="#c5e157" guid="876047A6-B350-459F-9387-3896234AAC91" name="EQDIVINC - Special Education Needs" isCodable="true">
+     <Description>Use this code when the paper discusses accommodations, interventions, or instructional strategies designed to support learners with disabilities or exceptionalities, ensuring they receive appropriate education.</Description>
+    </Code>
+    <Code color="#c5e157" guid="C588C096-A803-4D8B-986A-1F9FCF1D65BB" name="EQDIVINC - Underrepresented Minorities, Equity" isCodable="true">
+     <Description>Apply this code when the paper focuses on groups that are less represented in education relative to their proportions in the general population, aiming to address disparities and promote inclusion.</Description>
+    </Code>
+   <Code color="#3CF0F9" guid="203983D3-3E36-4769-B77F-EFC7A3CFE9DB" name="EQDIVINC - NO DEI MENTIONED" isCodable="true"><Description /></Code></Code>
+   <Code color="#d9f6bd" guid="B3E6F937-C2BD-436E-8BD9-535EF5536649" name="Geographical Focus" isCodable="true">
+    <Description>This category is used to classify studies based on the primary geographical location where the research was conducted. If the research context is not explicitly stated, it may refer to the institutional affiliation or primary working location of the authors. The codes within this category allow for an analysis of the global distribution and regional specificities of Learning Sciences research. This is a parent category, and only the codes within this category should be applied when coding data (but never apply this parent category as a code).</Description>
+    <Code color="#d9f6bd" guid="06B9578C-E3F7-4032-AB4A-A4AA64B5B114" name="GEOGFOC - Africa - Central Africa, East Africa, West Africa" isCodable="true">
+     <Description>Apply this code to studies centered on countries in central Africa, such as Nigeria, Ghana, Senegal, Kenya, Tanzania, Ethiopia, Cameroon, or the Democratic Republic of Congo. If the paper does not directly indicate the geographical location, look at the university or email address to determine geographical location. If the research was conducted in another geographic location than the author locations, code only for the research location.</Description>
+    </Code>
+    <Code color="#d9f6bd" guid="25752765-760E-44CB-9D19-7038297506A3" name="GEOGFOC - Africa - North Africa (Egypt, Morocco, Algeria)" isCodable="true">
+     <Description>Use this code for research focused on countries in North Africa. If the paper does not directly indicate the geographical location, look at the university or email address to determine geographical location. If the research was conducted in another geographic location than the author locations, code only for the research location.</Description>
+    </Code>
+    <Code color="#d9f6bd" guid="25770C50-3888-4BD6-8DF4-8C7C02A0DF51" name="GEOGFOC - Africa - South Africa" isCodable="true">
+     <Description>Assign this code to studies pertaining specifically to South Africa and its neighboring countries. If the paper does not directly indicate the geographical location, look at the university or email address to determine geographical location. If the research was conducted in another geographic location than the author locations, code only for the research location.</Description>
+    </Code>
+    <Code color="#d9f6bd" guid="F5AB6B9A-DA6F-48E8-9270-4A13BE0C3EE3" name="GEOGFOC - America - Latin America, Central America, South America, Carribean" isCodable="true">
+     <Description>Apply this code to research conducted in Central and South American countries, including Brazil, Mexico, and Argentina. Central &amp; South America and Spanish/Portuguese-speaking Caribbean are included. If the paper does not directly indicate the geographical location, look at the university or email address to determine geographical location. If the research was conducted in another geographic location than the author locations, code only for the research location.</Description>
+    </Code>
+    <Code color="#d9f6bd" guid="08331BDC-D66A-42CE-9DF7-5682D4A90E5B" name="GEOGFOC - America - North America (USA and Canada only)" isCodable="true">
+     <Description>Use this code for studies conducted in the United States and Canada. If the paper does not directly indicate the geographical location, look at the university or email address to determine geographical location. If the research was conducted in another geographic location than the author locations, code only for the research location.</Description>
+    </Code>
+    <Code color="#d9f6bd" guid="80755F27-5073-471C-AFC0-02052C954053" name="GEOGFOC - Asia - East Asia (China, Japan, South Korea)" isCodable="true">
+     <Description>Assign this code to research centered on East Asian nations. If the paper does not directly indicate the geographical location, look at the university or email address to determine geographical location. If the research was conducted in another geographic location than the author locations, code only for the research location.</Description>
+    </Code>
+    <Code color="#d9f6bd" guid="451AF2D3-B372-4A36-99B3-82D6FA5B32EB" name="GEOGFOC - Asia - Middle East, Western Asia (Saudi Arabia, Iran, Turkey, Israel)" isCodable="true">
+     <Description>Apply this code to studies focused on countries in the Middle East. If the paper does not directly indicate the geographical location, look at the university or email address to determine geographical location. If the research was conducted in another geographic location than the author locations, code only for the research location.</Description>
+    </Code>
+    <Code color="#d9f6bd" guid="12A2F87E-1435-40B5-8209-61818E297846" name="GEOGFOC - Asia - South Asia (India, Pakistan, Bangladesh)" isCodable="true">
+     <Description>Use this code for research on South Asian nations. If the paper does not directly indicate the geographical location, look at the university or email address to determine geographical location. If the research was conducted in another geographic location than the author locations, code only for the research location.</Description>
+    </Code>
+    <Code color="#d9f6bd" guid="7E1AEC40-C56B-471E-BC43-C81D6D79DA5C" name="GEOGFOC - Asia - Southeast Asia (Thialand, Vietnam, Indonesia)" isCodable="true">
+     <Description>Assign this code to studies centered on Southeast Asian countries. If the paper does not directly indicate the geographical location, look at the university or email address to determine geographical location. If the research was conducted in another geographic location than the author locations, code only for the research location.</Description>
+    </Code>
+    <Code color="#d9f6bd" guid="A5F4A4C6-377B-43BF-BD9F-3C5CAEB010B8" name="GEOGFOC - Europe - Eastern, Central, Southeastern Europe (Poland, Hungary, Romania, Austria, Czechia, Slovakia, Switzerland)" isCodable="true">
+     <Description>Apply this code to research focused on Eastern, Central, and Southeastern European nations along with the Balkans. If the paper does not directly indicate the geographical location, look at the university or email address to determine geographical location. If the research was conducted in another geographic location than the author locations, code only for the research location.</Description>
+    </Code>
+    <Code color="#d9f6bd" guid="69EC8D44-D85E-4671-A6DF-3821C62A46FC" name="GEOGFOC - Europe - Northern Europe (Sweden, Denmark, Finland)" isCodable="true">
+     <Description>Use this code for studies pertaining to Northern European countries. If the paper does not directly indicate the geographical location, look at the university or email address to determine geographical location. If the research was conducted in another geographic location than the author locations, code only for the research location.</Description>
+    </Code>
+    <Code color="#d9f6bd" guid="04F99F58-3908-4E0F-BFD8-B38E592B4615" name="GEOGFOC - Europe - Southern Europe (Italy, Greece, Spain)" isCodable="true">
+     <Description>Assign this code to research centered on Southern European nations. If the paper does not directly indicate the geographical location, look at the university or email address to determine geographical location. If the research was conducted in another geographic location than the author locations, code only for the research location.</Description>
+    </Code>
+    <Code color="#d9f6bd" guid="A48FEF4D-43B4-4BAA-BE13-33E171027977" name="GEOGFOC - Europe - Western Europe (Germany, France, UK)" isCodable="true">
+     <Description>Apply this code to studies focused on Western European countries. If the paper does not directly indicate the geographical location, look at the university or email address to determine geographical location. If the research was conducted in another geographic location than the author locations, code only for the research location.</Description>
+    </Code>
+    <Code color="#d9f6bd" guid="B634236A-2770-437C-AB68-387FC868A1B7" name="GEOGFOC - Oceania (Australia, New Zealand, Samoa, Marshall Islands)" isCodable="true">
+     <Description>Apply this code when the author of a paper is working in Oceania, including Australia, New Zealand, Papua New Guinea, Fiji, Solomon Islands, Vanuatu, Samoa, Tonga, Kiribati, Nauru, Tuvalu, Palau, Federated States of Micronesia, or Marshall Islands. If the paper does not directly indicate the geographical location, look at the university or email address to determine geographical location. If the research was conducted in another geographic location than the author locations, code only for the research location.</Description>
+    </Code>
+    <Code color="#3b82f6" guid="4B9689F6-6FDF-457F-A7E6-C2D4FFBE6F2F" name="GEOGFOC - Asia - Middle East (Saudi Arabia, Iran, Israel)" isCodable="true">
+     <Description>Apply this code to studies focused on countries in the Middle East. If the paper does not directly indicate the geographical location, look at the university or email address to determine geographical location. If the research was conducted in another geographic location than the author locations, code only for the research location.</Description>
+    </Code>
+   <Code color="#A786DC" guid="F903D78D-50A1-4C6F-9B30-7C7F7781C892" name="GEOGFOC - ERROR IDENTIFYING REGION" isCodable="true"><Description /></Code></Code>
+   <Code color="#ffc7a7" guid="A5E5CBE4-8E09-40A9-AE42-2928C8D6A9D6" name="Innovations and Future Directions" isCodable="true">
+    <Description>This category captures research that explores, develops, or discusses novel, cutting-edge, or transformative approaches, technologies, methodologies, or pedagogical practices within education. It highlights studies that push the boundaries of current understanding or practice, often with an eye toward future possibilities and significant advancements in the learning sciences. This is a parent category, and only the codes within this category should be applied when coding data (but never apply this parent category as a code).</Description>
+    <Code color="#ffc7a7" guid="76325357-2763-4895-8821-AD895461FF54" name="INNOVFUTR - Disruptive Innovations" isCodable="true">
+     <Description>Use this code when the paper discusses new approaches, technologies, or practices that significantly alter or replace existing methods in education, potentially leading to transformative change.</Description>
+    </Code>
+    <Code color="#ffc7a7" guid="913BCED9-4E97-4EBE-9501-6C3C850497B0" name="INNOVFUTR - Emerging Technologies" isCodable="true">
+     <Description>Apply this code when the paper focuses on developing technologies with potential significant impacts on education, such as virtual reality, blockchain, or advanced robotics.</Description>
+    </Code>
+    <Code color="#ffc7a7" guid="BE152C3A-9BEC-40C1-8C1B-42855DFC4A2E" name="INNOVFUTR - Innovative Methologies, Analysis" isCodable="true">
+     <Description>This code will be appplied when the research results in a new reserach methodology or analytical approach.
+</Description>
+    </Code>
+    <Code color="#ffc7a7" guid="EB1FCF4C-0112-4DEC-9FA7-1C36ED1BA5FB" name="INNOVFUTR - Innovative Pedagogies" isCodable="true">
+     <Description>Use this code when the paper introduces or examines novel teaching methods or instructional strategies designed to enhance learning experiences and outcomes.</Description>
+    </Code>
+   <Code color="#519C0D" guid="D37A69CD-6D5F-4F7C-BEB5-3E73DD5C1223" name="INNOVFUTR - NO INNOVATION OR FUTURE DIRECTION" isCodable="true"><Description /></Code></Code>
+   <Code color="#71bbff" guid="FE182715-EF84-4939-A4A2-DF0813710FD2" name="Learner Population" isCodable="true">
+    <Description>This category identifies the specific groups of individuals who are the primary subjects of the research, either as learners or as participants whose practices/development are being studied. Codes specify populations by age group (e.g., Pre-K, Elementary, High School, Adult), educational level (e.g., Undergraduate, Graduate), professional role (e.g., In-Service Teachers, Faculty), or the general context of their learning (e.g., Corporate, Community, Out-of-School). This is a parent category, and only the codes within this category should be applied when coding data (but never apply this parent category as a code).</Description>
+    <Code color="#71bbff" guid="DFBDA6DE-4355-4902-917F-B1A896CF2710" name="LRNPOP - Community" isCodable="true">
+     <Description>Apply this code when the paper focuses on learners from community groups or organizations outside formal education settings.</Description>
+    </Code>
+    <Code color="#71bbff" guid="8AC7F923-EB06-4A0C-B02C-4FCEB056225A" name="LRNPOP - Corporate" isCodable="true">
+     <Description>Use this code for papers discussing individuals engaged in workplace training, professional development, or corporate education programs.</Description>
+    </Code>
+    <Code color="#71bbff" guid="92ADB3A3-6FD9-4CC2-AD77-120602AE9C17" name="LRNPOP - Educator - Community Educators" isCodable="true">
+     <Description>Apply this code to research focusing on the training, practices, or development of educators who work primarily in non-formal educational settings within communities. This includes studies on facilitators in after-school programs, museum educators, youth workers, or adult education instructors in community centers.</Description>
+    </Code>
+    <Code color="#71bbff" guid="C5AB39A5-9A4D-48DE-904B-3121CE6985CA" name="LRNPOP - Educator - Faculty (higher education)" isCodable="true">
+     <Description>This code is applied when a paper describes participants or learners who are faculty members in higher education.</Description>
+    </Code>
+    <Code color="#71bbff" guid="74494D98-7BF6-4FF9-AC0C-7DEC808054A6" name="LRNPOP - Educator - In-Service Teachers, Teacher Profesional Development" isCodable="true">
+     <Description>Use this code for studies centered on the professional development, practices, or experiences of currently practicing K-12 or higher education teachers. This encompasses research on ongoing teacher training, classroom practices of experienced teachers, teacher beliefs and attitudes, and initiatives to support teacher growth and effectiveness.</Description>
+    </Code>
+    <Code color="#71bbff" guid="6FD92F33-C6A8-4E8B-8452-8914661C50D5" name="LRNPOP - Educator - Leaders, Coordinators" isCodable="true">
+     <Description>This code is applied when a paper involves learners who are educational leaders or coordinators.</Description>
+    </Code>
+    <Code color="#71bbff" guid="29C727A2-2A02-4DD9-8457-8672061C3E0D" name="LRNPOP - Educator - Pre-Service Teachers" isCodable="true">
+     <Description>This code is appropriate for research related to the education and preparation of future teachers who are still in teacher training programs. It includes studies on teacher education curricula, student teaching experiences, development of teaching skills and knowledge during pre-service training, and the transition from pre-service to in-service teaching.</Description>
+    </Code>
+    <Code color="#71bbff" guid="BBA9E644-25BB-4653-95B6-05BF1A47A86E" name="LRNPOP - Educator - Teaching Assistants" isCodable="true">
+     <Description>Use this code for research focusing on the roles, development, or effectiveness of teaching assistants in educational settings. This encompasses studies on graduate teaching assistants in higher education, paraprofessionals in K-12 settings, or other support staff who assist with instruction. It includes research on training programs for teaching assistants, their impact on student learning, and their professional growth.</Description>
+    </Code>
+    <Code color="#71bbff" guid="D547155A-EF42-45FD-85C5-143469994894" name="LRNPOP - Elementary School" isCodable="true">
+     <Description>Assign this code to studies involving students enrolled in elementary education (typically ages 5-11).</Description>
+    </Code>
+    <Code color="#71bbff" guid="44E3655C-90D1-48DB-BFE9-862023A83AD1" name="LRNPOP - General Public - Adults" isCodable="true">
+     <Description>Apply this code when the paper focuses on adult learners from the general population, including continuing education or community education programs.</Description>
+    </Code>
+    <Code color="#71bbff" guid="33457F84-2218-4A57-9FB9-DE3269C02922" name="LRNPOP - General Public - Youth" isCodable="true">
+     <Description>Use this code for research involving youth learners not necessarily enrolled in formal schooling, such as community youth programs.</Description>
+    </Code>
+    <Code color="#71bbff" guid="CE3A769D-474A-4F5D-90B6-E8DAEEE5B40D" name="LRNPOP - High School" isCodable="true">
+     <Description>Assign this code to studies focusing on students enrolled in high school education (typically ages 14-18).</Description>
+    </Code>
+    <Code color="#71bbff" guid="852F96A5-7A27-4674-B303-0C5485E13789" name="LRNPOP - Higher Education - Graduate" isCodable="true">
+     <Description>Apply this code when the paper discusses graduate-level students pursuing master's or doctoral degrees.</Description>
+    </Code>
+    <Code color="#71bbff" guid="F4EC6122-6FC6-4F77-BF50-00C17FE40592" name="LRNPOP - Higher Education - Undergraduate" isCodable="true">
+     <Description>Use this code for studies involving undergraduate students in colleges or universities.</Description>
+    </Code>
+    <Code color="#71bbff" guid="7D45D9D6-6670-4DDC-B2BC-A617C3678EE9" name="LRNPOP - Middle School" isCodable="true">
+     <Description>Assign this code to research focusing on students enrolled in middle school education (typically ages 11-14).</Description>
+    </Code>
+    <Code color="#71bbff" guid="99534225-D7CA-4522-A67A-00DBA911050A" name="LRNPOP - Non-Profit Organization" isCodable="true">
+     <Description>Apply this code when the paper focuses on learners associated with non-profit entities, such as NGO educational programs.</Description>
+    </Code>
+    <Code color="#71bbff" guid="DEDA20E1-1002-43B7-8F30-12CE62CCFAB2" name="LRNPOP - Out-of-School, Family, Friends" isCodable="true">
+     <Description>This code is applied when the learners being studied are school-age young people learning non-school things on their own, with family, or with friends.</Description>
+    </Code>
+    <Code color="#71bbff" guid="A756C115-DE72-48EB-9831-9B941136E035" name="LRNPOP - Pre-K" isCodable="true">
+     <Description>Use this code for studies involving children in pre-kindergarten or early childhood education programs (typically ages 3-5).</Description>
+    </Code>
+   <Code color="#B15EEB" guid="A3C493B8-515B-4E71-9EE9-5455AC061554" name="LRNPOP - NO LEARNER POPULATION" isCodable="true"><Description /></Code></Code>
+   <Code color="#008c7c" guid="B93B5D8B-6888-49A4-8A2F-F529707D6949" name="Learning Environment, Context" isCodable="true">
+    <Description>This category defines the specific settings, milieus, or conditions in which learning or the educational intervention under investigation occurs. It encompasses physical locations (e.g., classroom, museum, outdoor), virtual spaces (e.g., online asynchronous/synchronous, VR/AR), organizational contexts (e.g., workplace, after-school program), and broader socio-cultural environments (e.g., urban, rural). This is a parent category, and only the codes within this category should be applied when coding data (but never apply this parent category as a code).</Description>
+    <Code color="#008c7c" guid="2BCB6A10-DA8C-407F-9923-3D5EA42A244A" name="CONTEXT - After School Program, Summer School Program" isCodable="true">
+     <Description>Use this code for studies involving preK-12 school students in after-school activities, summer school programs, or enrichment programs.</Description>
+    </Code>
+    <Code color="#008c7c" guid="165246C5-B667-4F5B-9099-8DFCB8765A72" name="CONTEXT - Classroom-Based" isCodable="true">
+     <Description>Apply this code when the paper discusses learning occurring within traditional classroom settings, whether physical or virtual classrooms that mimic traditional structures.</Description>
+    </Code>
+    <Code color="#008c7c" guid="80FD4216-BA25-4192-8A66-472DF3C82ACB" name="CONTEXT - Hybrid Online and In-Person" isCodable="true">
+     <Description>Use this code when the paper addresses educational models combining online digital media with traditional in-person classroom methods, allowing some element of student control over time, place, path, or pace.</Description>
+    </Code>
+    <Code color="#008c7c" guid="702D8449-567F-49D6-9B3A-BA3E5EA40413" name="CONTEXT - Laboratory" isCodable="true">
+     <Description>This code is applied when a study involves learners in a laboratory, especially in experimental studies.</Description>
+    </Code>
+    <Code color="#008c7c" guid="FF0D51E2-D54A-4CDB-897E-FD84A262FA82" name="CONTEXT - Makespace" isCodable="true">
+     <Description>Assign this code when the paper focuses on learning in spaces equipped for hands-on creation, fabrication, and experimentation, often featuring tools like 3D printers, laser cutters, and electronics.</Description>
+    </Code>
+    <Code color="#008c7c" guid="FDA053E4-3D58-46DB-9AD4-60DFEB89DDC9" name="CONTEXT - Museum" isCodable="true">
+     <Description>Apply this code when the paper discusses educational activities taking place in museum environments, including exhibits, interactive installations, or educational programs.</Description>
+    </Code>
+    <Code color="#008c7c" guid="DBBC4E9D-9FC5-47AA-9C6D-AE49950AA43C" name="CONTEXT - Online Asynchronous" isCodable="true">
+     <Description>Use this code when the paper focuses on online learning without real-time interaction, where learners access content and complete work on their own schedules.</Description>
+    </Code>
+    <Code color="#008c7c" guid="119A43EC-5C50-4C1B-B46B-72F507BE2395" name="CONTEXT - Online Synchronous" isCodable="true">
+     <Description>Assign this code when the paper addresses real-time online educational experiences, such as live webinars, virtual classrooms, or video conferencing sessions.</Description>
+    </Code>
+    <Code color="#008c7c" guid="3C6766DF-604D-4A44-8271-E33C4922B41C" name="CONTEXT - Outdoor, Nature" isCodable="true">
+     <Description>Apply this code when the paper discusses learning conducted in natural or outdoor settings, emphasizing environmental interaction and experiential learning.</Description>
+    </Code>
+    <Code color="#008c7c" guid="57A6C321-5974-40F8-AC73-1DF908FD5503" name="CONTEXT - Out-Of-School Community-Based" isCodable="true">
+     <Description>Apply this code when the context of learning described in a study is an out-of-school community-based context.</Description>
+    </Code>
+    <Code color="#008c7c" guid="32375B9A-3EFD-4E64-A901-A646B2EA32F7" name="CONTEXT - Out-Of-School Individual, Family, Friends" isCodable="true">
+     <Description>Apply this code when the context of learning described in a study is an out-of-school context where learners are learning on their own or with friends or family.</Description>
+    </Code>
+    <Code color="#008c7c" guid="7F116AC1-D9BC-49EC-B8D2-FA01821084C5" name="CONTEXT - Professional, Workplace" isCodable="true">
+     <Description>This code is applied when a paper describes learning in professional or workplace contexts.</Description>
+    </Code>
+    <Code color="#008c7c" guid="147B01BB-2B2A-499F-841F-F1BC92B11012" name="CONTEXT - Rural Settings" isCodable="true">
+     <Description>Use this code when the paper focuses on education occurring in rural or remote areas, potentially addressing unique challenges and opportunities in these contexts.</Description>
+    </Code>
+    <Code color="#008c7c" guid="9DEA0E69-F072-488A-ACD8-7E02057542D5" name="CONTEXT - Suburban" isCodable="true">
+     <Description>Use this code when a paper describes learners in a suburban context.</Description>
+    </Code>
+    <Code color="#008c7c" guid="A3807A45-6B2F-4359-BAA0-8AA285486DB1" name="CONTEXT - Urban Settings" isCodable="true">
+     <Description>Assign this code when the paper discusses learning environments situated in urban locales, possibly dealing with issues like diversity, resource allocation, or urban-specific educational strategies.</Description>
+    </Code>
+    <Code color="#008c7c" guid="E253730E-B553-4590-9EDF-111FAE186099" name="CONTEXT - Virtual Reality, Augmented Reality" isCodable="true">
+     <Description>Apply this code when the paper addresses education utilizing virtual reality (VR) or augmented reality (AR) technologies to create immersive learning experiences.</Description>
+    </Code>
+    <Code color="#008c7c" guid="E3E26B76-6D54-4EFF-9317-5D771CEA68D3" name="CONTEXT - Workshop, Professional Development Program" isCodable="true">
+     <Description>This code is applied when a study involves learners in the context of a workshop or professional development program.</Description>
+    </Code>
+   <Code color="#AC78E3" guid="C8E82D9E-7826-4795-A241-BD588B0C510D" name="CONTEXT - NO LEARNING ENVIRONMENT OR CONTEXT" isCodable="true"><Description /></Code></Code>
+   <Code color="#d391ad" guid="7CEF8327-C9AA-4454-98CA-598502F08E0B" name="Learning Outcomes, Objectives" isCodable="true">
+    <Description>This category specifies the intended or actual achievements, skills, knowledge, dispositions, or developmental changes that learners are expected to or do attain as a result of an educational experience or intervention. It covers a wide range of goals, from cognitive and procedural skills to affective, social, and identity-related developments. This is a parent category, and only the codes within this category should be applied when coding data (but never apply this parent category as a code).</Description>
+    <Code color="#d391ad" guid="73FECF36-5310-477D-A927-ABEA8CD422ED" name="LRNOBJ - Agility, Adaptation Mindset" isCodable="true">
+     <Description>This code is applied when a paper describes learning objectives that include developing a mindset of adaptation or agility.</Description>
+    </Code>
+    <Code color="#d391ad" guid="B9FD7B72-6263-4922-89E6-8971BEFF3052" name="LRNOBJ - Argumentation Skills" isCodable="true">
+     <Description>Apply this code when a paper has a learning goal of learners developing argumentation skills.</Description>
+    </Code>
+    <Code color="#d391ad" guid="A4233BA7-3DDC-4555-ABDE-C605F035F06B" name="LRNOBJ - Collaboration, Communication" isCodable="true">
+     <Description>Apply this code when the paper discusses learning objectives or outcomes focused on enhancing learners' abilities to work effectively with others and communicate ideas clearly. This includes the development of teamwork skills, effective verbal and written communication, active listening, negotiation, and conflict resolution.</Description>
+    </Code>
+    <Code color="#d391ad" guid="044A6499-7EB1-48E4-B843-9E5D1E442BCD" name="LRNOBJ - Community Building" isCodable="true">
+     <Description>This code should be applied when a goal of the learning experiences or environments being studied is to build community such as communities of practice, including capacity and expertise.</Description>
+    </Code>
+    <Code color="#d391ad" guid="AF42255B-317B-4A30-8838-0C7168DD51F1" name="LRNOBJ - Complexity Thinking, Systems Thinking" isCodable="true">
+     <Description>This code is applied when the learning objective in a paper is for learners to develop complex systems thinking or systems thinking ways of knowing.</Description>
+    </Code>
+    <Code color="#d391ad" guid="3C37D986-B144-4B18-B76D-7851143360EF" name="LRNOBJ - Computational Thinking" isCodable="true">
+     <Description>This code is applied when a study has learners devleoping computational thinking skills.</Description>
+    </Code>
+    <Code color="#d391ad" guid="F8323241-7E5F-490A-896D-7A45E860A2D1" name="LRNOBJ - Conceptual Understanding" isCodable="true">
+     <Description>Use this code when the paper emphasizes learning objectives aimed at deep comprehension of concepts, principles, or theories within a subject area. This involves moving beyond rote memorization to grasp underlying meanings and relationships.</Description>
+    </Code>
+    <Code color="#d391ad" guid="F5049F3A-EDB6-4C60-BA79-EF6D72B389A1" name="LRNOBJ - Creativity, Innovation" isCodable="true">
+     <Description>Assign this code when the paper focuses on learning objectives that encourage learners to think creatively, generate original ideas, or apply knowledge in novel ways. This includes fostering divergent thinking and innovative problem-solving.</Description>
+    </Code>
+    <Code color="#d391ad" guid="A4ED8A6D-BB9B-47C5-B318-E55D8C56CC5D" name="LRNOBJ - Critical Consciousness" isCodable="true">
+     <Description>This code is applied when a paper describes a learning outcome as learners developing critical consciousness, including the ability to understand, recognize, evaluate, and work with (or problematize) power relations and structures.</Description>
+    </Code>
+    <Code color="#d391ad" guid="49E8D0C3-B5E7-4697-853D-43CFFAB30555" name="LRNOBJ - Critical Thinking" isCodable="true">
+     <Description>Apply this code when the paper addresses learning outcomes related to developing learners' abilities to analyze information, evaluate arguments, identify biases, and make reasoned decisions. Critical thinking involves logical reasoning and evidence-based analysis.</Description>
+    </Code>
+    <Code color="#d391ad" guid="896BA049-6F17-44F7-86C8-30CE21524023" name="LRNOBJ - Disciplinary Reasoning (exclude scientific thinking)" isCodable="true">
+     <Description>This code is applied when a study has a learning objective of developing disciplinary reasoning in any discipline except science. For instance, this code would be applied when a goal is historical reasoning.</Description>
+    </Code>
+    <Code color="#d391ad" guid="3FE7CF5F-8E0E-455C-A717-DA4345BD26FD" name="LRNOBJ - Dispositions, Perspectives, Attitudes" isCodable="true">
+     <Description>This code is applied when the learning outcome is development in terms of dispositions, perspectives, and attitudes.</Description>
+    </Code>
+    <Code color="#d391ad" guid="BCEB2E7D-1033-48FE-BDA3-D6B4ECB85832" name="LRNOBJ - Empathy Development" isCodable="true">
+     <Description>This code is applied when a paper discusses a learning context in which empathy development (cognitive empathy, affective empathy, and/or conative empathy) is an intended outcome.</Description>
+    </Code>
+    <Code color="#d391ad" guid="A0382B5C-5A9A-4914-9EAC-806DA8F96C75" name="LRNOBJ - Grit, Resilience, Perseverance" isCodable="true">
+     <Description>This code is applied when the objective of an experience is to develop grit, resilience, or perseverance.</Description>
+    </Code>
+    <Code color="#d391ad" guid="F359EB5A-C0A0-4E3D-A59C-BE3AC308785A" name="LRNOBJ - Identity Development" isCodable="true">
+     <Description>Use this code when a research study describes a learning experience or context in which the objective is identity development.</Description>
+    </Code>
+    <Code color="#d391ad" guid="EEE40378-45EF-467F-8480-81F51DEFE271" name="LRNOBJ - Inquiry Skills, Scientific Thinking" isCodable="true">
+     <Description>This code is applied when a paper discusses learners developing inquiry skills (distinct from problem-solving abilities), including scientific thinking (hypothesis, experiment design, data analysis, etc.).</Description>
+    </Code>
+    <Code color="#d391ad" guid="D884E775-8614-4237-A22B-7FBBE133DE7B" name="LRNOBJ - Language Skill Development" isCodable="true">
+     <Description>This code is applied when a study investigates language skill development.</Description>
+    </Code>
+    <Code color="#d391ad" guid="9C46F207-3F5B-4929-84AE-5808FBFE8AF2" name="LRNOBJ - Metacognition, Self-Regulation" isCodable="true">
+     <Description>Use this code when the paper discusses learning objectives that promote learners' awareness and control over their own learning processes. This includes strategies for planning, monitoring, and evaluating one's understanding and performance.</Description>
+    </Code>
+    <Code color="#d391ad" guid="CCE73BB8-5425-4949-8E8F-7F89CDC268F5" name="LRNOBJ - Problem-Solving Abilities" isCodable="true">
+     <Description>Assign this code when the paper emphasizes enhancing learners' skills in identifying problems, generating solutions, and implementing effective strategies to overcome challenges. This includes both individual and collaborative problem-solving contexts.</Description>
+    </Code>
+    <Code color="#d391ad" guid="A415318E-977C-4470-9F71-BF554200BE7C" name="LRNOBJ - Procedural Skills" isCodable="true">
+     <Description>Apply this code when the paper discusses learning objectives related to developing specific techniques, methods, or procedures within a discipline. This often involves step-by-step tasks that require practice to master.</Description>
+    </Code>
+    <Code color="#d391ad" guid="7C34D738-CEBE-4347-A888-67C1F2B23A02" name="LRNOBJ - Product Creation and Dissemination" isCodable="true">
+     <Description>This code is applied when an outcome for the learners (excluding the researchers) being studied is that they will create and disseminate products.</Description>
+    </Code>
+    <Code color="#d391ad" guid="9C115EA4-C54A-4AE9-B282-143DB89B0B5B" name="LRNOBJ - Self-Efficacy" isCodable="true">
+     <Description>This code is applied when the objective of an experience is to develop self-efficacy.</Description>
+    </Code>
+    <Code color="#8d6e63" guid="58AA8CD1-D2C4-4F8C-AB87-C72D1E9551B6" name="LRNOBJ - Social-Emotional Learning, Emotional Intelligence, Relationships, Interactions" isCodable="true">
+     <Description>Use this code when the paper focuses on developing learners' abilities to manage emotions, establish positive relationships, and make responsible decisions. It includes self-awareness, self-management, social awareness, relationship skills, and responsible decision-making.</Description>
+    </Code>
+   <Code color="#E6B78B" guid="CF3A1DB0-B32D-461B-90E0-5DE775E6CC7D" name="LRNOBJ - NO LEARNING OUTCOMES OR OBJECTIVES" isCodable="true"><Description /></Code></Code>
+   <Code color="#ef5350" guid="BE52B376-B367-481A-A883-B6F0620BDE5F" name="Learning Theories" isCodable="true">
+    <Description>This category identifies the explicit theoretical frameworks or models concerning how learning occurs that are used to ground, inform, or guide the research. It includes established psychological, sociological, and educational theories that explain the processes and mechanisms of knowledge acquisition, skill development, and conceptual or personal transformation. This is a parent category, and only the codes within this category should be applied when coding data (but never apply this parent category as a code).</Description>
+    <Code color="#ef5350" guid="581AA8CD-95D8-4AAE-894D-7F321EFCA14A" name="THRYLRN - Behaviourist (Skinner, Watson)" isCodable="true">
+     <Description>Apply this code when the research focuses on learning theories that emphasize observable behaviors and their modification through stimuli and reinforcement; these theories, associated with Skinner and Watson, view learning as a process of forming associations between stimuli and responses.</Description>
+    </Code>
+    <Code color="#ef5350" guid="27B5DCB3-A8C3-4F74-A3B5-7F01A78E8EF9" name="THRYLRN - Cognitive Apprenticeship (Collins)" isCodable="true">
+     <Description>This code is applied when a paper uses cognitive apprenticeship theory by Allan Collins (with Brown and Newman).It is an instructional model that makes thinking visible by guiding learners through authentic tasks under expert guidance, similar to traditional craft apprenticeships but focused on cognitive skills. It is considered both a theory and an instructional approach within educational psychology.</Description>
+    </Code>
+    <Code color="#ef5350" guid="C91F7C95-E633-4037-BA2F-D4A86AB19F38" name="THRYLRN - Cognitive Constructivist (Piaget)" isCodable="true">
+     <Description>Use this code for studies that draw on Piaget's theory of cognitive development, which emphasizes how individuals construct knowledge through their experiences and interactions with the environment; this includes research on stages of cognitive development and the processes of assimilation and accommodation.</Description>
+    </Code>
+    <Code color="#ef5350" guid="508EE353-4C86-4EEC-A924-B6D8F5D0FC7C" name="THRYLRN - Conceptual Change Theory (diSessa, Vosniadou, Pintrich, Sinatra, Posner, Chinn)" isCodable="true">
+     <Description>This code is applied when a paper uses conceptual change theory (diSessa, Vosniadou, Pintrich, Sinatra, Posner, Chinn, etc.).</Description>
+    </Code>
+    <Code color="#ef5350" guid="BEAB6E8A-B659-46EF-BCD0-12E363FACC45" name="THRYLRN - Constructionist (Papert)" isCodable="true">
+     <Description>This code is appropriate for research based on Papert's theory, which extends constructivism to emphasize learning through making, creating, and constructing physical or digital artifacts; it often involves the use of technology in education to facilitate hands-on, project-based learning.</Description>
+    </Code>
+    <Code color="#ef5350" guid="E14A736E-49CD-4412-B655-5216ACC96626" name="THRYLRN - Critical Pedagogy (Freire, Kincheloe, hooks)" isCodable="true">
+     <Description>This code should be applied when research investigates learning grounded in critical pedagogy, including perspectives by Freire, Kincheloe, Giroux, hooks, and Green.</Description>
+    </Code>
+    <Code color="#ef5350" guid="DA360E47-C84A-4540-9850-75439D477DDC" name="THRYLRN - Cultural-Historical Activity Theory, Activity Theory" isCodable="true">
+     <Description>Apply this code to studies that use the framework of activity theory, which examines learning as a socially situated process mediated by tools, rules, and division of labor within a community; this approach often focuses on the interplay between individual actions and broader social and cultural contexts.</Description>
+    </Code>
+    <Code color="#ef5350" guid="9F43F31F-463D-49F9-A10A-695BC7B9BD8E" name="THRYLRN - Knowledge Building Theory (Scardamalia, Bereiter)" isCodable="true">
+     <Description>Apply this code when a paper uses knowledge building theory by Scardamalia and Bereiter. Scardamalia and Bereiter’s knowledge building theory is deeply rooted in constructivist and constructionist traditions but shifts the center of gravity to collective knowledge advancement. It integrates Piaget’s emphasis on active, self-driven learning and the importance of conflict/disequilibrium, incorporates Vygotsky’s social foundation and mediated collaboration, and echoes Papert’s commitment to learning by creating. However, it stands apart by making the continual improvement of shared ideas—treating knowledge itself as a “public good”—the linchpin of the learning environment. This focus on collective epistemic work and the cultivation of community responsibility for knowledge improvement is the hallmark that sets knowledge building theory apart from earlier constructivist paradigms.</Description>
+    </Code>
+    <Code color="#ef5350" guid="E2FBDF2C-9BC1-40C3-87AA-7E4F6FB931E8" name="THRYLRN - Learning Styles" isCodable="true">
+     <Description>This code is applied when a study uses learning styles as a theoretical framework, such as auditory, visual, and kinesthetic learners.</Description>
+    </Code>
+    <Code color="#ef5350" guid="A955984E-A36C-49B1-9A25-8A0445070990" name="THRYLRN - Model-Based Reasoning Theory (Nersessian, Johnson-Laird, Hestenes, Clement, White)" isCodable="true">
+     <Description>This code is applied when a paper uses Model-Based Reasoning Theory such as work by Nersessian, Johnson-Laird, Hestenes, Clement, White, etc. Model-based reasoning refers to the cognitive processes where individuals use mental models to understand, explain, and predict phenomena. In science education, this approach is particularly valued for helping students develop deeper conceptual understanding.</Description>
+    </Code>
+    <Code color="#ef5350" guid="A81EC43E-3A6C-4AEF-9908-721055E10156" name="THRYLRN - No Theory Mentioned" isCodable="true">
+     <Description>Apply this code when the research does not mention any theories (neither learning theories nor other theories).
+</Description>
+    </Code>
+    <Code color="#ef5350" guid="31F72678-A7A1-409D-9158-52AE86108ED4" name="THRYLRN - Script Theory (Schank, Abelson, Fischer)" isCodable="true">
+     <Description>This code is applied when a paper uses script theory, including collaboration script theory. Major researchers include Schank, Abelson, and Fischer). </Description>
+    </Code>
+    <Code color="#ef5350" guid="3786A1F8-7CAF-421E-9503-07844AD79412" name="THRYLRN - Self-Regulated Learning Theory, Socially-Regulated Learning (Zimmerman, Pintrich, Winne, Boekaerts, Järvelä)" isCodable="true">
+     <Description>This code is applied when a paper uses self-regulated learning or socially-regulated learning as a theoretical framework (Zimmerman, Pintrich, Winne, Boekaerts, Järvelä).</Description>
+    </Code>
+    <Code color="#ef5350" guid="7C11E0DE-6107-447D-B7B9-DBBD2B047B93" name="THRYLRN - Situated Learning Theory (Lave and Wenger)" isCodable="true">
+     <Description>Use this code for research that views learning as embedded in and inseparable from participating in communities of practice; this theory emphasizes the importance of social interaction, authentic contexts, and gradual progression from peripheral to full participation in a community.</Description>
+    </Code>
+    <Code color="#ef5350" guid="F26BA4D6-710C-4675-9029-642E9D05AF95" name="THRYLRN - Social Constructivist, Scaffolding, ZPD (Vygotsky)" isCodable="true">
+     <Description>This code is appropriate for studies drawing on Vygotsky's theory, which emphasizes the role of social interaction and culture in cognitive development; key concepts include the zone of proximal development, scaffolding, and the importance of language in learning.</Description>
+    </Code>
+    <Code color="#ef5350" guid="C6FE9D8A-0FD2-40ED-AE9F-94BD184D7B02" name="THRYLRN - Transformative Learning Theory (Mezirow)" isCodable="true">
+     <Description>Apply this code to research that explores how learners critically reflect on and revise their assumptions, beliefs, and perspectives; this theory, associated with Mezirow, often focuses on adult learning and the process of perspective transformation.</Description>
+    </Code>
+   <Code color="#267242" guid="DF4545FF-FED1-4073-8A0D-C357100806D3" name="THRYLRN - NO LEARNING THEORY MENTIONED" isCodable="true"><Description /></Code></Code>
+   <Code color="#d8517e" guid="0A5E105C-8EB1-43FF-A470-46593010126A" name="Other Theories (besides learning theories)" isCodable="true">
+    <Description>This category encompasses theoretical frameworks and models, distinct from primary learning theories, that are employed in the research to understand phenomena related to, influencing, or contextualizing learning. These may include theories from psychology (e.g., motivation, cognitive load, identity), sociology (e.g., critical theory, sociomaterialism), linguistics, systems science, or specific domains of educational knowledge (e.g., PCK/TPACK) that provide analytical lenses for the study. This is a parent category, and only the codes within this category should be applied when coding data (but never apply this parent category as a code).</Description>
+    <Code color="#d8517e" guid="42E769B2-99B3-457E-80C3-28082B8B5BFE" name="THRYOTHER - Cognitive Load" isCodable="true">
+     <Description>Use this code for research that examines the mental effort required in working memory during learning tasks; this theory considers how instructional design can optimize cognitive load to enhance learning outcomes.</Description>
+    </Code>
+    <Code color="#d8517e" guid="9A4C4179-8553-4E35-9200-F5F1CE04159D" name="THRYOTHER - Cognitivist General (input, processing, storage, retrieval)" isCodable="true">
+     <Description>Apply this code to studies that focus on general cognitive processes involved in learning, including how information is acquired, processed, stored in memory, and later retrieved; this encompasses a broad range of cognitive theories not covered by more specific codes.</Description>
+    </Code>
+    <Code color="#d8517e" guid="E59A2CD5-E6FB-4B9D-8089-38830D3BC9DA" name="THRYOTHER - Complex Systems Theories" isCodable="true">
+     <Description>This code is applied when a paper uses complex systems theories, including ideas such as emergence, dynamic systems, non-linear dynamics, attractor states, self-organization, and so on.</Description>
+    </Code>
+    <Code color="#d8517e" guid="EF3F215D-05AD-4238-9C65-EAA457AC894B" name="THRYOTHER - Critical Theory" isCodable="true">
+     <Description>This code is applied when a paper uses critical theories (besides critical pedagogy) such as critical race theory.</Description>
+    </Code>
+    <Code color="#d8517e" guid="25470669-A822-4357-AE70-F492580D7D4C" name="THRYOTHER - Ecological Models" isCodable="true">
+     <Description>This code is applied when ecological models are used as foundational theoretical frameworks for the research.</Description>
+    </Code>
+    <Code color="#d8517e" guid="124CD446-B8DA-4AF1-A54E-6703F9265E12" name="THRYOTHER - Embodied Cognition" isCodable="true">
+     <Description>This code is used when a study uses embodied cognition theory.</Description>
+    </Code>
+    <Code color="#d8517e" guid="3F32EDB5-875E-4C89-BB57-7B406C711245" name="THRYOTHER - Epistemic Justice, Epistemic Agency (Fricker, Medina, Code, Scardamalia, Bereiter)" isCodable="true">
+     <Description>This code is applied when a paper uses a theoretical frame of epistemic justice or epistemic agency (Fricker, Medina, Code, Scardamalia, Bereiter)</Description>
+    </Code>
+    <Code color="#d8517e" guid="9A7F4748-79DB-490C-93AA-B6D050E4EE8C" name="THRYOTHER - Frame Theories, Frame Analysis, Perspectival Frames (Goffman, Greeno)" isCodable="true">
+     <Description>This code is applied when a paper uses frame theories, frame analysis, or perspectival frames theories such as those by Goffman or Greeno.</Description>
+    </Code>
+    <Code color="#d8517e" guid="C8419D2C-E6FA-45C7-90D1-A998B8727AAF" name="THRYOTHER - Identity" isCodable="true">
+     <Description>This code is appropriate for research exploring how learners' sense of self, including their beliefs, values, and group affiliations, influences and is influenced by the learning process; it may include studies on academic identity, professional identity formation, or cultural identity in educational contexts.</Description>
+    </Code>
+    <Code color="#d8517e" guid="3EC16FBA-06D4-40F7-A30E-D556C5F93247" name="THRYOTHER - Information Theories (not info processing)" isCodable="true">
+     <Description>Apply this code when a paper uses information theories (excluding information processing theories) such as coordination class theory, knowledge-in-pieces, mental models.</Description>
+    </Code>
+    <Code color="#d8517e" guid="D6694141-B6C6-4071-A4AC-B7C27856818C" name="THRYOTHER - Intersubjectivity" isCodable="true">
+     <Description>This code is applied when a paper uses intersubjectivity as a theoretical frame. Through intersubjectivity groups create collective or common social awareness.</Description>
+    </Code>
+    <Code color="#d8517e" guid="98BA625B-D03E-4A60-B287-ECF95598D972" name="THRYOTHER - Intrapersonal Psychology Theories (eg, grit, mindsets)" isCodable="true">
+     <Description>This code is applied when a paper uses intrapersonal psychology theories such as grit or mindsets theories.</Description>
+    </Code>
+    <Code color="#d8517e" guid="4164D68B-49D1-4D08-ABC9-51CD157AA7AE" name="THRYOTHER - Linguistics Theories" isCodable="true">
+     <Description>This code is applied when a paper is grounded in linguistic theories, including lexical, grammatical, pragmatic, semantic, paralinguistic, and extralinguistic features.</Description>
+    </Code>
+    <Code color="#d8517e" guid="D2749357-DA49-4B28-B744-40565216C00D" name="THRYOTHER - Motivation - Other" isCodable="true">
+     <Description>Use this code for studies on motivational theories in learning that are not covered by the Self-Determination Theory code; this might include research on goal orientation, expectancy-value theory, or attribution theory.</Description>
+    </Code>
+    <Code color="#d8517e" guid="5AC54C9B-56BE-4405-B98D-EAE5B5A109D9" name="THRYOTHER - Motivation - Self-Determination (Deci and Ryan)" isCodable="true">
+     <Description>Apply this code to research based on Deci and Ryan's Self-Determination Theory, which examines how intrinsic and extrinsic motivation affect learning; key concepts include autonomy, competence, and relatedness as basic psychological needs.</Description>
+    </Code>
+    <Code color="#ef5350" guid="40C8C0FE-BFDD-4BD9-AFB2-7513B27A86AD" name="THRYOTHER - Pedagogical Content Knowledge (PCK, TPACK)" isCodable="true">
+     <Description>This code is applied when a paper uses the framework of pedagogical content knowledge (PCK) as a theoretical grounding, or technological, pedagogical, and content knowledge (TPACK).</Description>
+    </Code>
+    <Code color="#d8517e" guid="29DEDBE1-64AF-4F4E-ADF7-280D3F24F2F7" name="THRYOTHER - Sociomaterial Theories, Actor-Network Theory" isCodable="true">
+     <Description>Apply this code when a paper draws on Actor-Network Theory (ANT) or closely related sociomaterial perspectives (Callon, Latour, Law, Mol, Orlikowski, Fenwick). Key hallmarks: 1) Generalised symmetry – people, technologies, artefacts, rules, and ideas (“actants”) are treated as equally capable of agency; 2) Relational ontology – entities have no intrinsic properties outside the network of associations that temporarily stabilises them; 3) Translation, enrolment, punctualisation – analytic focus on how heterogeneous actants negotiate, align, and hold a network together; and 4) Methodological principle – “follow the actors” empirically rather than imposing predefined system boundaries or aggregate categories. Use this code even when authors do not label their approach ANT explicitly but cite canonical ANT scholars or employ the characteristic socio-material tracing of associations. Do **not** use this code for studies that merely mention “networks” in a general sense or that employ formal complex-systems network analysis without the socio-material commitments above.</Description>
+    </Code>
+   <Code color="#10390C" guid="1EB89D9C-31DE-410F-84A9-79C42EA3C221" name="THRYOTHER - NO OTHER THEORIES MENTIONED" isCodable="true"><Description /></Code></Code>
+   <Code color="#b99fbe" guid="90FC3D46-6AC3-42CD-9CC0-249A9D774273" name="Paradigm (Epistemology, Ontology)" isCodable="true">
+    <Description>This category refers to the underlying philosophical assumptions about the nature of reality (ontology) and knowledge (epistemology) that guide the research design, methodology, and interpretation of findings. These paradigms shape how researchers approach inquiry, define what constitutes valid knowledge, and understand the relationship between the researcher and the researched. This category requires analysis of implied paradigms because paradigms are very rarely explicitly stated. This is a parent category, and only the codes within this category should be applied when coding data (but never apply this parent category as a code).</Description>
+    <Code color="#b99fbe" guid="89466F40-87B0-46F0-B884-5062AA29EA28" name="PARADGM - Collectivist, Community" isCodable="true">
+     <Description>Use this code for research that adopts a worldview emphasizing the importance of community, shared knowledge, and collaborative learning; this paradigm often focuses on how knowledge is socially constructed and maintained. If the paper does not directly indicate the paradigm (which is usually the case), use all contextual clues to determine the ontological and epsitemological stances. Also be careful of false indicators such as the literature review section in the beginning suggesting a particular paradigm, but the methods and wording of findings suggesting an incommensurable paradigm. If there is a conflict, code for what they do (methods and findings).</Description>
+    </Code>
+    <Code color="#b99fbe" guid="4A787EF3-8C87-4F2F-B7FF-CF30BAB3E729" name="PARADGM - Constructivist" isCodable="true">
+     <Description>Apply this code to studies that view knowledge as actively constructed by learners rather than passively received; this paradigm emphasizes the role of experience, reflection, and personal interpretation in learning. Research in this paradigm is often qualitative or mixed-methods. Generalizability is not only not a goal, but is usually considered impossible. The scientific or academic knowledge constructed by humans is usually not considered "truth", but rather the best possible explanation at the time after a majority of experts or members of a community of practice arrive at a consensus. Furthermore, multiple "truths" or realities are considered valid (although most constructivists reject relativism). If the paper does not directly indicate the paradigm (which is usually the case), use all contextual clues to determine the ontological and epsitemological stances. Also be careful of false indicators such as the literature review section in the beginning suggesting a particular paradigm, but the methods and wording of findings suggesting an incommensurable paradigm. If there is a conflict, code for what they do (methods and findings).</Description>
+    </Code>
+    <Code color="#b99fbe" guid="5A8A25A4-3736-4BB1-BB87-C00DA2D03C24" name="PARADGM - Critical" isCodable="true">
+     <Description>This code is appropriate for research that adopts a critical stance, examining power structures, inequalities, and social justice issues in education; it often involves questioning assumptions and promoting transformative change. Development of critical consciousness is important. This paradigm is grounded in work by Freire, bell hooks, Marx, the Frankfurt School (e.g., Marcuse, Habermas, Horkheimer, Adorno), Gramsci, Foucault, W.E.B. Du Bois, Bourdieu, Derrida, Deleuze, Chrenshaw, Derrick Bell, Michael Apple, Giroux, Kincheloe, and so on. If the paper does not directly indicate the paradigm (which is usually the case), use all contextual clues to determine the ontological and epsitemological stances. Also be careful of false indicators such as the literature review section in the beginning suggesting a particular paradigm, but the methods and wording of findings suggesting an incommensurable paradigm. If there is a conflict, code for what they do (methods and findings).</Description>
+    </Code>
+    <Code color="#b99fbe" guid="D1C07A07-5A81-4C0F-A202-3D16BD282DA9" name="PARADGM - Individualist, Competitive" isCodable="true">
+     <Description>Use this code for studies that frame learning primarily as an individual process or that examine competitive learning environments; this paradigm often focuses on personal achievement and individual differences in learning. It is often not explicitly stated in the data, but is sometimes implied through use of things such as curve grading, standardized testing, and ideas that suggest social Darwinist ideas. If the paper does not directly indicate the paradigm (which is usually the case), use all contextual clues to determine the ontological and epsitemological stances. Also be careful of false indicators such as the literature review section in the beginning suggesting a particular paradigm, but the methods and wording of findings suggesting an incommensurable paradigm. If there is a conflict, code for what they do (methods and findings).</Description>
+    </Code>
+    <Code color="#b99fbe" guid="65A315DA-FE86-41A1-ACEE-9B549798947A" name="PARADGM - Interpretivist" isCodable="true">
+     <Description>Apply this code to research that seeks to understand and interpret the meanings that individuals or groups ascribe to their experiences; this paradigm emphasizes the subjective nature of knowledge and the importance of context. This paradigm almost never has a goal of generalizability. Contextualization is important. If the paper does not directly indicate the paradigm (which is usually the case), use all contextual clues to determine the ontological and epsitemological stances. Also be careful of false indicators such as the literature review section in the beginning suggesting a particular paradigm, but the methods and wording of findings suggesting an incommensurable paradigm. If there is a conflict, code for what they do (methods and findings).</Description>
+    </Code>
+    <Code color="#b99fbe" guid="FB66EB25-4911-420C-8120-BB6C6E40001D" name="PARADGM - No Discernable Paradigm" isCodable="true">
+     <Description>Apply this code when there is no indication explicitly or implicitly of paradigm (ontological, epistemological stances). If the paper does not directly indicate the paradigm (which is usually the case), use all contextual clues to determine the ontological and epsitemological stances. Also be careful of false indicators such as the literature review section in the beginning suggesting a particular paradigm, but the methods and wording of findings suggesting an incommensurable paradigm. If there is a conflict, code for what they do (methods and findings). Use this code only if you are very certain that there are no indications of paradigm in the entire paper.</Description>
+    </Code>
+    <Code color="#b99fbe" guid="C63ED3A4-0AD0-4C7A-9DA1-6DF1B29B8735" name="PARADGM - Postivist, Post-Positivist, Objectivist" isCodable="true">
+     <Description>This code is appropriate for studies that adopt a positivist or objectivist scientific approach, seeking objective truths through empirical observation and measurement; post-positivist research recognizes the influence of researchers' theories, backgrounds, and values on what is observed. This paradigm is usually not explicitly mentioned, but is implied through things such as traditional experimental methods with pre- and post-intervention testing (especially knowledge testing, and usually not testing of things such as identity through surveys) and control groups. Research in this paradigm seeks to "discover" (as opposed to "construct") objective truth, and generalizability is a highly-valued goal. If the paper does not directly indicate the paradigm (which is usually the case), use all contextual clues to determine the ontological and epsitemological stances. Also be careful of false indicators such as the literature review section in the beginning suggesting a particular paradigm, but the methods and wording of findings suggesting an incommensurable paradigm. If there is a conflict, code for what they do (methods and findings).</Description>
+    </Code>
+    <Code color="#b99fbe" guid="CFAA23C9-734C-43B3-9646-F098306F41B8" name="PARADGM - Pragmatist" isCodable="true">
+     <Description>Apply this code to research that adopts a pragmatist worldview which evaluates ideas, theories, and knowledge claims primarily by their practical consequences and utility rather than by abstract or a priori criteria. This paradigm emphasizes that knowledge is provisional, contextual, and validated through its functional value in problem-solving and practice. True pragmatist research focuses on outcomes while maintaining sophisticated philosophical grounding, often incorporating mixed-methods approaches that serve the research question rather than adhering to methodological purism. Be cautious when researchers self-identify as pragmatist merely to justify methodological choices without embracing pragmatism's deeper philosophical commitments—many claiming this label are actually operating from positivist or post-positivist assumptions while avoiding those labels. Genuine pragmatist research recognizes the role of experience, values the integration of theory with practice, acknowledges the social nature of inquiry, and views knowledge as instrumental rather than representational. This paradigm is grounded in the work of Peirce (who emphasized the practical meaning of concepts), James (who focused on truth as what proves useful), and Dewey (who emphasized inquiry as a means of solving practical problems in experience). If the paper does not directly indicate the paradigm (which is usually the case), use all contextual clues to determine the ontological and epsitemological stances. Also be careful of false indicators such as the literature review section in the beginning suggesting a particular paradigm, but the methods and wording of findings suggesting an incommensurable paradigm. If there is a conflict, code for what they do (methods and findings).</Description>
+    </Code>
+   <Code color="#F96D47" guid="7DBEF254-5598-4C92-A2C0-C331FDE9EF6B" name="PARADGM - NO PARADIGM FOUND" isCodable="true"><Description /></Code></Code>
+   <Code color="#6f4ab0" guid="086BFFCD-6CD5-4956-88D7-B1E27FBF33B1" name="Pedagogies, Practices in Teaching and Learning" isCodable="true">
+    <Description>This category encompasses the specific methods, strategies, instructional approaches, and activities employed in teaching and learning processes. It covers a wide array of educational practices, from traditional instruction to innovative, learner-centered techniques, focusing on the practical 'how-to' of facilitating learning experiences. This is a parent category, and only the codes within this category should be applied when coding data (but never apply this parent category as a code).</Description>
+    <Code color="#6f4ab0" guid="BDD94923-EEF0-45E4-B3E4-60945DB62CE1" name="PEDPRACT - Case-Based Reasoning" isCodable="true">
+     <Description>Apply this code when a paper discusses the teaching and learning practices of case-based reasoning. Case-based reasoning (CBR) is a problem-solving paradigm introduced to learning sciences by Janet Kolodner in the 1980s. It's based on the idea that humans solve new problems by recalling similar past experiences. In CBR, learners use concrete cases from their memory, adapt solutions from these cases to new situations, and learn by storing the outcomes of these new experiences. Kolodner, who pioneered this approach, developed computational models that demonstrate how case-based reasoning works in human cognition. Her work has significantly influenced educational design by promoting learning environments that help students build libraries of cases, reflect on experiences, and apply past knowledge to new contexts.</Description>
+    </Code>
+    <Code color="#6f4ab0" guid="E393CFEA-DDCD-45B7-A04A-6C30032A88A7" name="PEDPRACT - Co-design (learners and researchers)" isCodable="true">
+     <Description>This code applies when the research involves participants (as learners) co-designing learning activities or materials with researchers.</Description>
+    </Code>
+    <Code color="#6f4ab0" guid="79F471CA-C8DF-4E57-A865-BEF64009BA67" name="PEDPRACT - Collaborative Learning" isCodable="true">
+     <Description>Use this code for studies examining or implementing approaches where learners work together in groups to achieve shared learning goals; this includes cooperative learning structures, peer tutoring, and collaborative problem-solving.</Description>
+    </Code>
+    <Code color="#6f4ab0" guid="523A69E1-B6FE-408D-92CC-8970EAAD263B" name="PEDPRACT - Community of Learners" isCodable="true">
+     <Description>This code is applied when a paper describes a learning environment in which learning is structured through a community of learners.</Description>
+    </Code>
+    <Code color="#6f4ab0" guid="72D7B951-514B-4CF2-9A6F-1AFC31599151" name="PEDPRACT - Concept Mapping, Network Mapping" isCodable="true">
+     <Description>This code is applied when a paper describes a study in which learning occurs through the construction and/or interpretation of concept maps or network maps.</Description>
+    </Code>
+    <Code color="#6f4ab0" guid="87413667-D3EA-42B9-9338-A3F0CEF67CB2" name="PEDPRACT - Critical Pedagogy (eg critical consciousness building)" isCodable="true">
+     <Description>Apply this code to research on educational approaches that aim to develop learners' critical awareness of social, political, and economic contradictions; this pedagogy, associated with Paulo Freire, often focuses on empowering learners to recognize and challenge oppressive structures.</Description>
+    </Code>
+    <Code color="#6f4ab0" guid="8656F59F-6AC1-4E67-B7E0-A1DE5DAF0518" name="PEDPRACT - Design Thinking, Human-Centered Design" isCodable="true">
+     <Description>This code is appropriate for studies that incorporate or examine the use of design thinking processes in education; this approach typically involves empathy, problem definition, ideation, prototyping, and testing to solve complex problems. It also encompasses engaging learners in human-centered design methodologies.</Description>
+    </Code>
+    <Code color="#6f4ab0" guid="A9533026-6A02-4B49-95B3-2DD4ECE62CD0" name="PEDPRACT - Discussion" isCodable="true">
+     <Description>Use this code for research on the use of discussion-based teaching methods, including Socratic seminars, structured academic controversies, or online discussion forums; this includes studies on facilitating productive discussions and assessing learning through discussion.</Description>
+    </Code>
+    <Code color="#6f4ab0" guid="F95152F2-8A55-44B9-BA7E-3F94E55158D9" name="PEDPRACT - Drill and Practice" isCodable="true">
+     <Description>Apply this code to studies that examine or implement repetitive practice of skills or concepts to enhance retention and automaticity; this includes research on the effectiveness of drill exercises, flashcards, or practice tests.</Description>
+    </Code>
+    <Code color="#6f4ab0" guid="605477ED-AE39-4EB5-A7F2-D02EAB13386E" name="PEDPRACT - Feedback (from teacher, facilitator)" isCodable="true">
+     <Description>This code is applied when a paper describes practices in teaching and learning that involve teachers or facilitators giving feedback to learners.</Description>
+    </Code>
+    <Code color="#6f4ab0" guid="4313585B-544E-4CC5-B8EB-884CB3ED1680" name="PEDPRACT - Game-Based Learning - Generative" isCodable="true">
+     <Description>This code is applied when a paper describes generative game-based learning in which learners create (or co-design) and play their own games.</Description>
+    </Code>
+    <Code color="#6f4ab0" guid="C84E4AFF-68A9-4063-AB34-9D2C734AB6AA" name="PEDPRACT - Game-Based Learning - Interactive" isCodable="true">
+     <Description>This code is applied when a paper describes students learning through playing pre-made games (commercial, by researchers).</Description>
+    </Code>
+    <Code color="#6f4ab0" guid="5028C371-779E-4D36-A732-67B0D6E724BF" name="PEDPRACT - Inquiry Learning" isCodable="true">
+     <Description>This code is applied when a paper describes learners engaging in inquiry learning where the focus is on the process of learner investigation and discovery.</Description>
+    </Code>
+    <Code color="#6f4ab0" guid="7016A6AB-2B3B-4D2D-8707-BA85A67082F8" name="PEDPRACT - Interest-Based, Passion-Driven Learning" isCodable="true">
+     <Description>This code is applied when a paper includes learner interest-based learning or learner passion-driven learning.</Description>
+    </Code>
+    <Code color="#6f4ab0" guid="E64F46B5-90AA-4379-9FC9-8F99D8D442F5" name="PEDPRACT - Learner Agency" isCodable="true">
+     <Description>This code is applied when a paper describes research or learning experiences focused in increasing learner agency.</Description>
+    </Code>
+    <Code color="#6f4ab0" guid="E5DD83C8-E09F-47A8-ACC6-EB3E0733E266" name="PEDPRACT - Learning by Doing, Engaging in Practices" isCodable="true">
+     <Description>This code is applied when a study describes learners engaged in learning by doing or engaging in the practices of a community of practice.</Description>
+    </Code>
+    <Code color="#6f4ab0" guid="5DFE31F5-3DAA-4610-B405-F127BD3A1351" name="PEDPRACT - Long-Form Lecture, Direct Instruction (by teacher)" isCodable="true">
+     <Description>This code is appropriate for research on traditional lecture-based teaching where the instructor presents information for extended periods; studies might examine the effectiveness of lectures, strategies for enhancing engagement during lectures, or comparisons with other teaching methods. This code is also applied when a study involves teacher-focused direct instruction.</Description>
+    </Code>
+    <Code color="#6f4ab0" guid="570F76E6-C84C-4808-A15D-94049BB9DB2A" name="PEDPRACT - Making, Designing, Creating" isCodable="true">
+     <Description>Use this code for studies on pedagogies that emphasize hands-on creation of artifacts or products as a means of learning; this includes maker education, project-based learning with tangible outcomes, and creative problem-solving approaches.</Description>
+    </Code>
+    <Code color="#6f4ab0" guid="AFFE7459-D185-4D31-BB66-0A43DDF1C951" name="PEDPRACT - Mentor, Mentee, Apprentice" isCodable="true">
+     <Description>Apply this code when the research investigates learning through mentoring, being mentored, or apprenticeship</Description>
+    </Code>
+    <Code color="#6f4ab0" guid="D0E0DD60-62FD-4EC0-AEAA-B784AA32FE4A" name="PEDPRACT - Modeling, Teacher Demonstration" isCodable="true">
+     <Description>This code is applied when a study describes practices in teaching and learning in which teachers or facilitators model or demonstrate processes, procedures, skills, etc.</Description>
+    </Code>
+    <Code color="#6f4ab0" guid="176E81B6-185A-4B92-B9C2-556A51C4B272" name="PEDPRACT - Peer Learning (learning by teaching, peer feedback)" isCodable="true">
+     <Description>Apply this code when the research study investigates learners engaged in peer learning such as learning-by-teaching or peer tutoring, or peer feedback.</Description>
+    </Code>
+    <Code color="#6f4ab0" guid="CFE3383A-98A9-47F2-B758-91F5EA620820" name="PEDPRACT - Place-Based, Land-Based Learning" isCodable="true">
+     <Description>Apply this code when a study uses place-based or land-based learning practices.</Description>
+    </Code>
+    <Code color="#6f4ab0" guid="12472F8D-538E-4E13-8600-27174D2C13EF" name="PEDPRACT - Play" isCodable="true">
+     <Description>This code is applied when a paper describes pedagogies or practices in teaching and learning in which play is an important aspect of the learning experience or learning environment.</Description>
+    </Code>
+    <Code color="#6f4ab0" guid="476BE2DB-7769-458C-A1F4-638970BA56F9" name="PEDPRACT - Problem-Based Learning" isCodable="true">
+     <Description>This code is applied when a paper involves learners in problem-based learning activities.</Description>
+    </Code>
+    <Code color="#6f4ab0" guid="4D493121-7DDE-40B3-AFD8-DA83D32322B1" name="PEDPRACT - Productive Failure, Productive Struggle" isCodable="true">
+     <Description>This code is applied when a paper describes a pedagogy or teaching practice that involves learners engaging in productive failure or productive struggle (Kapur, Hiebert, Boaler, National Council of Teachers of Mathematics)</Description>
+    </Code>
+    <Code color="#6f4ab0" guid="FE770458-D929-4E3B-ABA8-3E3140625320" name="PEDPRACT - Project-Based Learning" isCodable="true">
+     <Description>Apply this code to research on teaching methods that engage students in complex, authentic projects over an extended period; this includes studies on designing effective projects, assessing project-based learning, and its impact on various learning outcomes.</Description>
+    </Code>
+    <Code color="#6f4ab0" guid="4B4E098D-6544-4C4D-8405-B1F7C3AC94DE" name="PEDPRACT - Quizzes, Tests, Exams" isCodable="true">
+     <Description>This code is appropriate for studies examining the use of various forms of testing as learning tools; this includes research on test design, the testing effect on learning, and the impact of high-stakes testing on education.</Description>
+    </Code>
+    <Code color="#6f4ab0" guid="33BC8DEE-0B8F-4CF9-BBFC-FC2106CB1665" name="PEDPRACT - Reading Learner-Selected Books, Articles, Resources (non-text)" isCodable="true">
+     <Description>This code is applied when a paper describes students learning by reading student-selected books, articles, and resources.</Description>
+    </Code>
+    <Code color="#6f4ab0" guid="389889AC-D3D0-4A9F-AE30-279F7038E086" name="PEDPRACT - Reading Primary Sources (eg tweets)" isCodable="true">
+     <Description>Apply this code when the study involves having learners read primary sources such as historical texts, but also including social media posts.</Description>
+    </Code>
+    <Code color="#6f4ab0" guid="A905CFCD-FCC7-40CA-9425-9C7636CA98C4" name="PEDPRACT - Reading Textbooks" isCodable="true">
+     <Description>This code should be applied when the study includes investigations involving students reading textbooks.</Description>
+    </Code>
+    <Code color="#6f4ab0" guid="3EE63836-CD30-4014-B3DA-BC2225FEA08A" name="PEDPRACT - Real-World Impact Work (immediate)" isCodable="true">
+     <Description>Use this code for studies on pedagogies that involve students in projects or activities with immediate, tangible impacts on their communities or environments; this might include service learning, community-based research, or environmental action projects.</Description>
+    </Code>
+    <Code color="#6f4ab0" guid="4AF7ACCE-C053-49E6-AB2A-AB8CBE5F9A6E" name="PEDPRACT - Real-World Relevance Exploration" isCodable="true">
+     <Description>Apply this code to research on teaching practices that explicitly connect academic content to real-world applications or issues; this includes studies on contextualizing learning, using authentic examples, or exploring career connections.</Description>
+    </Code>
+    <Code color="#6f4ab0" guid="43834EDF-FE91-4201-8D38-688892712A89" name="PEDPRACT - Reflection activities (individual, group)" isCodable="true">
+     <Description>Apply this code to studies that include individual or group reflective activities such as writing reflection papers or engaging in reflective discussion.</Description>
+    </Code>
+    <Code color="#6f4ab0" guid="D67D143A-C30B-4B30-BC36-5E96F29C26D2" name="PEDPRACT - Remix, Bricolage" isCodable="true">
+     <Description>Apply when learning involves learners deconstructing, combining, and repurposing existing media, materials, or ideas to create something new.</Description>
+    </Code>
+    <Code color="#6f4ab0" guid="E6012D17-7A9E-4C85-AC66-BBC2ED41CE16" name="PEDPRACT - Role Playing, Simulation" isCodable="true">
+     <Description>This code is applied when a paper describes learners engaged in role playing or engaging with a simulation in which they play an agentic role.</Description>
+    </Code>
+    <Code color="#6f4ab0" guid="F87056FB-A711-44D8-A3C7-4F35EC9FFA11" name="PEDPRACT - Scaffolding, Scripts" isCodable="true">
+     <Description>This code is applied when a paper describes practices in teaching and learning involving scaffolding or scripts (e.g., collaboration scripts).</Description>
+    </Code>
+    <Code color="#6f4ab0" guid="0846685C-11C0-481B-B66C-FF8A6E92602F" name="PEDPRACT - Service Learning, Community-Engaged Learning" isCodable="true">
+     <Description>This code is applied when a study engages learners in service learning or community-engaged learning practices.</Description>
+    </Code>
+    <Code color="#6f4ab0" guid="0B3B5A6F-5D8C-423E-9DA3-64102B24E754" name="PEDPRACT - Short Lecture (by students)" isCodable="true">
+     <Description>This code is appropriate for studies examining the use of student presentations or mini-lectures as a teaching and learning strategy; this might include research on the benefits of teaching others, peer instruction, or the flipped classroom model.</Description>
+    </Code>
+    <Code color="#6f4ab0" guid="2C8164BE-1587-4D09-A307-B2D83A478377" name="PEDPRACT - Short Lecture (by teacher)" isCodable="true">
+     <Description>Use this code for research on brief, focused presentations by teachers, often interspersed with other activities; studies might examine the effectiveness of mini-lectures, strategies for delivering concise explanations, or the use of short lectures in blended learning environments. Short lectures could include instructional videos.</Description>
+    </Code>
+    <Code color="#6f4ab0" guid="890D744D-8A51-4DF1-A57F-6E8B146644EC" name="PEDPRACT - Tinkering (focused), Experimentation, Exploration" isCodable="true">
+     <Description>This code is applied when a paper describes students learning through focused tinkering, experimentation, and exploration.</Description>
+    </Code>
+    <Code color="#6f4ab0" guid="822211B0-7D72-4E95-A161-97CC8647CC6F" name="PEDPRACT - Writing - Essays, Reports" isCodable="true">
+     <Description>This code is applied when a paper describes a learning experience in which learners write essays or reports.</Description>
+    </Code>
+   <Code color="#F29ED2" guid="178CAB5A-2475-4AB5-B6C7-023B4E183010" name="PEDPRACT - NO PEDAGOGIES OR PRACTICES MENTIONED" isCodable="true"><Description /></Code></Code>
+   <Code color="#ff9800" guid="4004F3A0-5EDC-4CB4-82D5-32E0A9742975" name="Policy and Systemic Factors" isCodable="true">
+    <Description>This category addresses broader organizational, structural, and governance-related aspects that shape and influence educational systems and practices. It includes research on curriculum design and implementation, the analysis of educational policies, efforts to scale and sustain innovations, the implementation of standards, and large-scale initiatives aimed at systemic educational reform. This is a parent category, and only the codes within this category should be applied when coding data (but never apply this parent category as a code).</Description>
+    <Code color="#ff9800" guid="9A073808-ED37-42DF-BB2E-C2F58B7D6BD9" name="PLCYSYSTM - Curriculum Development" isCodable="true">
+     <Description>Apply this code to research focusing on the process of designing, implementing, or evaluating educational curricula; this includes studies on curriculum standards, content selection, sequencing, and alignment with learning objectives.</Description>
+    </Code>
+    <Code color="#ff9800" guid="782190D6-EF63-4622-99B4-98B9B13A65B6" name="PLCYSYSTM - Educational Policy Analysis" isCodable="true">
+     <Description>Use this code for studies that examine the development, implementation, or impact of education policies at various levels (school, district, state, national); this includes research on policy reforms, accountability measures, and the relationship between policy and practice.</Description>
+    </Code>
+    <Code color="#ff9800" guid="D67E97B1-553D-4B6E-9024-B623C1D9D017" name="PLCYSYSTM - Scaling and Sustainability of Innovations" isCodable="true">
+     <Description>Apply this code to studies that explore how educational innovations can be expanded beyond initial implementation and maintained over time; this includes research on factors affecting scalability, strategies for sustainable implementation, and challenges in widespread adoption of new practices.</Description>
+    </Code>
+    <Code color="#ff9800" guid="A9904D2A-BFDF-4FB6-8470-187FAC123D49" name="PLCYSYSTM - Standards Implementation" isCodable="true">
+     <Description>Use this code for research examining the process of adopting and implementing educational standards; this includes studies on the impact of standards on teaching practices, curriculum alignment with standards, and assessment of standards-based learning.</Description>
+    </Code>
+    <Code color="#ff9800" guid="B8F7D117-263B-4E38-88CE-85C08E67B193" name="PLCYSYSTM - Systemic Change Initiatives" isCodable="true">
+     <Description>This code is appropriate for studies investigating large-scale efforts to transform educational systems; it includes research on comprehensive school reform models, district-wide improvement initiatives, and system-level approaches to educational change.</Description>
+    </Code>
+   <Code color="#49A768" guid="F3F9C79B-B048-4C07-A355-A0F1AC83931D" name="PLCYSYSTM - NO POLICY OR SYSTEMIC FACTORS MENTIONED" isCodable="true"><Description /></Code></Code>
+   <Code color="#6d70fa" guid="97491587-6AAB-4057-A9BF-FB52BED4EA9C" name="Purpose, Goal of Research" isCodable="true">
+    <Description>This category defines the primary aims, objectives, or intentions behind the research study. It clarifies what the researchers sought to achieve, such as describing a phenomenon, evaluating the effectiveness of an intervention for specific outcomes, developing new methodologies or theories, or contributing to the improvement and scaling of educational practices. This is a parent category, and only the codes within this category should be applied when coding data (but never apply this parent category as a code).</Description>
+    <Code color="#6d70fa" guid="52CA7C43-1038-4E35-AE30-EEAD5BF4BAC6" name="PRGL - Descriptive (whats happening)" isCodable="true">
+     <Description>Apply this code to studies that aim to provide a detailed account or analysis of current educational practices, contexts, or phenomena without necessarily evaluating their effectiveness.</Description>
+    </Code>
+    <Code color="#6d70fa" guid="DD8596F1-9F6F-4471-8964-625D99F53827" name="PRGL - Developing New Methodology, Instruments" isCodable="true">
+     <Description>This code is applied when the goal of a study is to develop a new research methodology, analytical approach, or instrument.</Description>
+    </Code>
+    <Code color="#6d70fa" guid="D1BC4601-B7B7-408D-A547-43D83ACE95F4" name="PRGL - Efficacy of Intervention (what works) - Engagement, Motivation" isCodable="true">
+     <Description>Use this code for research that evaluates the effectiveness of educational interventions specifically in terms of their impact on student engagement or motivation.</Description>
+    </Code>
+    <Code color="#6d70fa" guid="BF6A9AC5-536D-49F9-AC69-A527683A1191" name="PRGL - Efficacy of Intervention (what works) - Identity Development" isCodable="true">
+     <Description>This code is appropriate for studies assessing how well certain interventions or practices support the development of learners' personal, academic, or professional identities.</Description>
+    </Code>
+    <Code color="#6d70fa" guid="13A361E9-E447-4565-80E9-148EAE7F040C" name="PRGL - Efficacy of Intervention (what works) - Knowledge, Understanding" isCodable="true">
+     <Description>Apply this code to research that measures the effectiveness of interventions in terms of enhancing learners' knowledge acquisition or conceptual understanding.</Description>
+    </Code>
+    <Code color="#6d70fa" guid="81718518-F178-498F-9492-0BE30F590A99" name="PRGL - Efficacy of Intervention (what works) - Skills" isCodable="true">
+     <Description>Use this code for studies evaluating how well educational interventions improve specific skills, whether cognitive, practical, or social.</Description>
+    </Code>
+    <Code color="#6d70fa" guid="30D7EEF6-C04C-4237-BF99-61D084ACC46B" name="PRGL - Efficacy of Intervention (what works) - Thinking, Ways of Knowing" isCodable="true">
+     <Description>This code is applied when a study has a goal of helping learners develop new ways of thinking or ways of knowing, including critical thinking, computational thinking, and disciplinary ways of knowing.</Description>
+    </Code>
+    <Code color="#6d70fa" guid="0E8B3FC0-9FC1-4EBD-A432-B752A97DAFC4" name="PRGL - Improvement, Implementation, Scaling" isCodable="true">
+     <Description>This code is applied when the purpose or goal of a study described in a paper is improvement, implementation, or scaling of a learning design, curriculum, or approach.</Description>
+    </Code>
+    <Code color="#6d70fa" guid="A5F2AF55-D301-4297-BDC1-5251F7D14117" name="PRGL - Theory Building - Develop Existing Theory" isCodable="true">
+     <Description>This code is appropriate for research that aims to extend, refine, or elaborate on existing educational theories through empirical investigation or conceptual analysis.</Description>
+    </Code>
+    <Code color="#6d70fa" guid="5B1DC3A5-A056-47BA-B05D-97F1D21B62D4" name="PRGL - Theory Building - New Theory" isCodable="true">
+     <Description>Apply this code to studies that propose and develop new theoretical frameworks or models to explain educational phenomena or guide practice.</Description>
+    </Code>
+   <Code color="#9C96C9" guid="851C7D80-D789-4F82-950B-D117CC6F1C6F" name="PRGL - NO PURPOSE OR GOAL MENTIONED" isCodable="true"><Description /></Code></Code>
+   <Code color="#3b82f6" guid="635E5C0A-B61E-4E0C-BA9B-EFC0A2116CE3" name="Research Methodology" isCodable="true">
+    <Description>This category details the systematic approaches, designs, and techniques employed by researchers to conduct their studies, including methods for data collection and analysis. It covers a wide spectrum of research paradigms and practices, from qualitative and quantitative approaches to design-based research, action research, modeling, and literature synthesis. This is a parent category, and only the codes within this category should be applied when coding data (but never apply this parent category as a code).</Description>
+    <Code color="#3b82f6" guid="0F2A7043-9AC5-4408-B1E8-3523EECA2473" name="RSRCHMTHD - Action Research - General" isCodable="true">
+     <Description>Use this code for studies that involve practitioners systematically investigating their own practice to improve it; this includes cycles of planning, action, and reflection.</Description>
+    </Code>
+    <Code color="#3b82f6" guid="9F366D14-5A1C-4B29-B91F-F9EF77F4D1A2" name="RSRCHMTHD - Action Research - Participatory Action Research" isCodable="true">
+     <Description>Apply this code to research that actively involves stakeholders (e.g., teachers, students, community members) as co-researchers in the study design, data collection, and analysis processes.</Description>
+    </Code>
+    <Code color="#3b82f6" guid="CFB6DE12-2E49-41C6-BC36-E51E8FDD9C6F" name="RSRCHMTHD - Action Research - Youth Paticipatory Action Research" isCodable="true">
+     <Description>This code is appropriate for studies where young people are engaged as co-researchers to investigate issues affecting their lives and communities.</Description>
+    </Code>
+    <Code color="#3b82f6" guid="BFA335C6-D0A3-4E96-9D72-21AA1C66C057" name="RSRCHMTHD - Agent-Based Modeling" isCodable="true">
+     <Description>Use this code for research that employs computer simulations to model the actions and interactions of autonomous agents (individual or collective entities) to understand complex systems in education.</Description>
+    </Code>
+    <Code color="#3b82f6" guid="512D561C-2566-473E-A48E-C3C46A5DD855" name="RSRCHMTHD - Co-Design (researchers and educators)" isCodable="true">
+     <Description>This code is applied when the paper describes a study in which the researchers and educators are co-designing learning activities, materials, or tools.</Description>
+    </Code>
+    <Code color="#3b82f6" guid="BD951F57-121D-4C4E-88DE-60D82037BDC0" name="RSRCHMTHD - Data - Multimodal Data, Learning Analytics, Big Data" isCodable="true">
+     <Description>Use this code for studies that collect and analyze data from multiple modalities (e.g., text, audio, video, physiological measures) to gain a more comprehensive understanding of learning processes. This code is also appropriate for research that involves the measurement, collection, analysis, and reporting of data about learners and their contexts for purposes of understanding and optimizing learning. This code can also be applied to studies that utilize large, complex datasets, often from multiple sources, to identify patterns or trends in educational contexts.</Description>
+    </Code>
+    <Code color="#3b82f6" guid="8BB21023-BAD8-49DB-841F-CD6C3FF9EC75" name="RSRCHMTHD - Data - Qualitative - Artifacts Created by Learners" isCodable="true">
+     <Description>This code is applied when data collection (for analysis) includes collecting learner-created artifacts.</Description>
+    </Code>
+    <Code color="#3b82f6" guid="1241F975-FF11-4E27-BC0D-9DA7C66F4897" name="RSRCHMTHD - Data - Qualitative - Focus Groups" isCodable="true">
+     <Description>Apply this code to research that uses facilitated group discussions to gather in-depth insights on educational topics.</Description>
+    </Code>
+    <Code color="#3b82f6" guid="FF9E1542-2B2A-468E-A41C-5661DCB7ED95" name="RSRCHMTHD - Data - Qualitative - Interviews" isCodable="true">
+     <Description>This code is appropriate for studies that collect data through one-on-one conversations with participants to gather detailed perspectives and experiences.</Description>
+    </Code>
+    <Code color="#3b82f6" guid="5E683AE2-F2E4-4B8E-B0A2-B8BCA136D418" name="RSRCHMTHD - Data - Qualitative - Observations" isCodable="true">
+     <Description>Use this code for research that involves systematic watching and recording of behaviors, interactions, or phenomena in educational settings.</Description>
+    </Code>
+    <Code color="#3b82f6" guid="208277C6-7271-4434-8BA2-7ACC81A9CBA7" name="RSRCHMTHD - Data - Qualitative - Reflections (participant)" isCodable="true">
+     <Description>Apply this code to studies that use participants' written or verbal reflections on their experiences or learning as a data source.</Description>
+    </Code>
+    <Code color="#3b82f6" guid="01E3B006-B814-4369-830A-AA000D36F355" name="RSRCHMTHD - Data - Qualitative - Reflections (researcher memo)" isCodable="true">
+     <Description>This code is appropriate for research that incorporates the researcher's own reflective notes or memos as part of the data analysis process.</Description>
+    </Code>
+    <Code color="#3b82f6" guid="91D3D410-44E9-4820-961C-E9EC00EDB511" name="RSRCHMTHD - Data - Qualitative - Reflections (teacher memo)" isCodable="true">
+     <Description>Use this code for studies that incorporate teachers' reflective journals or memos as a data source.</Description>
+    </Code>
+    <Code color="#3b82f6" guid="F4FD33D4-F161-4DC2-B59D-12808D1577FF" name="RSRCHMTHD - Data - Qualitative - Survey - Open-Ended" isCodable="true">
+     <Description>This code is applied when a paper describes collection of qualitative open-ended survey data.</Description>
+    </Code>
+    <Code color="#3b82f6" guid="2AEB4DAE-82FD-4A7B-8986-B285AA1EF38A" name="RSRCHMTHD - Data - Qualitative - Think-Aloud Recording" isCodable="true">
+     <Description>This code is applied when a paper describes a study that used a think-aloud protocol for data collection.</Description>
+    </Code>
+    <Code color="#3b82f6" guid="7BE3685F-DD31-4966-9696-14A51B67A9B1" name="RSRCHMTHD - Data - Qualitative - Video Recording of Learning Experiences" isCodable="true">
+     <Description>This code is applied when a study uses video recording of learning experiences as a data source.</Description>
+    </Code>
+    <Code color="#3b82f6" guid="B83E51D9-B998-498B-8E7C-D23A80552155" name="RSRCHMTHD - Data - Quantitative - Observation Instrument" isCodable="true">
+     <Description>Apply this code to research that uses structured observation tools or protocols to quantify observed behaviors or phenomena.</Description>
+    </Code>
+    <Code color="#3b82f6" guid="2F5D7294-CF90-4042-9DFF-C6B04704E69A" name="RSRCHMTHD - Data - Quantitative - Scores - Projects (rubric graded)" isCodable="true">
+     <Description>This code is applied when a research study uses scores on projects that were graded using a rubric.</Description>
+    </Code>
+    <Code color="#3b82f6" guid="0A2F33F8-686F-46BC-8930-26D3E4839199" name="RSRCHMTHD - Data - Quantitative - Scores - Tests (exam, test, quiz)" isCodable="true">
+     <Description>This code is appropriate for studies that use performance scores from various assessments as quantitative data.</Description>
+    </Code>
+    <Code color="#3b82f6" guid="889C8876-4662-413C-9956-6EFE2B849D11" name="RSRCHMTHD - Data - Quantitative - Survey - Construct (eg motivation)" isCodable="true">
+     <Description>Use this code for research that employs surveys designed to measure specific psychological constructs or attributes.</Description>
+    </Code>
+    <Code color="#3b82f6" guid="7AB89C6D-EBB2-4DCA-94FF-77CD5D5350AB" name="RSRCHMTHD - Data - Quantitative - Survey - Non-Construct (e.g., feedback)" isCodable="true">
+     <Description>Apply this code to studies that use surveys to collect factual information or opinions that are not tied to specific psychological constructs.</Description>
+    </Code>
+    <Code color="#3b82f6" guid="32193C06-985F-4AEA-A9B7-D21E8AE11D29" name="RSRCHMTHD - Design Case (descriptive)" isCodable="true">
+     <Description>This code should be applied when the study describes a design case.</Description>
+    </Code>
+    <Code color="#3b82f6" guid="12CA9AE8-C2DF-4B3E-AB29-02EDE7522405" name="RSRCHMTHD - Design-Based Implementation Research (DBIR)" isCodable="true">
+     <Description>Apply this code when a study uses design-based implementation research (DBIR) methodologies.</Description>
+    </Code>
+    <Code color="#3b82f6" guid="26F91438-4F62-461E-B4C5-F3C80412FAB9" name="RSRCHMTHD - Design-Based Research, Design Experiement" isCodable="true">
+     <Description>Use this code for studies that involve iterative cycles of design, implementation, and analysis of educational interventions in real-world settings.</Description>
+    </Code>
+    <Code color="#3b82f6" guid="803E00D6-745C-47B1-9794-160B439E2C9B" name="RSRCHMTHD - Mixed Methods, Multi-Methods" isCodable="true">
+     <Description>Apply this code to research that combines both qualitative and quantitative approaches in data collection and analysis.</Description>
+    </Code>
+    <Code color="#3b82f6" guid="E771A016-1A52-4BE1-A955-D952D7A35DE0" name="RSRCHMTHD - Network Analysis - Epistemic Network Analysis" isCodable="true">
+     <Description>This code is applied when a study uses epistemic network analysis.</Description>
+    </Code>
+    <Code color="#3b82f6" guid="642FDBF3-5EE9-489A-B2E0-5684B4939584" name="RSRCHMTHD - Network Analysis - General" isCodable="true">
+     <Description>This code is appropriate for studies that examine the structure of relationships between individuals, groups, or concepts in educational settings.</Description>
+    </Code>
+    <Code color="#3b82f6" guid="9C782E73-202F-4974-A003-32BBD3C21C81" name="RSRCHMTHD - Qualitative - Case Study" isCodable="true">
+     <Description>Use this code for in-depth investigations of a particular instance, event, or phenomenon within its real-life context.</Description>
+    </Code>
+    <Code color="#3b82f6" guid="4D7D7F01-8B49-4E2A-B07C-8CD8A79A2283" name="RSRCHMTHD - Qualitative - Discourse Analysis" isCodable="true">
+     <Description>Apply this code to research that examines patterns of language use and meaning-making in educational contexts.</Description>
+    </Code>
+    <Code color="#3b82f6" guid="7D05C32F-922F-4DBE-A688-BF0C2175F063" name="RSRCHMTHD - Qualitative - Document Analysis, Text Analysis" isCodable="true">
+     <Description>This code is appropriate for studies that systematically review and interpret various forms of written material relevant to educational research.</Description>
+    </Code>
+    <Code color="#3b82f6" guid="AE1E6B04-D8C3-44C6-A330-2BD6324B7877" name="RSRCHMTHD - Qualitative - Ethnographic" isCodable="true">
+     <Description>Use this code for research that involves immersive, long-term observation and participation in educational settings to understand cultural phenomena.</Description>
+    </Code>
+    <Code color="#3b82f6" guid="1E54051A-AD9B-49EC-8232-D0D250D2D487" name="RSRCHMTHD - Qualitative - Grounded Theory" isCodable="true">
+     <Description>Apply this code to studies that aim to develop theory through systematic analysis of data, often involving iterative data collection and analysis.</Description>
+    </Code>
+    <Code color="#3b82f6" guid="994FA27B-C94E-4633-8E48-432E662F350F" name="RSRCHMTHD - Qualitative - Interaction Analysis" isCodable="true">
+     <Description>This code is applied when a study uses interaction analysis research methods.Interaction analysis is a qualitative research method involving the systematic study of social interactions, typically through detailed examination of audio or video recordings, to understand patterns, processes, and meanings within communicative events. It often emphasizes naturally occurring interactions and utilizes fine-grained coding and analysis of verbal and non-verbal behaviors.</Description>
+    </Code>
+    <Code color="#3b82f6" guid="C26C0D8B-8AC7-40A9-A304-80EB5E2648CC" name="RSRCHMTHD - Qualitative - Phenomenology" isCodable="true">
+     <Description>Apply this code when a research study uses phenomenological methodologies.</Description>
+    </Code>
+    <Code color="#3b82f6" guid="3C59831A-BC2A-4344-A59D-CB546B4E5E56" name="RSRCHMTHD - Qualitative - Thematic Analysis" isCodable="true">
+     <Description>This code is applied when a research study uses the qualitative research analytical method of thematic analysis.</Description>
+    </Code>
+    <Code color="#3b82f6" guid="2F0C926B-C79B-49E3-8F04-319F36A70407" name="RSRCHMTHD - Quantitative - Advanced Stats (eg regression)" isCodable="true">
+     <Description>This code is appropriate for research using complex statistical techniques to analyze relationships between variables or predict outcomes.</Description>
+    </Code>
+    <Code color="#3b82f6" guid="0F70CF54-DE1D-46EE-A8C7-43DD4A816BFE" name="RSRCHMTHD - Quantitative - Experimental (control group, pre-post)" isCodable="true">
+     <Description>This code is applied when the study uses an experimental or quasi-experimental design including pre- and post-intervention measures and control groups.</Description>
+    </Code>
+    <Code color="#3b82f6" guid="4E694433-392D-4546-876E-9F2B937AB0EB" name="RSRCHMTHD - Quantitative - Simple Stats (eg frequency)" isCodable="true">
+     <Description>Use this code for studies employing basic statistical methods such as descriptive statistics or simple inferential tests.</Description>
+    </Code>
+    <Code color="#3b82f6" guid="182C5F7B-690A-4654-BBE7-DECECA464EFF" name="RSRCHMTHD - Systematic Literature Review, Meta-Analysis, Synthesis" isCodable="true">
+     <Description>This code is applied when a paper describes a research method of systematic literature review, meta-analysis, or other systematized literature synthesis methods.</Description>
+    </Code>
+   <Code color="#4D4EC3" guid="C2A5B755-7C7B-4B79-9625-2EE6DCD36D33" name="RSRCHMTHD - NO RESEARCH METHOD" isCodable="true"><Description /></Code></Code>
+   <Code color="#4abccb" guid="62EFFE2A-217C-4806-99CF-19DB235FD2F7" name="Subject Matter, Content Area" isCodable="true">
+    <Description>This category specifies the academic discipline, domain of knowledge, or specific content area that is the primary focus of the learning activities or educational interventions described in the research. It identifies what subject(s) learners are engaging with or what field of study the research pertains to. This is a parent category, and only the codes within this category should be applied when coding data (but never apply this parent category as a code).</Description>
+    <Code color="#4abccb" guid="496875C7-4246-4AB7-B5BB-CBA7E93FCF35" name="SUBJECT - Arts and Music" isCodable="true">
+     <Description>Apply this code to research focusing on visual arts, performing arts (such as theater, dance), or music education. This includes studies on artistic skill development, aesthetic appreciation, creative expression, and the integration of arts into other subject areas.</Description>
+    </Code>
+    <Code color="#4abccb" guid="BC7E6F0C-F289-460A-B16C-3070017AA940" name="SUBJECT - Coding, Computer Science" isCodable="true">
+     <Description>This code is applied when a paper describes learners doing coding and other computer science work.</Description>
+    </Code>
+    <Code color="#4abccb" guid="93215F3F-B7DB-4B80-B47A-2EFDC87F14E2" name="SUBJECT - Education" isCodable="true">
+     <Description>Apply this code to research focusing on students who study in education programs, such as teacher preparation programs.</Description>
+    </Code>
+    <Code color="#4abccb" guid="ED99FCF1-DFB7-4628-AE40-30E611EC31FD" name="SUBJECT - Engineering" isCodable="true">
+     <Description>Use this code for studies centered on engineering education at any level. This encompasses research on teaching engineering principles, design processes, problem-solving in engineering contexts, and the development of engineering-related skills and knowledge.</Description>
+    </Code>
+    <Code color="#4abccb" guid="901C30BC-ADC8-45A1-A9E5-01A709BEC98E" name="SUBJECT - History" isCodable="true">
+     <Description>This code is applied when a paper is about learners engaging in learning history or historical thinking.</Description>
+    </Code>
+    <Code color="#4abccb" guid="419BFAF7-C395-4157-B203-F5B77A2B2865" name="SUBJECT - Language Arts" isCodable="true">
+     <Description>This code is appropriate for research related to the teaching and learning of language skills, including reading, writing, speaking, and listening. It covers studies on literacy development, literature education, composition, grammar, and language acquisition in first or additional languages.</Description>
+    </Code>
+    <Code color="#4abccb" guid="C93EC4E9-E05E-43E6-A39F-33AEA4F183B3" name="SUBJECT - Mathematics" isCodable="true">
+     <Description>Apply this code to studies focused on mathematics education across all levels. This includes research on numerical literacy, algebraic thinking, geometry, statistics, calculus, and mathematical problem-solving, as well as studies on math anxiety or attitudes towards mathematics.</Description>
+    </Code>
+    <Code color="#4abccb" guid="BC84E352-C9E9-4072-BDB5-BD38E4FE9F26" name="SUBJECT - Medicine, Health" isCodable="true">
+     <Description>This code is applied when a study investigates learning where medicine or health (including public health) is the primary subject matter.</Description>
+    </Code>
+    <Code color="#4abccb" guid="034530AC-AD84-479D-B489-9E26AC4E4711" name="SUBJECT - Multidisciplinary, Interdisciplinary Studies" isCodable="true">
+     <Description>Use this code for research that explicitly crosses traditional subject boundaries or examines integrated approaches to learning. This includes studies on thematic units that combine multiple subjects, problem-based learning that draws from various disciplines, or research on the effectiveness of interdisciplinary curricula.</Description>
+    </Code>
+    <Code color="#4abccb" guid="AB013E71-0FB1-4F06-A4E8-402931FF218F" name="SUBJECT - Science" isCodable="true">
+     <Description>This code is appropriate for studies centered on science education, including biology, chemistry, physics, earth sciences, and environmental science. It covers research on scientific literacy, inquiry-based learning in science, science process skills, and the nature of science understanding.</Description>
+    </Code>
+    <Code color="#4abccb" guid="42076651-D20D-4909-AEC2-0187170664B8" name="SUBJECT - Social Studies" isCodable="true">
+     <Description>Apply this code to research focusing on the teaching and learning of social sciences, including history, geography, economics, civics, and cultural studies. This encompasses studies on historical thinking, geographic literacy, citizenship education, and global awareness.</Description>
+    </Code>
+    <Code color="#4abccb" guid="79561614-BB7B-42A7-B863-AD09376EE2BE" name="SUBJECT - STEM, STEAM" isCodable="true">
+     <Description>Use this code for studies that explicitly focus on integrated approaches to Science, Technology, Engineering, and Mathematics (STEM), or those that also include Arts (STEAM). This includes research on STEM/STEAM curricula, interdisciplinary projects combining these fields, and initiatives to promote STEM/STEAM education.</Description>
+    </Code>
+    <Code color="#4abccb" guid="030AFEEA-CF64-4825-AC95-E7F1D6E659AA" name="SUBJECT - Technology" isCodable="true">
+     <Description>This code is appropriate for research centered on technology education (excluiding computer science, coding), information technology, and digital literacy. It covers studies on technological problem-solving, digital tool use in education, and the development of technological fluency.</Description>
+    </Code>
+   <Code color="#3A70D0" guid="3B5FE158-CE97-4C83-B6A1-C7E8359293DE" name="SUBJECT - NO SUBJECT MENTIONED" isCodable="true"><Description /></Code></Code>
+   <Code color="#a24ef1" guid="444A9D1E-CB2D-4EFD-95F0-C56D6D199BBF" name="Technologies" isCodable="true">
+    <Description>This category identifies the specific tools, platforms, systems, and materials—both digital and physical—that are used to support, mediate, deliver, or constitute learning experiences, or are themselves the object of study within an educational context. It ranges from low-tech materials to advanced computational systems and digital environments. This is a parent category, and only the codes within this category should be applied when coding data (but never apply this parent category as a code).</Description>
+    <Code color="#a24ef1" guid="5D796E35-0341-4BF2-8471-324AFCBC089D" name="TECHNLGY - Artificial Intelligence - General" isCodable="true">
+     <Description>Apply this code to research involving the use or study of AI systems in educational contexts, excluding specific applications covered by other codes.</Description>
+    </Code>
+    <Code color="#a24ef1" guid="8697564E-5EC1-4305-BADA-94B7A15CED47" name="TECHNLGY - Artificial Intelligence - Generative, Transformer" isCodable="true">
+     <Description>Use this code for studies focusing on generative AI models or transformer-based language models in education, such as applications of GPT models in learning environments.</Description>
+    </Code>
+    <Code color="#a24ef1" guid="F50ACA15-F83B-412A-B2E1-1D3F91D79D5B" name="TECHNLGY - Augmented Reality, Virtual Reality" isCodable="true">
+     <Description>This code is applied when a paper describes learners using augmented reality or virtual reality.</Description>
+    </Code>
+    <Code color="#a24ef1" guid="2C2D0482-4BB6-419B-8768-18FB5B165D83" name="TECHNLGY - Brainstorming, Mapping, Collecting (eg Miro, Padlet)" isCodable="true">
+     <Description>This code is applied when a paper describes learners using digial tools for brainstorming, concept mapping, or collecting digital artifacts. These tools include Miro, Padlet, Jamboard, etc.</Description>
+    </Code>
+    <Code color="#a24ef1" guid="3AB90120-A790-4DCA-BF08-B54DCCCDF93C" name="TECHNLGY - Coding Platforms (eg, Scratch, Python)" isCodable="true">
+     <Description>This code is applied when a paper describes learners engaging in coding activities using a coding platform such as Scratch or Python.</Description>
+    </Code>
+    <Code color="#a24ef1" guid="3F33054E-D4FA-40FE-84F6-C7152B5E0A9F" name="TECHNLGY - Collective Knowledge Construction (eg knowledge forum)" isCodable="true">
+     <Description>This code is appropriate for research on technologies that support collaborative creation and organization of knowledge, such as wikis or specialized platforms for group learning.</Description>
+    </Code>
+    <Code color="#a24ef1" guid="011842F7-0AB0-4545-8B80-26B750CBFED1" name="TECHNLGY - Feedback - Learner to Learner" isCodable="true">
+     <Description>Apply this code to studies examining technologies that facilitate peer feedback processes in educational settings.</Description>
+    </Code>
+    <Code color="#a24ef1" guid="60ABB804-EFB1-43D2-8D4D-6F2FAF238FC0" name="TECHNLGY - Feedback - Learner to Teacher" isCodable="true">
+     <Description>Use this code for research on technologies that enable students to provide feedback to their instructors, such as classroom response systems or digital evaluation tools.</Description>
+    </Code>
+    <Code color="#a24ef1" guid="AEE9FD5F-9685-4038-A193-BA99AC513108" name="TECHNLGY - Feedback - Teacher to Learner" isCodable="true">
+     <Description>This code is appropriate for studies on technologies that support teachers in providing feedback to students, including automated grading systems or digital annotation tools.</Description>
+    </Code>
+    <Code color="#a24ef1" guid="D7642E90-1A46-41D2-B06C-4D271CB35368" name="TECHNLGY - Feedback - Technology to Learner" isCodable="true">
+     <Description>This code is applied when a paper describes technologies through which learners are given feedback by the technology.</Description>
+    </Code>
+    <Code color="#a24ef1" guid="D7432B1C-2C86-4E12-9920-C893CDF23D64" name="TECHNLGY - Feedback - Technology to Teacher" isCodable="true">
+     <Description>This code is applied when a paper describes technologies that give teachers feedback about their students learning.</Description>
+    </Code>
+    <Code color="#a24ef1" guid="E1407B12-94A1-46A2-A62D-88E914C5CA7A" name="TECHNLGY - Game - Commercial Educational Game" isCodable="true">
+     <Description>Apply this code to research involving the use or analysis of commercially available educational games in learning contexts.</Description>
+    </Code>
+    <Code color="#a24ef1" guid="5030678E-54F3-4849-BD47-79849512445A" name="TECHNLGY - Game - Commercial Entertainment Game" isCodable="true">
+     <Description>Use this code for studies examining the educational potential or applications of commercial games not primarily designed for education.</Description>
+    </Code>
+    <Code color="#a24ef1" guid="88BF136C-95B7-41EA-8950-1142CDCA8EDF" name="TECHNLGY - Game - Researcher Designed" isCodable="true">
+     <Description>This code is appropriate for research involving educational games specifically designed by researchers for their studies.</Description>
+    </Code>
+    <Code color="#a24ef1" guid="7F9D288E-0FCD-4B38-8400-3E987B5A257E" name="TECHNLGY - Game - Student Designed" isCodable="true">
+     <Description>Apply this code to studies where students create games as part of the learning process or where student-created games are used as educational tools.</Description>
+    </Code>
+    <Code color="#a24ef1" guid="E4F317D1-38D8-4B36-B7E4-08A14E61D36C" name="TECHNLGY - Individual Knowledge Construction" isCodable="true">
+     <Description>This code is applied when learners use a technology for individual knowledge construction such as digital storytelling.</Description>
+    </Code>
+    <Code color="#a24ef1" guid="B3039550-26CF-4836-8A1F-33815815D06F" name="TECHNLGY - Intelligent Tutor" isCodable="true">
+     <Description>Use this code for research on adaptive learning systems that provide personalized instruction and feedback based on individual student performance.</Description>
+    </Code>
+    <Code color="#a24ef1" guid="23CE4191-C4B7-4D1F-9C36-79083BF107F5" name="TECHNLGY - Learning Management System" isCodable="true">
+     <Description>This code is appropriate for studies involving platforms used to organize and deliver educational content, manage assignments, and track student progress.</Description>
+    </Code>
+    <Code color="#a24ef1" guid="5F9A49BF-4AC2-4102-AA71-4D7E86200E4B" name="TECHNLGY - Maker Technologies (eg 3D printer, laser cutter, Raspberry Pi)" isCodable="true">
+     <Description>This code is applied when a paper describes students using makerspace tools such as laser cutters, 3D printers, programming boards such as Gogo or Raspberry Pi, etc.</Description>
+    </Code>
+    <Code color="#a24ef1" guid="190E15D3-635A-492E-9842-B616663B4757" name="TECHNLGY - Online Discussion" isCodable="true">
+     <Description>Apply this code to research on technologies supporting asynchronous or synchronous text-based discussions in online learning environments.</Description>
+    </Code>
+    <Code color="#a24ef1" guid="81FA1348-300A-4E41-BAC9-1D6593868F2F" name="TECHNLGY - Physical Low-Tech, Simple Tools and Materials" isCodable="true">
+     <Description>This code is applied when a paper describes contexts in which learners use physical and simple low-tech tools and materials such as paper, household items, etc.</Description>
+    </Code>
+    <Code color="#a24ef1" guid="90AB2965-023E-4972-AC3B-7F38F4B0C534" name="TECHNLGY - Publishing, Website Creation" isCodable="true">
+     <Description>This code is applied when a study describes students learning by using technologies for publishing or website creation.</Description>
+    </Code>
+    <Code color="#a24ef1" guid="9EF7923B-384F-4F8A-A8E5-3AF38654E502" name="TECHNLGY - Simulation - Agent-Based Modeling" isCodable="true">
+     <Description>This code is applied when a paper describes learners using digital tools for agent-based modeling of complex systems dynamics.</Description>
+    </Code>
+    <Code color="#a24ef1" guid="BCE2961B-59E6-4E72-888B-CF2A38358677" name="TECHNLGY - Simulation - Science" isCodable="true">
+     <Description>Use this code for studies involving computer simulations of scientific phenomena or processes used for educational purposes.</Description>
+    </Code>
+    <Code color="#a24ef1" guid="903189AD-B23A-43D5-A6F2-D80FB92F55B4" name="TECHNLGY - Simulation - Social, Other" isCodable="true">
+     <Description>This code is appropriate for research on simulations of social systems, historical events, or other non-scientific scenarios used in educational contexts.</Description>
+    </Code>
+    <Code color="#a24ef1" guid="2F0A08DA-7544-4233-B4E5-69329227CB8A" name="TECHNLGY - Social Media, Messaging" isCodable="true">
+     <Description>This code is applied when a paper describes learners using social media or messaging technologies.</Description>
+    </Code>
+    <Code color="#a24ef1" guid="6F32BB73-EA72-45B5-BB0B-273D64C6DD2F" name="TECHNLGY - Virtual Meeting (eg Zoom)" isCodable="true">
+     <Description>This code will be applied when the research involves learners using virtual meeting technologies such as Zoom (exclude use of virtual meeting technologies for data collection).</Description>
+    </Code>
+    <Code color="#a24ef1" guid="11C785EB-37CF-4851-B6BA-35971DE49570" name="TECHNLGY - Wearables, Quantified Self" isCodable="true">
+     <Description>This code is apppled when a paper talks about engaging learners with wearables and quantified self technologies.</Description>
+    </Code>
+   <Code color="#DE2EF9" guid="EFB40F0E-F5E4-460B-A4BB-CE4BFCB291A0" name="TECHNLGY - NO TECHNOLOGIES MENTIONED" isCodable="true"><Description /></Code></Code>
+  <Code color="#565B3A" guid="A1E8C040-206B-45DD-9AD8-F89E13F818B8" name="Research Data" isCodable="true"><Description /><Code color="#1941DC" guid="679B8353-8DE3-4E58-B0E3-B2E08A28DCF8" name="RSRCHDATA - NO RESEARCH DATA" isCodable="true"><Description /></Code><Code color="#D489A4" guid="63B158FE-121A-4D50-9A41-EF3BD041E32F" name="RSRCHDATA - Multimodal Data, Learning Analytics, Big Data" isCodable="true"><Description /></Code><Code color="#8222FA" guid="D0E05045-31D5-4606-8755-22D18B705261" name="RSRCHDATA - Qualitative - Artifacts Created by Learners" isCodable="true"><Description /></Code><Code color="#A9C3BB" guid="CFD6B05A-7456-4B9C-A25A-EF0F9C87D859" name="RSRCHDATA - Qualitative - Focus Groups" isCodable="true"><Description /></Code><Code color="#E9BA99" guid="F2D33811-AAA3-4958-81BC-17B6D1EB1A3D" name="RSRCHDATA - Qualitative - Interviews" isCodable="true"><Description /></Code><Code color="#0D5EF7" guid="748B079A-E814-4BB9-BBE4-0EA98E8FD3C9" name="RSRCHDATA - Qualitative - Observations" isCodable="true"><Description /></Code><Code color="#FA10F9" guid="B72F84E8-C983-424E-AAB3-D7F3D2CA81B7" name="RSRCHDATA - Qualitative - Reflections (participant)" isCodable="true"><Description /></Code><Code color="#79D3FE" guid="4DCD9EAC-F7AA-4A2B-A481-35F052CBA3AC" name="RSRCHDATA - Qualitative - Reflections (researcher memo)" isCodable="true"><Description /></Code><Code color="#935753" guid="B9352738-64F8-45ED-982F-5C1CF59A45FE" name="RSRCHDATA - Qualitative - Reflections (teacher memo)" isCodable="true"><Description /></Code><Code color="#CD6C36" guid="9A20700A-D1E7-4A2D-AE00-B860BED83F89" name="RSRCHDATA - Qualitative - Survey - Open-Ended" isCodable="true"><Description /></Code><Code color="#A93D18" guid="32A90380-CF2B-488F-A231-7080B5AE7732" name="RSRCHDATA - Qualitative - Think-Aloud Recording" isCodable="true"><Description /></Code><Code color="#2B293B" guid="57004E13-8E1D-4C1A-9AB0-18F3A2F8A405" name="RSRCHDATA - Qualitative - Video Recording of Learning Experiences" isCodable="true"><Description /></Code><Code color="#EB7A13" guid="A17AEA19-FF9B-4A62-89DD-5994DACFBCD6" name="RSRCHDATA - Quantitative - Observation Instrument" isCodable="true"><Description /></Code><Code color="#67D195" guid="C9565C51-16B6-47DB-9C92-C2778A794E69" name="RSRCHDATA - Quantitative - Scores - Projects (rubric graded)" isCodable="true"><Description /></Code><Code color="#C37F5B" guid="478C8F6E-5171-4D8D-975B-4FE2E01A1E04" name="RSRCHDATA - Quantitative - Scores - Tests (exam, test, quiz)" isCodable="true"><Description /></Code><Code color="#EFC115" guid="1696DF5D-9089-47D8-88B8-3ACA652B20BA" name="RSRCHDATA - Quantitative - Survey - Construct (eg motivation)" isCodable="true"><Description /></Code><Code color="#E7CA06" guid="E476DF64-6F61-4AC9-B367-5CC55E465A06" name="RSRCHDATA - Quantitative - Survey - Non-Construct (e.g., feedback)" isCodable="true"><Description /></Code></Code></Codes>
+ </CodeBook>
+ <Sources>
+	<TextSource modifyingUser="F3EA8DA1-BB99-411F-8ED4-011170237B6C" guid="C5E4C960-5296-4FDE-8C63-DEABA4E17F92" creatingUser="F3EA8DA1-BB99-411F-8ED4-011170237B6C" creationDateTime="2024-10-18T23:23:46Z" name="ICLS 2024 3-10" plainTextPath="internal://C5E4C960-5296-4FDE-8C63-DEABA4E17F92.txt" modifiedDateTime="2024-10-18T23:23:46Z"/>
+	<TextSource modifyingUser="F3EA8DA1-BB99-411F-8ED4-011170237B6C" guid="7391D47A-323D-4291-8202-ED599C250828" creatingUser="F3EA8DA1-BB99-411F-8ED4-011170237B6C" creationDateTime="2024-10-18T23:18:48Z" name="ICLS 2024 11-18" plainTextPath="internal://7391D47A-323D-4291-8202-ED599C250828.txt" modifiedDateTime="2024-10-18T23:18:48Z"/>
+	<TextSource modifyingUser="F3EA8DA1-BB99-411F-8ED4-011170237B6C" guid="6D0B5D8D-C3FA-492F-92C7-AABEF30CE82A" creatingUser="F3EA8DA1-BB99-411F-8ED4-011170237B6C" creationDateTime="2024-10-18T23:23:16Z" name="ICLS 2024 19-26" plainTextPath="internal://6D0B5D8D-C3FA-492F-92C7-AABEF30CE82A.txt" modifiedDateTime="2024-10-18T23:23:16Z"/>
+	<TextSource modifyingUser="F3EA8DA1-BB99-411F-8ED4-011170237B6C" guid="07B03AB2-5E9B-4708-9D6F-ED80C1513BAE" creatingUser="F3EA8DA1-BB99-411F-8ED4-011170237B6C" creationDateTime="2024-10-18T23:23:37Z" name="ICLS 2024 27-34" plainTextPath="internal://07B03AB2-5E9B-4708-9D6F-ED80C1513BAE.txt" modifiedDateTime="2024-10-18T23:23:37Z"/>
+	<TextSource modifyingUser="F3EA8DA1-BB99-411F-8ED4-011170237B6C" guid="1FF22868-3407-46BC-8189-6DD9E70B0885" creatingUser="F3EA8DA1-BB99-411F-8ED4-011170237B6C" creationDateTime="2024-10-18T23:23:58Z" name="ICLS 2024 35-42" plainTextPath="internal://1FF22868-3407-46BC-8189-6DD9E70B0885.txt" modifiedDateTime="2024-10-18T23:23:58Z"/>
+	<TextSource modifyingUser="F3EA8DA1-BB99-411F-8ED4-011170237B6C" guid="1C693BD8-FFE2-4398-AB33-0831971751F4" creatingUser="F3EA8DA1-BB99-411F-8ED4-011170237B6C" creationDateTime="2025-06-16T22:00:02Z" name="ICLS 2025 1007-1015" plainTextPath="internal://1C693BD8-FFE2-4398-AB33-0831971751F4.txt" modifiedDateTime="2025-06-16T22:00:02Z"/>
+	<TextSource modifyingUser="F3EA8DA1-BB99-411F-8ED4-011170237B6C" guid="EB84B1CD-7263-4AD1-82D3-B229B7EE734A" creatingUser="F3EA8DA1-BB99-411F-8ED4-011170237B6C" creationDateTime="2025-06-16T22:00:04Z" name="ICLS 2025 101-109" plainTextPath="internal://EB84B1CD-7263-4AD1-82D3-B229B7EE734A.txt" modifiedDateTime="2025-06-16T22:00:04Z"/>
+	<TextSource modifyingUser="F3EA8DA1-BB99-411F-8ED4-011170237B6C" guid="B787D8CD-082E-401C-B13B-82225ED71363" creatingUser="F3EA8DA1-BB99-411F-8ED4-011170237B6C" creationDateTime="2025-06-16T22:00:12Z" name="ICLS 2025 1016-1024" plainTextPath="internal://B787D8CD-082E-401C-B13B-82225ED71363.txt" modifiedDateTime="2025-06-16T22:00:12Z"/>
+	<TextSource modifyingUser="F3EA8DA1-BB99-411F-8ED4-011170237B6C" guid="3CEF20B2-0549-42C3-9B05-796FA9EBF763" creatingUser="F3EA8DA1-BB99-411F-8ED4-011170237B6C" creationDateTime="2025-06-16T22:00:14Z" name="ICLS 2025 1025-1033" plainTextPath="internal://3CEF20B2-0549-42C3-9B05-796FA9EBF763.txt" modifiedDateTime="2025-06-16T22:00:14Z"/>
+	<TextSource modifyingUser="F3EA8DA1-BB99-411F-8ED4-011170237B6C" guid="DFBA1BB6-2213-427B-819D-35408645187D" creatingUser="F3EA8DA1-BB99-411F-8ED4-011170237B6C" creationDateTime="2025-06-16T22:00:15Z" name="ICLS 2025 1034-1042" plainTextPath="internal://DFBA1BB6-2213-427B-819D-35408645187D.txt" modifiedDateTime="2025-06-16T22:00:15Z"/>
+	</Sources>
+	<Sets>
+	<Set guid="45FE4439-9BF4-47FC-AFAF-D87305293172" name="ICLS 2024">
+	<MemberSource targetGUID="C5E4C960-5296-4FDE-8C63-DEABA4E17F92"/>
+	<MemberSource targetGUID="7391D47A-323D-4291-8202-ED599C250828"/>
+	<MemberSource targetGUID="6D0B5D8D-C3FA-492F-92C7-AABEF30CE82A"/>
+	<MemberSource targetGUID="07B03AB2-5E9B-4708-9D6F-ED80C1513BAE"/>
+	<MemberSource targetGUID="1FF22868-3407-46BC-8189-6DD9E70B0885"/>
+	</Set>
+	<Set guid="FEEDCF5C-1D45-4CE1-B551-586A9CD14F09" name="ICLS 2025">
+	<MemberSource targetGUID="1C693BD8-FFE2-4398-AB33-0831971751F4"/>
+	<MemberSource targetGUID="EB84B1CD-7263-4AD1-82D3-B229B7EE734A"/>
+	<MemberSource targetGUID="B787D8CD-082E-401C-B13B-82225ED71363"/>
+	<MemberSource targetGUID="3CEF20B2-0549-42C3-9B05-796FA9EBF763"/>
+	<MemberSource targetGUID="DFBA1BB6-2213-427B-819D-35408645187D"/>
+	</Set>
+	</Sets>
+</Project>
