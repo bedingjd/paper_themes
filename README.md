@@ -118,9 +118,12 @@ are as desired.
 
 
 ### TO-DO
-- [ ] Check dependencies and see if they are still needed
+- [ ] Check python import dependencies and see if they are still needed
 - [ ] Are the following files in use?
   - '2025-06-16_ICLS_Conf_Themes_ALL_just10.zip'
+- [ ] Remove the restriction to just code one paper in lines 1952-1958
+- [ ] Ensure option #7 can run right after option #6
+  - The code needs to remember the variable: OUTPUT_FILES_PATH = 'Output_Proj_gemma_4_31_20060509a_20260509_1652'
 
 ### Some reconfigurations
 - In order to clean up the file structure, I adjusted the location of serveral files

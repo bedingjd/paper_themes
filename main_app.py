@@ -593,13 +593,13 @@ def unzip_qdxp_file(filepath):
 
 def print_menu():
     print("\n======================================================")
-    print("[1] Ask the AI to code the papers, one PAPER at a time")
-    print("[2] Ask the AI to code the papers, one CODE CATEGORY at a time")
-    print("[3] Convert the coded papers to a .qdxp file (if papers were coded one PAPER at a time)")
-    print("[4] Convert the coded papers to a .qdxp file (if papers were coded one CATEGORY at a time)")
-    print("[5] List currently available models (Gemini)")
-    print("[6] OPENROUTER: Ask the AI to code the papers, one CODE CATEGORY at a time")
-    print("[7] OPENROUTER-REVISED-PROMPT: Convert the coded papers to a .qdxp file (if papers were coded one CATEGORY at a time)")
+    print("[1] (deprecated) Ask the AI to code the papers, one PAPER at a time")
+    print("[2] (deprecated) Ask the AI to code the papers, one CODE CATEGORY at a time")
+    print("[3] (deprecated) Convert the coded papers to a .qdxp file (if papers were coded one PAPER at a time)")
+    print("[4] (deprecated) Convert the coded papers to a .qdxp file (if papers were coded one CATEGORY at a time)")
+    print("[5] (deprecated) List currently available models (Gemini)")
+    print("[6] Ask the AI to code the papers, one CODE CATEGORY at a time")
+    print("[7] Convert the coded papers to a .qdxp file (if papers were coded one CATEGORY at a time via #6)")
 
     print("[9] Quit")
 
@@ -1946,13 +1946,13 @@ if __name__ == "__main__":
                 # Start the loop.  Look at one paper at a time
                 for paper_ID in listOAllPaperIDs:
                     # **********************************************************
-                    # this section added to only code one paper and skip all the others
+                    # this section added to only code one paper (or a few) and skip all the others
                     print(paper_ID)
                     codeThisPaper = False
-                    if paper_ID != 'EB84B1CD-7263-4AD1-82D3-B229B7EE734A':
+                    if paper_ID == 'EB84B1CD-7263-4AD1-82D3-B229B7EE734A':
                         codeThisPaper = True
-                    elif paper_ID != 'DFBA1BB6-2213-427B-819D-35408645187D':
-                        codeThisPaper = True
+                    #elif paper_ID == 'DFBA1BB6-2213-427B-819D-35408645187D':
+                    #    codeThisPaper = True
                     if not codeThisPaper:
                         continue
 
