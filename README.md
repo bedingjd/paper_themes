@@ -123,16 +123,25 @@ are as desired.
   - '2025-06-16_ICLS_Conf_Themes_ALL_just10.zip'
 
 ### Some reconfigurations
-- changed location to: QDPX_NAME = "references/2025-06-16_ICLS_Conf_Themes_ALL_just10.qdpx"  
-- changed location to: LEARNING_SCIENCES_OVERVIEW_FILENAME = 'references/00_Learning_Sciences_Overview_converted.rtf'
-- in main_app.py, line 655: with open(filename, "a", errors="ignore") as f_temp: 
-  - we're ignoring any encoding errors
-  - same with line 1982: with open(csv_file_name, "a", errors="ignore") as f_temp:
-- Set all writes to utf-8 encoding
-  - encoding="utf-8"
-  - Line 552: with open(timestamp_filename, "a", encoding="utf-8") as f_temp:
-  - Line 560: with open(timestamp_filename, "a", encoding="utf-8") as f_temp:
-  - Line 655:  with open(filename, "a", errors="ignore", encoding="utf-8") as f_temp: 
-  - Line 1332: with open(timestamp_filename, "w", encoding="utf-8") as f_temp:
-  - Line 1982:  with open(csv_file_name, "a", errors="ignore", encoding="utf-8") as f_temp:
-  - 
+- In order to clean up the file structure, I adjusted the location of serveral files
+  - changed location to: QDPX_NAME = "references/2025-06-16_ICLS_Conf_Themes_ALL_just10.qdpx"  
+  - changed location to: LEARNING_SCIENCES_OVERVIEW_FILENAME = 'references/00_Learning_Sciences_Overview_converted.rtf'
+  - changed location to: CODEBOOK_QDE_PATH = 'references/project_with_generated_codes.qde'
+- to fix encoding errors: 
+  - in main_app.py, line 655: with open(filename, "a", errors="ignore") as f_temp: 
+    - we're ignoring any encoding errors
+    - same with line 1982: with open(csv_file_name, "a", errors="ignore") as f_temp:
+  - Set all writes to utf-8 encoding
+    - encoding="utf-8"
+    - Line 552: with open(timestamp_filename, "a", encoding="utf-8") as f_temp:
+    - Line 560: with open(timestamp_filename, "a", encoding="utf-8") as f_temp:
+    - Line 655:  with open(filename, "a", errors="ignore", encoding="utf-8") as f_temp: 
+    - Line 1332: with open(timestamp_filename, "w", encoding="utf-8") as f_temp:
+    - Line 1982:  with open(csv_file_name, "a", errors="ignore", encoding="utf-8") as f_temp:
+    - In objects3.py, Line 41:  with open(f"./{self.name}/project.qde", "w", encoding="utf-8") as qdpxFile:
+    - In source2.py, Line 81: with open(f"./{self.projectName}/sources/{source[1]}.txt", "w", encoding="utf-8") as sourceFile:
+- NOTE:  creating the MaxQDA Project file requires: 'project_with_generated_codes.qde'
+  - [ ] I think I created this file so a Unique ID was assigned to every paper, that matched the one expeceted my MaxQDA.  Do I need to modify this file to support all the papers?
+- [ ] Need to fix code so that after you run Option #6, you don't need to modify the config file to run Option #7
+  - The code needs to remember the variable: OUTPUT_FILES_PATH = 'Output_Proj_gemma_4_31_20060509a_20260509_1652'
+

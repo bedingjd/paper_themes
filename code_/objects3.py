@@ -38,7 +38,7 @@ class Project:
 
         finally:
 
-            with open(f"./{self.name}/project.qde", "w") as qdpxFile:
+            with open(f"./{self.name}/project.qde", "w", encoding="utf-8") as qdpxFile:
                 qdpxFile.write(projectString)
 
             print(projectString)

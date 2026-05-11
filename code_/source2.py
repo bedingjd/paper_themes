@@ -78,7 +78,7 @@ class Source:
             with open(f"{self.textSourcePath}/{source[0]}.txt", "r", encoding="utf-8") as file:
                 fileContents = file.read()
 
-            with open(f"./{self.projectName}/sources/{source[1]}.txt", "w") as sourceFile:
+            with open(f"./{self.projectName}/sources/{source[1]}.txt", "w", encoding="utf-8") as sourceFile:
                 sourceFile.write(fileContents)
 
     def text_source_to_string(self, time, name, user, guid, plain_text_path):

@@ -3,9 +3,9 @@ import docx2txt
 # This file includes key variables used by the main_app
 # ============================================================================
 
-PROJECT_NAME = 'Proj_gemma_4_31_20060509a'
+PROJECT_NAME = 'Proj_gemma_4_31_20260511a'
 #PROJECT_NAME = 'Proj_olmo31_20260216_0820'                       # name for the new MaxQDA project to be created
-OUTPUT_FILES_PATH = 'Output_Proj_gemma_4_31_20060509a_20260509_1652' # 'Output_Proj_Deepseek_31_20260218_1424_20260218_1424' #'Output_Proj_Deepseek_31_20260216_1410'
+OUTPUT_FILES_PATH = 'Output_Proj_gemma_4_31_20260511a_20260510_1407' # 'Output_Proj_Deepseek_31_20260218_1424_20260218_1424' #'Output_Proj_Deepseek_31_20260216_1410'
 #OUTPUT_FILES_PATH = 'Output_Proj_olmo31_20260216_0820'           # folder is in the same directory.  was 'output_files'
                                                                                 #    This is where the output files from the AI are stored
 # short description to describe this run.  This will be printed at the top of each output file
@@ -81,7 +81,7 @@ CODEBOOK_IN_QDE = True                                  # set to false if codebo
 CODEBOOK_QDE_PATH = 'project.qde'                       # path to qde file, with Codebook included.  Was Project5bb/project.qde 'resources/project.qde'
 CODEBOOK_QDE_PATH = 'AllCodes_8_aug.qdc'                
 CODEBOOK_QDE_PATH = 'AllCodes_8_aug_v2.qdc'             # this is the one with the new codes. Also pasted in the paper info from old project.qde
-CODEBOOK_QDE_PATH = 'project_with_generated_codes.qde'
+CODEBOOK_QDE_PATH = 'references/project_with_generated_codes.qde'
 CODEBOOK_EXCEL_PATH = 'resources/codebook_small_3_5.xlsx'     # path to Excel file
 CODEBOOK_IN_WORD = "202508_updated_codebook/2025-08-08 ICLS Conference Themes - Codebook.docx"
 #CODEBOOK_EXCEL_PATH = '/202508_updated_codebook/2025_08_08_Codebook_with_GUID.xlsx'
