@@ -2069,7 +2069,9 @@ if __name__ == "__main__":
 
             # create a name for the log file
             LOG_FILE_NAME = OUTPUT_FILES_PATH + "/" + "log_gen_proj_" + str(generate_timestamp()) + ".log"
-            #LOG_FILE_NAME = OUTPUT_FILES_PATH + "/" + "log_" + str(generate_timestamp()) + ".log"
+            # ensure it works on Mac and Windows.  this assumes the variable OUTPUT_FILES_PATH is formatting correctly for the OS
+            LOG_FILE_NAME = os.path.join(OUTPUT_FILES_PATH, "log_gen_proj_" + str(generate_timestamp()) + ".log")
+
 
             # 1. create a new Project
             project = Project(PROJECT_NAME, USER_NAME, EXFILES_PATH)
