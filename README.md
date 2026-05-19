@@ -147,4 +147,16 @@ are as desired.
   - [ ] I think I created this file so a Unique ID was assigned to every paper, that matched the one expeceted my MaxQDA.  Do I need to modify this file to support all the papers?
 - [ ] Need to fix code so that after you run Option #6, you don't need to modify the config file to run Option #7
   - The code needs to remember the variable: OUTPUT_FILES_PATH = 'Output_Proj_gemma_4_31_20060509a_20260509_1652'
+- [ ] TO-FIX: coding for paper 'B7A' start and end character positions are incorrect.  They aren't even numbers
+  - 1F4 has commas instead of numbers
+  - main_app.py Lines 2321, 2322 gets the character counts from the 'code-ref' when sometimes the character counts are in the main 'coding'
+    - FIX THIS by adding a check to see if the character counts are in the top level, or if not, look for them in the lower level.
+      - Might also be able to fix this with structured responses from the AI, to ensure the coding always comes back in the same spot/location in the xml
+      - Or might be able to fix this when we correct the coding, to make sure the character counts are placed in the correct spot/location in the xml
+- [ ] TO-FIX: source2.py line 39, 40.  'source' is not found in 'all_sources' so we should probably add it to sources instead of just throwing an error
+  - Perhaps also log that we did this?
+  - When we throw an exception here it returns to main_app.py line 2329 and begins to run the thrown exception.
+  - Also, why was this paper not included in the original list of papers?  Is it not in the project.qde file?
+  - Finally, how can we continue on to log the other codes?
+
 

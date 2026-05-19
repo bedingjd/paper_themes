@@ -679,7 +679,8 @@ def get_filenames(directory):
 # function to parse the output file, to just get the json part out of it
 # returns 'None' if there was no json to split on
 def parse_output_file(filename, path):
-    with open(path+"/"+filename, encoding=getCharEncoding(filename)) as thisFile:
+    total_file_name = os.path.join(path, filename)                                  # to construct an OS independent path to file
+    with open(total_file_name, encoding=getCharEncoding(total_file_name)) as thisFile:
         text = thisFile.read()
         json_parts = str(text).split('json', 1)         # 'json' is the delimiter, 1 is the max number of splits
         #data_dict = xmltodict.parse(xml_file.read())
@@ -704,7 +705,8 @@ def parse_output_file(filename, path):
 # We added this to the file just in case the AI didn't provide it
 # returns 'None' if there was no paper GUID
 def parse_output_file_emergency_PaperGUID(filename, path):
-    with open(path+"/"+filename, encoding=getCharEncoding(filename)) as thisFile:
+    total_file_name = os.path.join(path, filename)                                  # to construct an OS independent path to file
+    with open(total_file_name, encoding=getCharEncoding(total_file_name)) as thisFile:
         try:
             text = thisFile.read()
             indexOfStartOfGUID = str(text).find('Paper GUID:') + len('Paper GUID: ')
@@ -2069,7 +2071,8 @@ if __name__ == "__main__":
 
             # create a name for the log file
             LOG_FILE_NAME = OUTPUT_FILES_PATH + "/" + "log_gen_proj_" + str(generate_timestamp()) + ".log"
-            # ensure it works on Mac and Windows.  this assumes the variable OUTPUT_FILES_PATH is formatting correctly for the OS
+            # ensure it works on Mac and Windows.  
+            # NOTE: this assumes the variable OUTPUT_FILES_PATH is formatting correctly for the OS
             LOG_FILE_NAME = os.path.join(OUTPUT_FILES_PATH, "log_gen_proj_" + str(generate_timestamp()) + ".log")
 
 

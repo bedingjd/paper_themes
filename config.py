@@ -3,9 +3,9 @@ import docx2txt
 # This file includes key variables used by the main_app
 # ============================================================================
 
-PROJECT_NAME = 'Proj_gemma_4_31_20260511a_test20260512_0851'
+PROJECT_NAME = 'Proj_gemma_4_31_20260511a_test20260513_1015_V3'
 #PROJECT_NAME = 'Proj_olmo31_20260216_0820'                       # name for the new MaxQDA project to be created
-OUTPUT_FILES_PATH = 'Output_Proj_gemma_4_31_20260511a_20260510_1407' # 'Output_Proj_Deepseek_31_20260218_1424_20260218_1424' #'Output_Proj_Deepseek_31_20260216_1410'
+OUTPUT_FILES_PATH = 'Output_Proj_gemma_4_31_20260510a_20260510_1407' # 'Output_Proj_Deepseek_31_20260218_1424_20260218_1424' #'Output_Proj_Deepseek_31_20260216_1410'
 #OUTPUT_FILES_PATH = 'Output_Proj_olmo31_20260216_0820'           # folder is in the same directory.  was 'output_files'
                                                                                 #    This is where the output files from the AI are stored
 # short description to describe this run.  This will be printed at the top of each output file
