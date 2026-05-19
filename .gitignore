@@ -3,3 +3,6 @@ errors/*
 .DS_Store
 Output*
 Proj_*
+.vscode/*
+sources/*
+code_/__pycache__/*
