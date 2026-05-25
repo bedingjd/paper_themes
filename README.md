@@ -1,8 +1,24 @@
 # paper_themes
 some python scripts to facilitate AI thematic coding of academic papers, and convert those codings to a MaxQDA project
 
-# Set-up
-### First time
+### To run each time (after set-up is complete)
+a. Start LM Studio, and the Model (in server mode)
+  - Set the context window to 25,000 (or >18,000)
+  - re-load model
+b. Open config.py and ensure the settings are correct:
+  - Project name
+  - Model name
+  - other config items as needed
+c. If not already active, activate the virtual environment with:
+ - Mac:
+    > source venv/bin/activate
+  - Windows:
+    > venv\scripts\activate.bat
+- Then run the code with:
+> python main_app.py
+
+
+## First time Set-up
 - This assumes the CodeBook and papers have been entered into MaxDQA, and exported
 as a .qdpx file.  This file should be placed in the same folder as the main_app.py
 
@@ -63,8 +79,19 @@ as a .qdpx file.  This file should be placed in the same folder as the main_app.
     - Name of project
     - IP address of LMStudio server
     - Name of model
+8. Other Notes on the Configuration settings:
+  - The prompt being used is in config.py as function: createThePrompt20260216()
+  - For Option #6: sending the prompt to the AI:
+    - CodeBook for option # 6 is: project.qde (make sure these have the latest codes)
+  - For Option #7, formatting the AI responses into MaxQDA XML:
+    - List of papers for option #7 is in the config.py variable: EXFILES_PATH
+    - List of paper GUIDs for option #7 is in the config.py variable: CODEBOOK_QDE_PATH 
+    - CodeBook for option#7 is in config.py variable: CODEBOOK_QDE_PATH
+    - 
 
-#### If you want to use with Open Routeror other online platform.  Obtain an OpenAI API key
+
+--------------------------------------------------------------------------------------------
+#### If you want to use with Open Router or other online platform.  Obtain an OpenAI API key
 Follow the instructions in the QuickStart instructions here: [https://platform.openai.com/docs/quickstart?language-preference=python&quickstart-example=completions](https://platform.openai.com/docs/quickstart?language-preference=python&quickstart-example=completions)
 - Create an API Key
   - I do not recommend exporting the key as an environmental variable as described in the QuickStart
@@ -114,7 +141,8 @@ are as desired.
 - If not already active, activate the virtual environment with:
 > source venv/bin/activate
 - Then run the code with:
-> python3 main_app.py
+> python main_app.py
+---------------------------------------------------------------------------------------------------------------------------------
 
 
 ### TO-DO
@@ -147,7 +175,7 @@ are as desired.
   - [ ] I think I created this file so a Unique ID was assigned to every paper, that matched the one expeceted my MaxQDA.  Do I need to modify this file to support all the papers?
 - [ ] Need to fix code so that after you run Option #6, you don't need to modify the config file to run Option #7
   - The code needs to remember the variable: OUTPUT_FILES_PATH = 'Output_Proj_gemma_4_31_20060509a_20260509_1652'
-- [ ] TO-FIX: coding for paper 'B7A' start and end character positions are incorrect.  They aren't even numbers
+- [x] TO-FIX: coding for paper 'B7A' start and end character positions are incorrect.  They aren't even numbers
   - 1F4 has commas instead of numbers
   - main_app.py Lines 2321, 2322 gets the character counts from the 'code-ref' when sometimes the character counts are in the main 'coding'
     - FIX THIS by adding a check to see if the character counts are in the top level, or if not, look for them in the lower level.
@@ -158,5 +186,7 @@ are as desired.
   - When we throw an exception here it returns to main_app.py line 2329 and begins to run the thrown exception.
   - Also, why was this paper not included in the original list of papers?  Is it not in the project.qde file?
   - Finally, how can we continue on to log the other codes?
+- [ ] TODO: create a new project.qde file ensuring both the latest CodeBook and all papers are in there
+- 
 
 
