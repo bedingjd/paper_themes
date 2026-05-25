@@ -2320,6 +2320,18 @@ if __name__ == "__main__":
 
                             start = ref.get('start_position', 0)
                             end = ref.get('end_position', 0)
+
+                            # check to see that we've captured the start and end positions correctly.  They may be in a different part of the XML
+                            # also, sometimes the nuber was listed as ','
+                            if start == 0 or start == -1 or not isinstance(start, (int)):
+                                start = coding.get('start_position', 0)
+                                print(f'No start position in ref, but found start position in coding as: {start}')
+                                log_this(LOG_FILE_NAME,f"...No start position in ref, but found start position in coding as: {start}")
+                            if end == 0 or end == -1 or not isinstance(end, (int)):
+                                end = coding.get('end_position', 0)
+                                print(f'No start position in ref, but found start position in coding as: {end}')
+                                log_this(LOG_FILE_NAME,f"...No start position in ref, but found start position in coding as: {end}")
+
                             
                             log_this(LOG_FILE_NAME,f"...details: source: {source}, code: {code}, start: {start}, end: {end}, target: {target}")
                             print(f"...details: source: {source}, code: {code}, start: {start}, end: {end}, target: {target}")

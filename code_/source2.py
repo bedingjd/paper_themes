@@ -37,7 +37,9 @@ class Source:
     def addSelection(self, source, code, start, end, userGuid):
         all_sources = [name for sources in self.sources.values() for name, _, _ in sources]
         if source not in all_sources:
-            raise ValueError(f"Source for {code} {start} {end} not found")
+            # raise ValueError(f"Source for {code} {start} {end} not found")              # this was the original code, added the line below to handle cases where the paper is not in the list
+            self.addSource(source, 'newly_added', source)                                 # NOTE:  Double check this functionality, this may not be what we want.  We may just want it to error
+        
 
         for key, sources in self.sources.items():
             for i, (name, guid, selections) in enumerate(sources):
