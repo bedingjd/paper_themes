@@ -1019,7 +1019,7 @@ def find_string_position(a: str, b: str):
 
 
 # since the AIs have trouble counting, this fixes the character counts in the AI response
-def fix_the_character_counts(response, paper):
+def fix_the_character_counts_original(response, paper):
 
     # the following was the original idea, similar to the way we parse the output file
     '''
@@ -1109,7 +1109,8 @@ def fix_the_character_counts(response, paper):
     return response
 
 # ---------------------------------------------------------------------------------------------
-def fix_the_character_counts_claude(response, paper):
+#def fix_the_character_counts_claude(response, paper):
+def fix_the_character_counts(response, paper):
     """
     Corrects start_position and end_position values in the AI response by
     locating each sentence in the paper and computing the real character offsets.
