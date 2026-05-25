@@ -1108,6 +1108,195 @@ def fix_the_character_counts(response, paper):
 
     return response
 
+# ---------------------------------------------------------------------------------------------
+def fix_the_character_counts_claude(response, paper):
+    """
+    Corrects start_position and end_position values in the AI response by
+    locating each sentence in the paper and computing the real character offsets.
+
+    Uses JSON parsing instead of string manipulation so it is resilient to
+    variations in field ordering, whitespace, and numeric formatting.
+    Returns the (possibly corrected) response string unchanged on any error.
+    """
+    print("... fixing the response character counts")
+
+    # Step 1: Extract the JSON blob from the response string.
+    # extract_pure_json() uses the same {(?s:.)*} pattern already in the codebase.
+    json_str = extract_pure_json(response)
+    if json_str is None:
+        print("... fix_the_character_counts: no JSON found in response, returning unchanged")
+        return response
+
+    # Locate where the JSON blob sits so we can splice the fixed version back in.
+    json_start = response.find(json_str)
+    if json_start == -1:
+        print("... fix_the_character_counts: could not locate JSON in response, returning unchanged")
+        return response
+    json_end = json_start + len(json_str)
+
+    # Step 2: Parse the JSON into a Python dictionary.
+    try:
+        data = json.loads(json_str)
+    except json.JSONDecodeError as e:
+        print(f"... fix_the_character_counts: JSON parse error ({e}), returning unchanged")
+        return response
+
+    # Step 3: Find the list of codings.  Different prompt versions use different key names.
+    the_codings = None
+    codings_key = None
+    for key in ('selections', 'codings', 'coding'):
+        candidate = data.get(key)
+        if isinstance(candidate, list):
+            the_codings = candidate
+            codings_key = key
+            break
+
+    if the_codings is None:
+        print("... fix_the_character_counts: no codings list found, returning unchanged")
+        return response
+
+    # Step 4: Walk each coding, find its sentence in the paper, and fix the positions.
+    changed = False
+    for coding in the_codings:
+        if not isinstance(coding, dict):
+            continue
+
+        # Different prompt versions use different keys for the quoted sentence.
+        sentence = None
+        for sentence_key in ('sentence', 'evidence_quote'):
+            candidate = coding.get(sentence_key)
+            if isinstance(candidate, str) and candidate:
+                sentence = candidate
+                break
+
+        if not sentence:
+            continue
+
+        real_start, real_end = find_string_position(sentence, paper)
+
+        if real_start == -1:
+            # Sentence not found in the paper text (e.g. paraphrase or truncation).
+            # Leave the existing values alone rather than writing -1, which would
+            # propagate an obviously wrong value into the XML.
+            print(f"... fix_the_character_counts: sentence not found in paper, skipping: {sentence[:60]!r}")
+            continue
+
+        old_start = coding.get('start_position')
+        old_end   = coding.get('end_position')
+
+        # Overwrite with the verified integer values.
+        coding['start_position'] = real_start
+        coding['end_position']   = real_end
+
+        if old_start != real_start or old_end != real_end:
+            changed = True
+            print(f"... fix_the_character_counts: corrected ({old_start}, {old_end}) -> ({real_start}, {real_end})")
+
+    if not changed:
+        return response
+
+    # Step 5: Serialize the corrected dictionary back to a JSON string.
+    data[codings_key] = the_codings
+    new_json_str = json.dumps(data)
+
+    # Step 6: Splice the corrected JSON back into the original response,
+    # preserving any header text (Paper GUID, model info, etc.) before and after it.
+    new_response = response[:json_start] + new_json_str + response[json_end:]
+    return new_response
+
+# ---------------------------------------------------------------------------------------------
+
+
+# since the AIs have trouble counting, this fixes the character counts in the AI response
+def fix_the_character_counts_old(response, paper):
+
+    # the following was the original idea, similar to the way we parse the output file
+    '''
+    front, codings = split_out_codings(response)
+
+    # next three lines remove everything before and after the [ and ]
+    just_codings = codings.split('[')
+    just_codings = just_codings[1].split(']')
+    just_codings = just_codings[0].strip()
+    #just_codings = "[\n" + just_codings + "]"
+
+    #the_codings = just_codings.split('},{')
+    the_codings = just_codings.split('},')
+    #print(f"THE CODINGS: {the_codings}")
+    for coding in the_codings:
+        #print(f"...THIS CODING IS: {coding}")
+        
+        this_coding_dictionary = parse_a_json_coding(coding)
+        print(f"THIS PARSE DICTIONARY: {this_coding_dictionary}")
+        log_this(LOG_FILE_NAME,f"Inside fix_the_character_counts ... THIS PARSE DICTIONARY: \n{this_coding_dictionary}")
+        #source = short_name                                             # NOTE: may want to change this to GUID
+        source = this_paper_guid
+
+        # need to check to see if these exist first
+        does_this_one_exist = True
+        if 'sentence' in this_coding_dictionary:
+            does_this_one_exist = True
+        else:
+            does_this_one_exist = False
+        
+        if does_this_one_exist:
+            sentence = this_coding_dictionary['sentence']
+            start = this_coding_dictionary['start_position']
+            end = this_coding_dictionary['end_position']
+            
+            # find the correct character numbers
+            new_start, new_end = find_string_position(sentence, paper)
+
+            # Adjust the original response
+            # TODO
+    '''
+    print("... fixing the response character counts")
+
+
+    current_index = 0
+    num_chars_to_look_backward = 70                     # since start and end are before the sentence, we need to back up a bit, I counted 68 charactersm but used 70 to be safe
+    next_index = 0
+
+    # first find the sentence
+    look_for_sentence = 'sentence": "'
+    next_index = response.find(look_for_sentence)                                   # find will return -1 if the sentence is not found
+    while next_index >= 0:
+        #print("===================================================")
+        #print(f"...working sentence starting at index {next_index}")
+        # skip to the actual sentence in the response
+        start_of_sentence_index = next_index + len(look_for_sentence)               # this tells us where the sentence actually starts
+        end_of_sentence_index = response.find('"', start_of_sentence_index)         # finds the ending "
+
+        # extract the sentence
+        sentence = response[start_of_sentence_index : end_of_sentence_index]
+        #print(f"Found the sentence:\n{sentence[0:50]}")
+
+        # find the correct start and end character counts
+        real_start, real_end = find_string_position(sentence, paper)
+        #print(f"=======> The correct start is {real_start}, and correct end is {real_end}")
+
+
+        # replace the start and end numbers
+        look_for_start = 'start_position": '
+        look_for_end = 'end_position": '
+        start_index = response.find(look_for_start, start_of_sentence_index - num_chars_to_look_backward) + len(look_for_start)       # 18 characters to the actual number
+        start_end_index = response.find(',', start_index)
+        end_index = response.find(look_for_end, start_end_index) + len(look_for_end)
+        end_end_index = response.find(',', end_index)
+        #print(f"The start and end positions are: {start_index} - {start_end_index}, {end_index} - {end_end_index}")
+        #print(f"the original start number was: {response[start_index : start_end_index]}")
+        #print(f"the original end number was: {response[end_index : end_end_index]}")
+        
+        response = response[:start_index] + str(real_start) + response[start_end_index : end_index] + str(real_end) + response[end_end_index :]
+        #print("---------------------------------")
+        #print(f"revised response is:\n{response}")
+
+        # get ready to rinse and repeat
+        next_index = response.find(look_for_sentence, end_of_sentence_index)        # set-up to look for the next sentence
+
+
+    return response
+
 
 # helper function to take an existing paper output file and update additional coding information
 def update_Output_Data(originalContent, newContent):
@@ -2327,10 +2516,19 @@ if __name__ == "__main__":
                                 start = coding.get('start_position', 0)
                                 print(f'No start position in ref, but found start position in coding as: {start}')
                                 log_this(LOG_FILE_NAME,f"...No start position in ref, but found start position in coding as: {start}")
+                                try:                                    # final check to ensure we don't have any weird start values (from Claude)
+                                    start = int(start)
+                                except:
+                                    start = 0
+
                             if end == 0 or end == -1 or not isinstance(end, (int)):
                                 end = coding.get('end_position', 0)
                                 print(f'No start position in ref, but found start position in coding as: {end}')
                                 log_this(LOG_FILE_NAME,f"...No start position in ref, but found start position in coding as: {end}")
+                                try:                                    # final check to ensure we don't have any weird end values (from Claude)
+                                    end = int(end)
+                                except:
+                                    end = 0
 
                             
                             log_this(LOG_FILE_NAME,f"...details: source: {source}, code: {code}, start: {start}, end: {end}, target: {target}")
