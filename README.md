@@ -145,13 +145,8 @@ are as desired.
 ---------------------------------------------------------------------------------------------------------------------------------
 
 
-### TO-DO
-- [ ] Check python import dependencies and see if they are still needed
-- [ ] Are the following files in use?
-  - '2025-06-16_ICLS_Conf_Themes_ALL_just10.zip'
-- [ ] Remove the restriction to just code one paper in lines 1952-1958
-- [ ] Ensure option #7 can run right after option #6
-  - The code needs to remember the variable: OUTPUT_FILES_PATH = 'Output_Proj_gemma_4_31_20060509a_20260509_1652'
+
+
 
 ### Some reconfigurations
 - In order to clean up the file structure, I adjusted the location of serveral files
@@ -190,3 +185,16 @@ are as desired.
 - 
 
 
+### TO-DO
+##### Priority
+- [ ] Update project.qde file to include all papers
+- [ ] Agree on which model to run
+- [ ] Run some papers we've hand coded and compare
+- [ ] Remove any restrictions to skip papers, code all papers with all categories
+- [ ] Ensure option #7 can run right after option #6
+  - The code needs to remember the variable: OUTPUT_FILES_PATH = 'Output_Proj_gemma_4_31_20060509a_20260509_1652'
+##### Secondary
+- [ ] Check python import dependencies and see if they are still needed
+- [ ] Are the following files in use?
+  - '2025-06-16_ICLS_Conf_Themes_ALL_just10.zip'
+- [ ] Remove the restriction to just code one paper in lines 1952-1958
