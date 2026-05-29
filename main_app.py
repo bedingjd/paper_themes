@@ -2137,8 +2137,10 @@ if __name__ == "__main__":
 
                 # Start the loop.  Look at one paper at a time
                 for paper_ID in listOAllPaperIDs:
+                    '''
                     # **********************************************************
                     # this section added to only code one paper (or a few) and skip all the others
+
                     print(paper_ID)
                     codeThisPaper = False
                     if paper_ID == 'EB84B1CD-7263-4AD1-82D3-B229B7EE734A':
@@ -2149,6 +2151,9 @@ if __name__ == "__main__":
                         continue
 
                     # **********************************************************
+                    '''
+
+                    
                     this_paper = all_the_papers[paper_ID]
 
                     current_datetime = datetime.now()
