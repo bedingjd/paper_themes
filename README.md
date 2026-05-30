@@ -37,7 +37,7 @@ as a .qdpx file.  This file should be placed in the same folder as the main_app.
 6. Create python environment and install python dependncies
   - open a Command Window.  WINDOWSKEY-R, type in 'cmd', then hit enter
   - navigate to paper_themes folder (git repo)
- - If not already created, create a virtual environemnt with:
+ - If not already created, create a virtual environment with:
 > python -m venv venv
   - Note: depending on the install, for this command, and all other commands, python3 might be needed instead of python, so this command might be:
     > python3 -m venv venv
@@ -187,12 +187,15 @@ are as desired.
 
 ### TO-DO
 ##### Priority
+- [ ] Write up instructions for Step 6 and Step 7, and configuration items
 - [ ] Update project.qde file to include all papers
 - [ ] Agree on which model to run
 - [ ] Run some papers we've hand coded and compare
 - [ ] Remove any restrictions to skip papers, code all papers with all categories
 - [ ] Ensure option #7 can run right after option #6
   - The code needs to remember the variable: OUTPUT_FILES_PATH = 'Output_Proj_gemma_4_31_20060509a_20260509_1652'
+- [ ] Make sure the AI returns each category (all 19)
+- [ ] Fix issue so we don't need to enter the config folder name each time
 ##### Secondary
 - [ ] Check python import dependencies and see if they are still needed
 - [ ] Are the following files in use?
