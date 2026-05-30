@@ -6,3 +6,4 @@ Proj_*
 .vscode/*
 sources/*
 code_/__pycache__/*
+venv/*
