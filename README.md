@@ -48,7 +48,10 @@ as a .qdpx file.  This file should be placed in the same folder as the main_app.
     > venv\scripts\activate.bat
 - If any python libraries are missing, they can be installed with:
   - a pip update might be required / desired:
-    > python.exe -m pip install --upgrade pip
+    - Mac
+      > python -m pip install --upgrade pip
+    - Windows
+      > python.exe -m pip install --upgrade pip
   - via the requirements file provided
     > python -m pip install -r requirements.txt
   - or one at a time via:
@@ -201,3 +204,7 @@ are as desired.
 - [ ] Are the following files in use?
   - '2025-06-16_ICLS_Conf_Themes_ALL_just10.zip'
 - [ ] Remove the restriction to just code one paper in lines 1952-1958
+
+##### Claude recommendations I haven't made yet
+- 2. Fix extract_pure_json — remove the exit() call
+In main_app.py (around line 785), extract_pure_json calls exit() when no JSON is found. In a truncated file where the last } closes an inner dict rather than the main object, the regex may still find something (so it won't hit exit()), but it will be an invalid fragment. However, if no match is found at all, calling exit() would silently kill the whole run. Change exit() to return None and ensure the call site in option 7 checks for None before proceeding — which it currently doesn't.

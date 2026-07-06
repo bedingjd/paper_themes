@@ -1108,6 +1108,56 @@ def fix_the_character_counts_original(response, paper):
 
     return response
 
+# ------------------------------------------------------------------------------
+# this was also recommended and written by Claude to fix some malformed xml we
+#   were seeing when running the LMStudio Gemma 4 e4b model
+def sanitize_position(value):
+    """
+    Converts a position value (which may be a malformed string from the AI)
+    to a clean integer.  Examples handled:
+        ":"       -> 0
+        "15269:"  -> 15269
+        "15269.0" -> 15269
+        15269     -> 15269
+    Returns 0 if no integer can be extracted.
+    """
+    if isinstance(value, int):
+        return value
+    if isinstance(value, float):
+        return int(value)
+    # Strip everything that isn't a digit and convert what's left
+    digits_only = re.sub(r'[^0-9]', '', str(value))
+    return int(digits_only) if digits_only else 0
+
+
+# and this was recommended by Claude to capture cases where the AI runs out of tokens.
+# this tries to capture the part of the response that was written as correct JSON
+# without ingesting any of the end which may be malformed JSON
+def recover_truncated_json(text):
+    """
+    Attempts to repair a JSON string that was truncated mid-stream.
+    Finds the last complete top-level 'selections' entry and closes
+    the array and outer object so json.loads() can succeed.
+    Returns a repaired string, or None if recovery fails.
+    """
+    # Walk backward through the text looking for a line that is just "},"
+    # which marks the end of a complete selection entry.
+    lines = text.splitlines()
+    for i in range(len(lines) - 1, -1, -1):
+        stripped = lines[i].strip()
+        if stripped in ('},{', '},', '}'):
+            # Reconstruct up to and including this line, then close up
+            partial = '\n'.join(lines[:i+1])
+            # Remove any trailing comma so we can close the array cleanly
+            partial = partial.rstrip().rstrip(',')
+            candidate = partial + '\n    ]\n}'
+            try:
+                return json.loads(candidate)
+            except json.JSONDecodeError:
+                continue   # try the next candidate line up
+    return None
+
+
 # ---------------------------------------------------------------------------------------------
 #def fix_the_character_counts_claude(response, paper):
 def fix_the_character_counts(response, paper):
@@ -1182,8 +1232,11 @@ def fix_the_character_counts(response, paper):
             print(f"... fix_the_character_counts: sentence not found in paper, skipping: {sentence[:60]!r}")
             continue
 
-        old_start = coding.get('start_position')
-        old_end   = coding.get('end_position')
+        #old_start = coding.get('start_position')
+        #old_end   = coding.get('end_position')
+
+        old_start = sanitize_position(coding.get('start_position', 0))
+        old_end   = sanitize_position(coding.get('end_position', 0))
 
         # Overwrite with the verified integer values.
         coding['start_position'] = real_start
@@ -2318,6 +2371,17 @@ if __name__ == "__main__":
             for file in output_filenames:
                 log_this(LOG_FILE_NAME,f"DEBUG: This is the file name: {file}")
                 if file.endswith(".xml") or file.endswith(".txt"):               # sometimes Mac adds .ds files, we don't want those
+                    
+                    # ----------------------------------------------------------------------------
+                    # from Claude.  a quick check to see if this is even correctly formatted JSON
+                    # Quick truncation check at the start of the file loop in option 7
+                    with open(os.path.join(OUTPUT_FILES_PATH, file), 'r', encoding=getCharEncoding(...)) as f:
+                        raw_tail = f.read()[-20:]   # just the last 20 characters
+                    if not raw_tail.rstrip().endswith('}'):
+                        log_this(LOG_FILE_NAME, f"WARNING: file appears truncated (does not end with '}}'): {file}")
+                    # ----------------------------------------------------------------------------
+                    
+                    
                     # pull out the back-up paper GUID
                     try:
                         emergencyPaperGUID = parse_output_file_emergency_PaperGUID(file, OUTPUT_FILES_PATH)
@@ -2343,6 +2407,7 @@ if __name__ == "__main__":
                         continue
 
                     # convert to a dictionary
+                    '''
                     try:
                         json_as_dict = json.loads(just_the_json_extract)
                         print(f"\nJSON as Dictionary: {json_as_dict}")
@@ -2350,7 +2415,22 @@ if __name__ == "__main__":
                     except:
                         log_this(LOG_FILE_NAME,f"ERROR:  Unable to convert 'json' into 'json_as_dict' json dictionary for this file: {file}")
                         continue
+                    '''
                     #exit()
+                    # -----------------------------------------------------------------------
+                    # from Claude to replace above 'convert to dictionary'
+                    try:
+                        json_as_dict = json.loads(just_the_json_extract)
+                        print(f"\nJSON as Dictionary: {json_as_dict}")
+                    except json.JSONDecodeError as e:
+                        log_this(LOG_FILE_NAME, f"WARNING: JSON parse error at position {e.pos} in {file}, attempting recovery")
+                        json_as_dict = recover_truncated_json(just_the_json_extract)
+                        if json_as_dict is None:
+                            log_this(LOG_FILE_NAME, f"ERROR: could not recover any data from truncated file: {file}")
+                            continue
+                        log_this(LOG_FILE_NAME, f"WARNING: recovered partial data from truncated file: {file}")
+
+                    # -----------------------------------------------------------------------
                     
 
                     '''
@@ -2525,7 +2605,13 @@ if __name__ == "__main__":
                                 try:                                    # final check to ensure we don't have any weird start values (from Claude)
                                     start = int(start)
                                 except:
-                                    start = 0
+                                    #start = 0
+                                    # ------------------------------------------------------------------------------
+                                    # above original, below from Claude
+                                    start = sanitize_position(ref.get('start_position', 0))
+                                    if start == 0 or start == -1:
+                                        start = sanitize_position(coding.get('start_position', 0))
+                                    # ------------------------------------------------------------------------------
 
                             if end == 0 or end == -1 or not isinstance(end, (int)):
                                 end = coding.get('end_position', 0)
@@ -2534,7 +2620,13 @@ if __name__ == "__main__":
                                 try:                                    # final check to ensure we don't have any weird end values (from Claude)
                                     end = int(end)
                                 except:
-                                    end = 0
+                                    #end = 0
+                                    # ------------------------------------------------------------------------------
+                                    # above original, below from Claude
+                                    end = sanitize_position(ref.get('end_position', 0))
+                                    if end == 0 or end == -1:
+                                        end = sanitize_position(coding.get('end_position', 0))
+                                    # ------------------------------------------------------------------------------
 
                             
                             log_this(LOG_FILE_NAME,f"...details: source: {source}, code: {code}, start: {start}, end: {end}, target: {target}")
