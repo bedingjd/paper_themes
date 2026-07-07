@@ -2375,7 +2375,9 @@ if __name__ == "__main__":
                     # ----------------------------------------------------------------------------
                     # from Claude.  a quick check to see if this is even correctly formatted JSON
                     # Quick truncation check at the start of the file loop in option 7
-                    with open(os.path.join(OUTPUT_FILES_PATH, file), 'r', encoding=getCharEncoding(...)) as f:
+                    #with open(os.path.join(OUTPUT_FILES_PATH, file), 'r', encoding=getCharEncoding(...)) as f:
+                    file_long = os.path.join(OUTPUT_FILES_PATH, file)
+                    with open(file_long, 'r', encoding=getCharEncoding(file_long)) as f:
                         raw_tail = f.read()[-20:]   # just the last 20 characters
                     if not raw_tail.rstrip().endswith('}'):
                         log_this(LOG_FILE_NAME, f"WARNING: file appears truncated (does not end with '}}'): {file}")
