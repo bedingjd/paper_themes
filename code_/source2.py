@@ -77,11 +77,16 @@ class Source:
 
         all_sources = [(name, guid) for sources in self.sources.values() for name, guid, _ in sources]
         for source in all_sources:
-            with open(f"{self.textSourcePath}/{source[0]}.txt", "r", encoding="utf-8") as file:
-                fileContents = file.read()
+            # make this a little more resilent in case the paper doesn't exist
+            try:
+                with open(f"{self.textSourcePath}/{source[0]}.txt", "r", encoding="utf-8") as file:
+                    fileContents = file.read()
 
-            with open(f"./{self.projectName}/sources/{source[1]}.txt", "w", encoding="utf-8") as sourceFile:
-                sourceFile.write(fileContents)
+                with open(f"./{self.projectName}/sources/{source[1]}.txt", "w", encoding="utf-8") as sourceFile:
+                    sourceFile.write(fileContents)
+            except Exception as e:
+                print(f"Unable to find paper {source[0]}.txt,  Received Exception: {e}\n")
+                continue
 
     def text_source_to_string(self, time, name, user, guid, plain_text_path):
         return (f'<TextSource creationDateTime="{time}" '

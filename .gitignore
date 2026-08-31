@@ -7,3 +7,4 @@ Proj_*
 sources/*
 code_/__pycache__/*
 venv/*
+errors/*

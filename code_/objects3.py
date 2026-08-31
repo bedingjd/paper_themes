@@ -5,6 +5,13 @@ from code_.codebook3 import *
 from datetime import datetime, timezone
 from code_.source2 import *
 from xml.dom.minidom import parseString
+import xml.etree.ElementTree as ET
+import re
+
+#from pathlib import Path
+#import argparse
+#import sys
+
 
 
 #print(uuid.uuid4())
@@ -22,6 +29,42 @@ class Project:
         #TODO: assign guids and rename the files
         self.codebook = Codebook()
         self.sources = Source(cTextSourcePath, cName)
+    
+    '''
+    ----------------------------------------------------------------------------
+    Functions to check and clean up the XML
+    '''
+    # this function written by Chat-GPT, used to validate whether the string is correctly formatted XMl
+    def validate_xml(self, text: str) -> None:
+        """Raise xml.etree.ElementTree.ParseError if text is not well-formed XML."""
+        ET.fromstring(text)
+        return
+    
+    # this function written by Chat-GPT, used to clean-up poorly formatted XML
+    #def repair_xml_text(text: str) -> tuple[str, int]:
+    def repair_xml_text(self, text: str) -> str:
+        """
+        Repair malformed CodeRef targetGUID attributes.
+
+        Returns:
+            (repaired_text, number_of_repairs)
+        """
+        # Matches malformed CodeRef attributes of the form:
+        # targetGUID="guid="VALUE" name="SOMETHING", "
+        MALFORMED_CODEREF = re.compile(
+            r'targetGUID="guid="([^"]+)"\s+name="([^"]*)",\s*"'
+        )
+
+        repaired_text, count = MALFORMED_CODEREF.subn(
+            lambda match: f'targetGUID="{match.group(1)}"',
+            text
+        )
+        return repaired_text  # , count                         # didn't need the count of the errors
+    
+    '''
+    ----------------------------------------------------------------------------
+    '''
+    
 
     def createQDPX(self):
         os.makedirs(self.name, exist_ok=True)
@@ -32,6 +75,22 @@ class Project:
             print("\n=======================================================")
             print(f"...PROJECT STRING: {projectString}")
             print("=======================================================")
+            '''
+            debug code
+            with open("project_string.txt", "w", encoding="utf-8") as file:
+                file.write(projectString)
+            exit()
+            '''
+
+            # ------------------------------------------------------------------
+            # let's make sure this is correctly formed XML
+            try:
+                self.validate_xml(projectString)
+            except:
+                # XML is not valid, so let's fix that
+                projectString = self.repair_xml_text(projectString)
+            # ------------------------------------------------------------------
+
             xml = parseString(projectString)
             projectBytes = xml.toprettyxml(indent="  ", encoding="utf-8")
             projectString = projectBytes.decode("utf-8")

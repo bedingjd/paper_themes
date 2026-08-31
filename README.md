@@ -208,3 +208,25 @@ are as desired.
 ##### Claude recommendations I haven't made yet
 - 2. Fix extract_pure_json — remove the exit() call
 In main_app.py (around line 785), extract_pure_json calls exit() when no JSON is found. In a truncated file where the last } closes an inner dict rather than the main object, the regex may still find something (so it won't hit exit()), but it will be an invalid fragment. However, if no match is found at all, calling exit() would silently kill the whole run. Change exit() to return None and ensure the call site in option 7 checks for None before proceeding — which it currently doesn't.
+
+##### 6 Jul 2026
+- Adrian Black.  Adrian's digital basement
+- [ ] check to see if we can check the context window, and determine if we can break this up into smaller pieces
+- [ ] Is there a way to determine what is eating up the tokens
+- [ ] Is there a way to reduce the context window?
+- Fable used up tokens very fast, and was expensive
+
+##### 30 Aug
+- Fixed a lot, a lot of encoding and poorly formatted XML issues
+- Thought I had a missing paper issue, but didn't run into it on this run
+- All categories returned data, except 'Research Data'
+  - Was this accidentally combined with 'Research Methodology'
+  - At least for the first paper, this is not the case, but the 'Research Methodology' response is truncated
+- Missing paper:  FileNotFoundError: [Errno 2] No such file or directory: 'sources/07B03AB2-5E9B-4708-9D6F-ED80C151도.txt'
+  - This paper is not in sources, but this one is: 07B03AB2-5E9B-4708-9D6F-ED80C1513BAE.txt
+  - Did the phone name get mangled?  Why the chinese character, perhaps an encoding issue?
+  - Also got missing paper errors for the following:
+    - Unable to find paper 07B03AB2-5E9B-4708-9D6F-ED80C151도.txt,  Received Exception: [Errno 2] No such file or directory: 'sources/07B03AB2-5E9B-4708-9D6F-ED80C151도.txt'
+    - Unable to find paper 58566FED-C746-4453-A63E-E766F60658D.txt,  Received Exception: [Errno 2] No such file or directory: 'sources/58566FED-C746-4453-A63E-E766F60658D.txt'
+    - Unable to find paper B787D8CD-082E-401C-B13B-822도.txt,  Received Exception: [Errno 2] No such file or directory: 'sources/B787D8CD-082E-401C-B13B-822도.txt'
+- TODO:  Need to add logging to source2.py, so these missing papers can be documented
