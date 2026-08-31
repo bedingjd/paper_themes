@@ -200,13 +200,17 @@ class PaperCoding(BaseModel):
 # idea from this search: https://www.bing.com/search?pglt=297&q=python+windows+UnicodeDecodeError%3A+%27charmap%27+codec+can%27t+decode+byte+0x9d+in+position+6445%3A+character+maps+to+%3Cundefined%3E&cvid=8b8cee47a9d64b1481fcd9767dd492f3&gs_lcrp=EgRlZGdlKgYIABBFGDkyBggAEEUYOTIHCAEQ6wcYQNIBCDQyODJqMGo3qAIAsAIA&FORM=ANNTA1&adppc=EDGEESS&PC=NMTS&source=chrome.ob
 def getCharEncoding(file_path):
     with open(file_path, "rb") as raw:
-        result = chardet.detect(raw.read(10000))
+        result = chardet.detect(raw.read(1024))   # was 10000
     encoding = result["encoding"]
+    # added this to avoid encoding issues, 20260830.  Is this a bad idea?
+    if encoding == 'ascii':
+        encoding = 'utf-8'
     return encoding
 
 
 # a function to read in text file
 def read_text_file(file_path):
+    #with open(file_path, 'r', encoding=getCharEncoding(file_path), errors='ignore') as file:        # added ignore errors to fix encoding issues on 20260830, this may be a bad idea
     with open(file_path, 'r', encoding=getCharEncoding(file_path)) as file:
         text = file.read()
     return text
@@ -2375,10 +2379,27 @@ if __name__ == "__main__":
                     # ----------------------------------------------------------------------------
                     # from Claude.  a quick check to see if this is even correctly formatted JSON
                     # Quick truncation check at the start of the file loop in option 7
-                    with open(os.path.join(OUTPUT_FILES_PATH, file), 'r', encoding=getCharEncoding(...)) as f:
-                        raw_tail = f.read()[-20:]   # just the last 20 characters
-                    if not raw_tail.rstrip().endswith('}'):
-                        log_this(LOG_FILE_NAME, f"WARNING: file appears truncated (does not end with '}}'): {file}")
+                    concatenated_file_name_and_path = os.path.join(OUTPUT_FILES_PATH, file)
+                    encoding_for_this_file = encoding=getCharEncoding(concatenated_file_name_and_path)
+                    if encoding_for_this_file == 'ascii':
+                        encoding_for_this_file = 'utf-8'
+
+                    with open(concatenated_file_name_and_path, 'r', encoding=encoding_for_this_file) as f:
+                        if encoding_for_this_file == 'utf-8' or encoding_for_this_file == 'ascii':
+                            try:
+                                raw_tail = f.read()[-20:]   # just the last 20 characters
+                                if not raw_tail.rstrip().endswith('}'):
+                                    log_this(LOG_FILE_NAME, f"ERROR: file appears truncated (does not end with '}}'): {file}")
+                                    print(f"ERROR: file appears truncated (does not end with '}}'): {file}")
+                                    continue
+                            except Exception as e:
+                                log_this(LOG_FILE_NAME, f"ERROR: could not check for file tail (line 2385).  File: {file} | ERROR: {e}")
+                                print(f"ERROR: could not check for file tail (line 2385).  File: {file} | ERROR: {e}")
+                                exit()
+                        else:
+                            log_this(LOG_FILE_NAME, f"WARNING: could not check for truncated file.  File was not in utf-8 or ascii encoding, it was in {encoding_for_this_file}: {file}")
+                            print(f"WARNING: could not check for truncated file.  File was not in utf-8 or ascii encoding, it was in {encoding_for_this_file}: {file}")
+                            exit()
                     # ----------------------------------------------------------------------------
                     
                     
