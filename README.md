@@ -229,4 +229,6 @@ In main_app.py (around line 785), extract_pure_json calls exit() when no JSON is
     - Unable to find paper 07B03AB2-5E9B-4708-9D6F-ED80C151도.txt,  Received Exception: [Errno 2] No such file or directory: 'sources/07B03AB2-5E9B-4708-9D6F-ED80C151도.txt'
     - Unable to find paper 58566FED-C746-4453-A63E-E766F60658D.txt,  Received Exception: [Errno 2] No such file or directory: 'sources/58566FED-C746-4453-A63E-E766F60658D.txt'
     - Unable to find paper B787D8CD-082E-401C-B13B-822도.txt,  Received Exception: [Errno 2] No such file or directory: 'sources/B787D8CD-082E-401C-B13B-822도.txt'
-- TODO:  Need to add logging to source2.py, so these missing papers can be documented
+- TODO:  Need to add logging to source2.py, so any papers missing from 'source' folder, and not included in the end results can be documented
+- TODO: Try Structured Output in LMStudio to determine if outputs are more stable
+- TODO: Perhaps invite Dr Arun George Zachariah to review the approach / code
