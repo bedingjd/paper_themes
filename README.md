@@ -232,3 +232,4 @@ In main_app.py (around line 785), extract_pure_json calls exit() when no JSON is
 - TODO:  Need to add logging to source2.py, so any papers missing from 'source' folder, and not included in the end results can be documented
 - TODO: Try Structured Output in LMStudio to determine if outputs are more stable
 - TODO: Perhaps invite Dr Arun George Zachariah to review the approach / code
+- TODO: Once working, add a GUI on front to make configuration setting easier and more understandable
