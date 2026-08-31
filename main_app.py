@@ -2379,6 +2379,7 @@ if __name__ == "__main__":
                     # ----------------------------------------------------------------------------
                     # from Claude.  a quick check to see if this is even correctly formatted JSON
                     # Quick truncation check at the start of the file loop in option 7
+
                     concatenated_file_name_and_path = os.path.join(OUTPUT_FILES_PATH, file)
                     encoding_for_this_file = encoding=getCharEncoding(concatenated_file_name_and_path)
                     if encoding_for_this_file == 'ascii':
@@ -2400,7 +2401,18 @@ if __name__ == "__main__":
                             log_this(LOG_FILE_NAME, f"WARNING: could not check for truncated file.  File was not in utf-8 or ascii encoding, it was in {encoding_for_this_file}: {file}")
                             print(f"WARNING: could not check for truncated file.  File was not in utf-8 or ascii encoding, it was in {encoding_for_this_file}: {file}")
                             exit()
+
+                    '''
+                    =======
+                    #with open(os.path.join(OUTPUT_FILES_PATH, file), 'r', encoding=getCharEncoding(...)) as f:
+                    file_long = os.path.join(OUTPUT_FILES_PATH, file)
+                    with open(file_long, 'r', encoding=getCharEncoding(file_long)) as f:
+                        raw_tail = f.read()[-20:]   # just the last 20 characters
+                    if not raw_tail.rstrip().endswith('}'):
+                        log_this(LOG_FILE_NAME, f"WARNING: file appears truncated (does not end with '}}'): {file}")
+
                     # ----------------------------------------------------------------------------
+                    '''
                     
                     
                     # pull out the back-up paper GUID
