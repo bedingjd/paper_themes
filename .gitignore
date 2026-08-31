@@ -8,3 +8,4 @@ sources/*
 code_/__pycache__/*
 venv/*
 errors/*
+code_old/*
