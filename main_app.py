@@ -2134,7 +2134,8 @@ if __name__ == "__main__":
             log_this(LOG_FILE_NAME,f"...start time: {current_time}")
 
             # read in the qde content
-            qde_content = qde_to_json("project.qde")
+            #qde_content = qde_to_json("project.qde")
+            qde_content = qde_to_json(CODEBOOK_QDE_PATH)        # added this 20260901 to ensure this section uses the same codebook as the next section
             #print(f"QDDE CONTENT...{qde_content}")
             #exit()
 

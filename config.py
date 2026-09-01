@@ -3,13 +3,18 @@ import docx2txt
 # This file includes key variables used by the main_app
 # ============================================================================
 
-PROJECT_NAME = 'Proj_gemma_4_31_20260511a_test20260513_1015_V3'
-#PROJECT_NAME = 'Proj_olmo31_20260216_0820'                       # name for the new MaxQDA project to be created
-OUTPUT_FILES_PATH = 'Output_Proj_gemma_4_31_20260510a_20260510_1407' # 'Output_Proj_Deepseek_31_20260218_1424_20260218_1424' #'Output_Proj_Deepseek_31_20260216_1410'
+# The name of the project
+PROJECT_NAME = 'Proj_gemma_4_31_20260706b'
+
+# This is used for Option 7, building the MaxQDA files.  This should match the folder name created in Option 6
+# Option 6 took the codings from the AI and stored them in this folder
+OUTPUT_FILES_PATH = 'Output_Proj_gemma_4_31_20260706_20260706_1005' # 'Output_Proj_Deepseek_31_20260218_1424_20260218_1424' #'Output_Proj_Deepseek_31_20260216_1410'
 #OUTPUT_FILES_PATH = 'Output_Proj_olmo31_20260216_0820'           # folder is in the same directory.  was 'output_files'
-                                                                                #    This is where the output files from the AI are stored
+#OUTPUT_FILES_PATH = 'jonan_s test'
+                                                                                #    
 # short description to describe this run.  This will be printed at the top of each output file
 # Don't need to include the Model Name, or parameters as these will be included automatically
+# I left in some previous descriptions for reference, and so I can quickly uncomment them if I want to use them again
 #RUN_DESCRIPTION = "Using LM Studio with PC with 50K context window, revised Chat-GPT prompt"
 #RUN_DESCRIPTION = "Using Gemma 3-27, 8 Aug Codebook as project.qde, just the short prompt, w/ JSON, same as Proj_gemini_25_pro_shortPrompt to test reliability across runs, and whether Gemma is as good as Gemini."
 #RUN_DESCRIPTION = "Using Deepseek R1, 0528, 8 Aug Codebook as .qdc file (used to be project.qde), just the short prompt, output in original format, just one paper, tell model to specifically use NO CODE, Temperature = 0" 
@@ -19,16 +24,21 @@ RUN_DESCRIPTION = "Using Deepseek 3_1, 8 Aug Codebook as .pdq with added GUIDs, 
 #RUN_DESCRIPTION = "Using Olmo 3_1, 8 Aug Codebook as .pdq with added GUIDs, just the revised Feb 2026 prompt, output in csv and xml, just one paper, Temperature = 0" 
 RUN_DESCRIPTION = "Using Gemma 4-31-31B, 8 Aug Codebook as .pdq with added GUIDs, just the revised Feb 2026 prompt, output in csv and xml, just one paper, Temperature = 0" 
 
-# point to the correct server
+# ============================================================================
+# Server Information
+# ============================================================================
+# point to the correct server.  
+# Just need to uncomment one.  The first is used to connect to the OpenRouter server online. The second to the PC running LMStudio (be sure to change the IP address)
 BASE_URL = "https://openrouter.ai/api/v1"               # OpenRouter server
-#BASE_URL = "http://localhost:1234/v1"                   # PC, check the IP address
-#BASE_URL = "http://192.168.1.187:1234/v1"                   # PC, check the IP address
 BASE_URL = "http://192.168.1.187:1234/v1"                   # PC, check the IP address
-#api_key="lm-studio"                                     # For LM Studio, not sure this is needed to checked
+#api_key="lm-studio"                                     # For LM Studio, not sure this is needed or checked
 
+# ============================================================================
+# Model Information
+# ============================================================================
 # The name of the AI model you would like to use
 # list of models and rates at: https://ai.google.dev/gemini-api/docs/rate-limits
-# You can also run the program and select option 3 to get a list of all models, but it doesn't identify the ones with a free tier
+# If using OpenRouter, you can also run the program and select option 3 to get a list of all models, but it doesn't identify the ones with a free tier
 #MODEL_NAME = "gemini-2.5-flash-preview-04-17"           # The name of the model you want to use. 
 MODEL_NAME = "gemini-2.5-flash-lite-preview-06-17"
 MODEL_NAME_OPENAI = "deepseek/deepseek-r1:free"          # The name of the model you want to use for OpenAI Router, list of free models here: https://openrouter.ai/models?max_price=0
@@ -49,7 +59,6 @@ MODEL_NAME_OPENAI = "deepseek/deepseek-r1-0528-qwen3-8b:free"
 MODEL_NAME_OPENAI = "openai/gpt-oss-20b"                        # in LM Studio on the PC
 MODEL_NAME_OPENAI = "google/gemini-2.5-pro"
 MODEL_NAME_OPENAI = "google/gemma-3-27b"                        # in LM studio on the PC
-
 MODEL_NAME_OPENAI = "openai/gpt-oss-20b"
 MODEL_NAME_OPENAI = "deepseek/deepseek-r1-0528-qwen3-8b:free"
 MODEL_NAME_OPENAI = "openai/gpt-5-pro"
@@ -90,11 +99,6 @@ CODEBOOK_IN_WORD = "202508_updated_codebook/2025-08-08 ICLS Conference Themes - 
 # ================
 # Learning Science Paper Location
 LEARNING_SCIENCES_OVERVIEW_FILENAME = 'references/00_Learning_Sciences_Overview_converted.rtf'
-
-# ============================================================================
-# Model Information
-# ============================================================================
-
 
 
 # ============================================================================

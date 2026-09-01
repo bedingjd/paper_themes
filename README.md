@@ -233,3 +233,24 @@ In main_app.py (around line 785), extract_pure_json calls exit() when no JSON is
 - TODO: Try Structured Output in LMStudio to determine if outputs are more stable
 - TODO: Perhaps invite Dr Arun George Zachariah to review the approach / code
 - TODO: Once working, add a GUI on front to make configuration setting easier and more understandable
+- TODO: Investigate fine training existing LLM model
+- TODO: Follow up with Cheaha and Security
+
+##### 30 Aug Mtg
+- Last example, what it coded is mostly good, but it's missing a lot
+  - Also, not coding for the null category.  Perhaps add a second pass to code for the null category
+- Another student researcher to hand-code additional papers
+- Add Aran, if he agrees
+- Tue next week Dr Donaldson will check coded papers, and codebook
+- Framework computers, looking to own, will need help set-up
+##### 31 Aug
+- Reviewed results from yesterday's run, Gemma 4.31, with 'structured output' turned on in LMStudio, using the 'createThePrompt20260209' prompt (which include the JSON for the structured output)
+  - It was also missing the 'Research Data' category of code
+  - Also, there were fewer (no?) errors in the logs, which may indicate turning on 'structure output' reduces the errors.  It may also just have been a good day for the AI.
+- Discovered reason 'Research Data' is missing.  It is missing from the 'project.qde' file
+  - Also discovered the code categories to represent 'no code found' were also missing
+  - They are included in the CODEBOOK_QDE_PATH = 'references/project_with_generated_codes.qde'
+  - Added line 2138 to main_app.py to ensure the same codebook is used for Option 6 and Option 7
+    - TODO: Need to test this
+  
+- Created (with the help of my AI overlords) a script to calc the Interrater Reliability of two runs, so I can quickly compare.  I need to validate the script is working properly.
