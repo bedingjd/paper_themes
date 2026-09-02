@@ -5,11 +5,13 @@ import docx2txt
 
 # The name of the project
 PROJECT_NAME = 'Proj_gemma_4_31_20260706b'
+PROJECT_NAME = 'Proj_muse_glimmer_30B_struct'
 
 # This is used for Option 7, building the MaxQDA files.  This should match the folder name created in Option 6
 # Option 6 took the codings from the AI and stored them in this folder
 OUTPUT_FILES_PATH = 'Output_Proj_gemma_4_31_20260706_20260706_1005' # 'Output_Proj_Deepseek_31_20260218_1424_20260218_1424' #'Output_Proj_Deepseek_31_20260216_1410'
 #OUTPUT_FILES_PATH = 'Output_Proj_olmo31_20260216_0820'           # folder is in the same directory.  was 'output_files'
+OUTPUT_FILES_PATH = 'Output_Proj_muse_glimmer_30B_struct_20260901_0903'
 #OUTPUT_FILES_PATH = 'jonan_s test'
                                                                                 #    
 # short description to describe this run.  This will be printed at the top of each output file
@@ -23,6 +25,7 @@ OUTPUT_FILES_PATH = 'Output_Proj_gemma_4_31_20260706_20260706_1005' # 'Output_Pr
 RUN_DESCRIPTION = "Using Deepseek 3_1, 8 Aug Codebook as .pdq with added GUIDs, just the revised Feb 2026 prompt, output in csv and xml, just one paper, Temperature = 0" 
 #RUN_DESCRIPTION = "Using Olmo 3_1, 8 Aug Codebook as .pdq with added GUIDs, just the revised Feb 2026 prompt, output in csv and xml, just one paper, Temperature = 0" 
 RUN_DESCRIPTION = "Using Gemma 4-31-31B, 8 Aug Codebook as .pdq with added GUIDs, just the revised Feb 2026 prompt, output in csv and xml, just one paper, Temperature = 0" 
+RUN_DESCRIPTION = "Using Meta Muse Glimmer 30B, 8 Aug Codebook as .pdq with added GUIDs, just the revised Feb 2026 prompt, output in csv and xml, just one paper, Temperature = 0, prompt is 20260209 version, inside LMStudion struct is turned on, context length is 24064"
 
 # ============================================================================
 # Server Information
@@ -66,6 +69,7 @@ MODEL_NAME_OPENAI = "google/gemini-3-flash-preview"
 MODEL_NAME_OPENAI = "allenai/olmo-3.1-32b-think"
 MODEL_NAME_OPENAI = "nex-agi/deepseek-v3.1-nex-n1"
 MODEL_NAME_OPENAI = "google/gemma-4-31b"                        # in LM studio on the PC
+MODEL_NAME_OPENAI = "meta/muse-glimmer"                        # in LM studio on the PC
 
 
 # set model config items:
@@ -666,6 +670,81 @@ def createThePrompt20260216(qde_content, paper_ID, this_paper, learning_science_
             - code unique ID
             - code name
             - and the sentence or paragraph from the paper that represents the code selected.
+        """
+    
+    return prompt_content
+
+
+
+def createThePrompt20260901(qde_content, paper_ID, this_paper, learning_science_overview,
+                            granularity=GRANULARITY,                            # "sentence" or "paragraph"
+                            max_codes_per_unit=MAX_CODES_PER_UNIT,              # tighten if still overcoding
+                            max_codes_per_paper=MAX_CODES_PER_PAPER,
+                            min_confidence=MIN_CONFIDENCE):
+
+    prompt_content = f"""
+
+    Background: We are conducting an analysis of all conference papers from the International Conference of the Learning Sciences from 1996 until the present. We are coding each paper according to a detailed codebook. We are generally applying codes at the paragraph level except for when we apply codes to the title of the paper or the author names/affiliations. Often multiple codes in each category may be used. One paragraph may have multiple codes from the same or different categories applied to them. After a code has been used once, we don’t need to look for it again in the same paper. Some categories may not be stated but could be inferred. For example, in the geographical location if they don't mention where it was conducted, we look at the institution affiliations near the top of the paper and code them if appropriate. Another example is in the category of learning theories or the category of other theories, when the paper might not name the theory but they might cite people who make it obvious what theory they are using. We never code the references list. Every category in the codebook should be represented in each paper, so each category has a code for when no other codes in that category apply.
+
+    LENA2 Coding Assistant is tailored to analyze papers, focusing on specific themes. All themes are associated with the Learning Sciences (remember that “the Learning Sciences” is a completely different field than “the Science of Learning”), and overview of the Learning Sciences is found in the file ({learning_science_overview}) 
+        
+        Step 1: It always starts by analyzing the codebook.  The codebook is located in ({qde_content}. The codebook is structured with many categories, and codes under each category. The codebook contains a definition paragraph about each category. Each code is listed with a name and a description.
+        
+        Step 2: It then analyzes the entire paper to understand the overall context.
+        The paper is in the file ({this_paper}), and the paper GUID is ({paper_ID}).
+        
+        Step 3: LENA2 then determines which codes from the codebook must be applied somewhere in the paper, remembering that at least one code from each category in the codebook must be applied in each paper.
+        a. It identifies the most relevant paragraph for each code that needs to be applied, remembering that after a code is used once in a paper it should not be used again. Every category in the codebook must be represented by application of at least one code in that category. If no relevant codes in a category are applicable, the null code for that category (e.g., “THRYOTHER - NO OTHER THEORIES MENTIONED”) should be applied to the title of the paper.
+        b. LENA2 ensures all the codes are considered.
+        c. For every code identified, LENA2 also identifies which paragraphs best match the codes it found, aligning them with codes strictly from the existing codebook which contains the name of the codes with a brief definition.
+        This assistant provides coding by quoting 
+        the exact paragraph and then referring only to the guid and the exact code names listed in the codebook, 
+        such as 'guid="A8FDF7D5-91FA-43CA-97AF-FB7DA8A77DB4" name="ASSMNT - Affective Outcomes"', 
+        'guid="2B887F2B-2CF1-4393-8A31-41737901F9EC" name="ASSMNT - Authentic Assessment"',
+        or 'guid="0897F606-3A15-4092-9760-DBA29E0DD86C" name="COMMCOLAB - Community Partnerships"'
+        d. It reports a confidence level (e.g., 'Confidence: 79%') for each code.
+        e. It reports the start and end of the paragraph, referenced by indicating the number of characters from the start of the paper
+        to the first character in the paragraph.  And also identifies the number of characters until the last character in the paragraph.
+        f. It only uses the codes listed in the codebook exactly as written in the codebook (including spelling mistakes).
+        g. Importantly, once a code is applied, do not use it again in the same paper.
+        
+        Step 4: After the paper is completely coded LENA2 also produces the results in a qdpx format.
+        
+        LENA2 Coding Assistant must output structured data in JSON format, which will later be converted into XML.
+        The JSON structure should match this schema:
+
+        {{
+        "guid": "<guid of paper>",
+        "plain_text_path": "<path>",
+        "name": "<document name>",
+        "creating_user": "402C8B2D-A9B1-4D7F-854C-7F1E14F390ED",
+        "modifying_user": "402C8B2D-A9B1-4D7F-854C-7F1E14F390ED",
+        "modified_datetime": "2024-03-08T14:34:57Z",
+        "creation_datetime": "2024-03-08T14:34:57Z",
+        "selections": [
+            {{
+            "guid": "<selection guid>",
+            "creating_user": "402C8B2D-A9B1-4D7F-854C-7F1E14F390ED",
+            "modifying_user": "402C8B2D-A9B1-4D7F-854C-7F1E14F390ED",
+            "start_position": <start position>,
+            "end_position": <end position>,
+            "sentence": <sentence>,
+            "creation_datetime": "2024-05-30T20:33:52Z",
+            "modified_datetime": "2024-05-30T20:33:52Z",
+            "coding": {{
+                "creating_user": "402C8B2D-A9B1-4D7F-854C-7F1E14F390ED",
+                "guid": "<coding guid>",
+                "creation_datetime": "2024-05-30T20:33:52Z",
+                "code_ref": {{
+                "target_guid": "<code reference GUID>",
+                "code_name": "<code name>"
+                }}
+            }}
+            }}
+        ]
+        }}
+
+        The output **must** be in this JSON format.
         """
     
     return prompt_content

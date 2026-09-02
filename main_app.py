@@ -420,7 +420,9 @@ def analyze_one_paper_via_code_category_via_openai(client, qde_content, paperID,
     raw_learning_sciences = readInRTF_file(LEARNING_SCIENCES_OVERVIEW_FILENAME)
     #prompt_content = createThePrompt20260209(qde_content, paperID, this_paper, raw_learning_sciences)
     # for csv format
-    prompt_content = createThePrompt20260216(qde_content, paperID, this_paper, raw_learning_sciences)
+    #prompt_content = createThePrompt20260216(qde_content, paperID, this_paper, raw_learning_sciences)
+    # testing the response schema and Structured Output set in LMStudio
+    prompt_content = createThePrompt20260901(qde_content, paperID, this_paper, raw_learning_sciences)
 
     # using this on 9 Feb 2026
     
