@@ -10,3 +10,5 @@ venv/*
 errors/*
 code_old/*
 test_*/*
+sources_all/*
+__pycache__/*
