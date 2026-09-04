@@ -254,3 +254,13 @@ In main_app.py (around line 785), extract_pure_json calls exit() when no JSON is
     - TODO: Need to test this
   
 - Created (with the help of my AI overlords) a script to calc the Interrater Reliability of two runs, so I can quickly compare.  I need to validate the script is working properly.
+  - I reviewed the results for paper 27-34
+  - Discovered Code UID with Chinese character (perhaps encoding issue at some step)
+    - B787D8CD-082E-401C-B13B-822도
+  - It sometimes coded the Code Category heading as a code, are we ok with that?  For example, in paper 27-34 'Additional Themes with Ideas' is coded
+  - It coded some codes more than once.  I need to double check the prompt, but I thought we asked them not to do that
+  - The 0831 run had one coding with odd GUID: <CodeRef targetGUID="null_guid_placeholder"/>
+    - another with: <CodeRef targetGUID="N/A"/>
+    - another with: <CodeRef targetGUID="PEDPRACT - NO OTHER PEDAGOGIES, PRACTICES IN TEACHING AND LEARNING MENTIONED"/>
+    - another with: <CodeRef targetGUID="NONE"/>
+  - 
