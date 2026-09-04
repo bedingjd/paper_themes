@@ -789,14 +789,15 @@ def extract_pure_json(the_text):
         value = value.replace('"', '').strip()          # remove " and any whitespace
         theCoding[key] = value                          # add key-value to the dictionary
         '''
-    log_this(LOG_FILE_NAME, f"\nERROR: inside extract_pure_json(): Nothing matched for {{'<anything>'}}, program used to exit here")
+    log_this(LOG_FILE_NAME, f"\nERROR: inside extract_pure_json(): Nothing matched for {{'<anything>'}}, program used to exit here, now returning None")
     # the following exit must mean we didn't find a single match
+    # what should the program do if there is no JSON to extract?
 
-    exit()
+    #exit()
     
     # remove all the stuff we've already found
     #remaining = re.sub(pattern, '', aCoding)
-    return 
+    return None
 
 
 # creates a dictionary of key-value pairs based on the simple json provided
@@ -1186,6 +1187,7 @@ def fix_the_character_counts(response, paper):
     json_str = extract_pure_json(response)
     if json_str is None:
         print("... fix_the_character_counts: no JSON found in response, returning unchanged")
+        log_this(LOG_FILE_NAME, f"inside fix_the_character_counts: extract_pure_json returned None, no JSON found in response, returning unchanged")
         return response
 
     # Locate where the JSON blob sits so we can splice the fixed version back in.
@@ -2442,6 +2444,9 @@ if __name__ == "__main__":
                     try:
                         just_the_json_extract = extract_pure_json(output_json)
                         #print(f"JUST THE JSON EXTRACT: {just_the_json_extract}")
+                        if just_the_json_extract is None:
+                            print(f"ERROR:  Unable to convert 'json' into 'just_the_json_extract'.  Likely no match for the regular expression {{'<everything>'}} for this file: {file}")
+                            log_this(LOG_FILE_NAME, f"ERROR:  Unable to convert 'json' into 'just_the_json_extract'.  Likely no match for the regular expression {{'<everything>'}} for this file: {file}")
                     except:
                         log_this(LOG_FILE_NAME,f"ERROR:  Unable to convert 'json' into 'just_the_json_extract'.  Likely no match for the regular expression {{'<everything>'}} for this file: {file}")
                         continue
