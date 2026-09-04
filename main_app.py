@@ -779,6 +779,7 @@ def extract_pure_json(the_text):
     pattern = "{(?s:.)*}"                               # this pattern looks for {"<anything>"}
     for match in re.finditer(pattern, the_text):        # find the matches
         print(f"\ninside extract_pure_json(): THE MATCH for {{'<anything>'}} IS {match.group()}")
+        log_this(LOG_FILE_NAME, f"\ninside extract_pure_json(): THE MATCH for {{'<anything>'}} IS {match.group()}")
         return match.group()
         '''
         match_details = match.group().split(':')        # split at the : to get the key-value pair
@@ -788,10 +789,13 @@ def extract_pure_json(the_text):
         value = value.replace('"', '').strip()          # remove " and any whitespace
         theCoding[key] = value                          # add key-value to the dictionary
         '''
+    log_this(LOG_FILE_NAME, f"\nERROR: inside extract_pure_json(): Nothing matched for {{'<anything>'}}, program used to exit here")
+    # the following exit must mean we didn't find a single match
+
     exit()
     
     # remove all the stuff we've already found
-    remaining = re.sub(pattern, '', aCoding)
+    #remaining = re.sub(pattern, '', aCoding)
     return 
 
 
