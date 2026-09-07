@@ -5,3 +5,4 @@ dotenv
 xmltodict
 google-genai
 chardet
+matplotlib
