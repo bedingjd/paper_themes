@@ -1483,11 +1483,14 @@ def parse_paper_names_via_qde(qde_file, project, LOG_FILE_NAME):
 if __name__ == "__main__":
 
     # unzip the QDXP files
+    '''
+    # <-----------   20260914 commented out this section.  Skipping this part so it doesn't override the paper copy to sources
     print(f"Making a copy of {QDPX_NAME}")
     copy_name = copy_qdxp_file(QDPX_NAME)
     print(f"... as {copy_name}")
     print(f"... unzipping {copy_name}")
     unzip_qdxp_file(copy_name)
+    '''
 
     # load keys and set-up the client
     # this version for Google AI Studio Gemini
