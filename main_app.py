@@ -997,7 +997,8 @@ def parse_codebook_via_qde3_qdc(codebook_file, project):                        
         #print(f"...THE XML FILE: {str(xml_file.read())}")
         # to pull out just the codes
         #pattern = "<CodeBook>.+</CodeBook>"
-        pattern = r"<CodeBook.+>[\s\S]+</CodeBook>"                    
+        pattern = r"<CodeBook.+>[\s\S]+</CodeBook>"
+        pattern = r"<CodeBook>[\s\S]*?</CodeBook>"                    
         theCodesRaw = re.search(pattern, str(xml_file.read()))
         theCodes = theCodesRaw.group()
         #print(f"...theCodes: {theCodes}")
